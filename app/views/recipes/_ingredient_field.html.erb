@@ -1,0 +1,11 @@
+<div class="nested-field">
+  <%= f.hidden_field :_destroy %>
+  <div class="block flex bg-gray-100 text-lg text-gray-700 font-bold shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full">
+    <%= f.text_field :body, placeholder: "Ex. 1 cup of Flour", class: "block flex-grow bg-gray-100 text-lg text-gray-700 rounded-md shadow border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 w-full" %>
+    <div data-action="click->nested-form#removeField" class="text-gray-500 text-center pl-2 text-gray-300 hover:text-red-300 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+  </div>
+</div>

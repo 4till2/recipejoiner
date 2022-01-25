@@ -1,0 +1,69 @@
+<div class="mx-auto md:w-2/3 flex">
+  <div class="mx-auto w-full md:w-3/4">
+    <% if notice.present? %>
+      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <% end %>
+    <div class="flex w-full justify-between p-4 pt-0 rounded">
+      <%= link_to recipes_path do %>
+        <div class="font-medium text-lg flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </div>
+      <% end %>
+      <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl"><%= @recipe.title %></h1>
+      <%= link_to edit_recipe_path(@recipe) do %>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+        </svg>
+      <% end %>
+    </div>
+    <div id="<%= dom_id @recipe %>">
+        <div class="text-gray-600 mx-auto">
+          <% if @recipe.image.attached? %>
+            <%= image_tag @recipe.image, class: 'rounded' %>
+          <% end %>
+          <div class="flex text-center justify-center text-md p-4">
+            <div class="text-gray-500 grid">
+              <span><%= @recipe.time %></span>
+              <span>Minutes</span>
+            </div>
+            <span class="border-l mx-2"></span>
+            <div class="text-gray-500 grid">
+              <span><%= @recipe.servings %></span>
+              <span>Servings</span>
+            </div>
+            <span class="border-l mx-2"></span>
+            <div class="text-gray-500 grid">
+              <span><%= @recipe.ingredients.count %></span>
+              <span>Ingredients</span>
+            </div>
+            <span class="border-l mx-2"></span>
+            <div class="text-gray-500 grid">
+              <span><%= @recipe.instructions.count %></span>
+              <span>Steps</span>
+            </div>
+          </div>
+        </div>
+
+      <div class="p-2">
+        <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Ingredients</h1>
+        <div class="w-full grid grid-cols-3">
+          <% @recipe.ingredients.each do |ingredient| %>
+              <%= render 'ingredient_embed', ingredient: ingredient %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="p-2 mt-4 my-2">
+        <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Instructions</h1>
+        <div class="w-full grid grid-cols-1">
+          <% @recipe.instructions.each.with_index do |instruction, index| %>
+            <%= render 'instruction_embed', instruction: instruction, index: index + 1 %>
+          <% end %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
