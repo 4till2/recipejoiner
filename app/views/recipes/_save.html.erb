@@ -1,0 +1,8 @@
+<div>
+  <div class="font-semibold text-xl">
+    Save <%= recipe.title %> to Cookbook
+  </div>
+    <% cookbooks.each do |cookbook| %>
+        <%= render 'cookbooks/cookbook_recipe_join', cookbook: cookbook, recipe: recipe, pick_cookbook: true %>
+  <% end %>
+</div>

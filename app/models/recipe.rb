@@ -2,6 +2,7 @@ class Recipe < ApplicationRecord
   belongs_to :user
   has_many :spoons, class_name: "Recipe",
            foreign_key: "original_id"
+  has_and_belongs_to_many :cookbooks
 
   belongs_to :original, class_name: "Recipe", optional: true
   has_one_attached :image, dependent: :destroy

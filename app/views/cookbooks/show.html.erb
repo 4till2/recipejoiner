@@ -1,0 +1,63 @@
+<div class="mx-auto md:w-2/3 flex">
+  <div class="mx-auto w-full md:w-3/4">
+    <% if notice.present? %>
+      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <% end %>
+    <div class="flex w-full justify-between pb-4 pt-0 rounded">
+      <%= link_to cookbooks_path do %>
+        <div class="font-medium text-lg flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </div>
+      <% end %>
+      <% if current_user == @cookbook.user %>
+        <%= link_to edit_cookbook_path(@cookbook), class: 'self-center' do %>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+          </svg>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div id="<%= dom_id @cookbook %>">
+      <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl w-full text-center"><%= @cookbook.title %></h1>
+      <div class="text-gray-600 mx-auto">
+        <% if @cookbook.image.attached? %>
+          <%= image_tag @cookbook.image, class: 'rounded' %>
+        <% end %>
+        <div class="flex text-center justify-center text-md p-4">
+          <div class="text-gray-500 grid">
+            <span><%= @cookbook.recipes.count %></span>
+            <span>Recipes</span>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 mt-4 my-2">
+        <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Recipes</h1>
+        <div
+          data-controller='modal'
+          data-modal-target='wrapper'
+          data-action='keydown@window->modal#closeWithKeyboard'
+          data-modal-turbo-value="true"
+          data-modal-url-value='/new_join_cookbook_recipe?cookbook_id=<%= @cookbook.id %>'
+          class="w-full flex"
+        >
+          <button data-action='modal#view' class="items-center flex text-center mx-auto p-4 border border-dashed rounded mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="font-semibold">Add Recipe</span>
+          </button>
+        </div>
+        <div class="w-full grid grid-cols-1">
+          <% @cookbook.recipes.each do |recipe| %>
+            <%= link_to recipe do %>
+              <%= render recipe %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

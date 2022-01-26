@@ -1,16 +1,16 @@
-<div id="<%= dom_id recipe %>">
-  <div class="flex items-center justify-between m-2 shadow border border-dotted border-gray-700/50 rounded-lg ">
+<%= turbo_frame_tag recipe do %>
+  <div class="flex w-full items-center justify-between my-4 shadow border border-dotted border-gray-900/50 rounded ">
     <div class="p-3">
       <p class="font-bold tracking-wide font-bold text-lg md:text-3xl">
         <%= recipe.title %>
       </p>
       <div class="flex">
-        <div class="text-gray-600 mt-1 text-sm h-24 w-24">
+        <div class="text-gray-600 mt-1 text-sm max-h-24 max-w-24">
           <% if recipe.image.attached? %>
-            <%= image_tag recipe.image, class: 'rounded' %>
+            <%= image_tag recipe.image, class: 'rounded mr-2' %>
           <% end %>
         </div>
-        <div class="px-2 text-gray-700">
+        <div class="text-gray-700">
           <%= recipe.description %>
         </div>
       </div>
@@ -37,5 +37,4 @@
       </div>
     </div>
   </div>
-</div>
-
+<% end %>

@@ -1,0 +1,18 @@
+<%= turbo_frame_tag cookbook do %>
+ <div class="w-full grid p-2 bg-gray-100/50 rounded-md rounded-l-none">
+   <div class="flex justify-between truncate whitespace-normal">
+     <div class="text-lg font-semibold">
+       <%= cookbook.title %>
+     </div>
+     <div class="w-12 h-12 text-center">
+       "Save"
+     </div>
+   </div>
+   <% if cookbook.image.attached? %>
+     <%= image_tag cookbook.image, class: 'rounded p-3' %>
+   <% end %>
+   <div>
+     <%= cookbook.description %>
+   </div>
+ </div>
+<% end %>
