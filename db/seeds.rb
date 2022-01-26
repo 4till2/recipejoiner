@@ -9,6 +9,7 @@
 u = User.create! email: 'test@mail.com', password: 'asdfasdf', password_confirmation: 'asdfasdf', username: 'yosef'
 10.times do
   r = Recipe.create user: u, title: Faker::Food.dish, description: Faker::Food.description, time: rand(120), servings: rand(24)
+  r.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg')
   3.times do
     Ingredient.create!(recipe: r, body: Faker::Food.measurement + ' ' +Faker::Food.ingredient)
   end
@@ -19,6 +20,7 @@ end
 
 5.times do
   c = Cookbook.create! title: Faker::Movie.title, user: u, description: Faker::Movie.quote
+  c.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg')
   3.times do
     c.recipes << Recipe.find(rand(9)+1)
   end

@@ -4,12 +4,12 @@
      <div class="text-lg font-semibold">
        <%= cookbook.title %>
      </div>
-     <div class="w-12 h-12 text-center">
+     <div class="text-center">
        "Save"
      </div>
    </div>
    <% if cookbook.image.attached? %>
-     <%= image_tag cookbook.image, class: 'rounded p-3' %>
+     <%= image_tag cookbook.image, class: 'py-2' %>
    <% end %>
    <div>
      <%= cookbook.description %>

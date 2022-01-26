@@ -24,7 +24,7 @@
       <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl w-full text-center"><%= @cookbook.title %></h1>
       <div class="text-gray-600 mx-auto">
         <% if @cookbook.image.attached? %>
-          <%= image_tag @cookbook.image, class: 'rounded' %>
+          <%= image_tag @cookbook.image, class: 'rounded mx-auto w-full my-2' %>
         <% end %>
         <div class="flex text-center justify-center text-md p-4">
           <div class="text-gray-500 grid">

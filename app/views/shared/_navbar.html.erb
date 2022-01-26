@@ -4,14 +4,14 @@
     <div class="w-full flex items-end text-xs md:text-lg text-gray-600 hover:text-gray-800">
       <div class="pr-3">
         <% if current_page?(:controller => 'recipes') %>
-          <div class="text-gray-400 font-semibold border-b">Recipes</div>
+          <div class="text-gray-300 font-semibold">Recipes</div>
         <% else %>
           <%= link_to 'Recipes', recipes_path, class: 'hover:border-b hover:border-b-gray-400' %>
         <% end %>
       </div>
       <div class="pr-3">
         <% if current_page?(:controller => 'cookbooks') %>
-          <div class="text-gray-400 font-semibold border-b">Cookbooks</div>
+          <div class="text-gray-300 font-semibold">Cookbooks</div>
         <% else %>
           <%= link_to 'Cookbooks', cookbooks_path, class: 'hover:border-b hover:border-b-gray-400' %>
         <% end %>

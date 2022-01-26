@@ -38,9 +38,9 @@
 
     <div id="<%= dom_id @recipe %>">
       <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl w-full text-center"><%= @recipe.title %></h1>
-      <div class="text-gray-600 mx-auto">
+      <div class="text-gray-600 mx-auto w-full">
         <% if @recipe.image.attached? %>
-          <%= image_tag @recipe.image, class: 'rounded' %>
+          <%= image_tag @recipe.image, class: 'mx-auto w-full my-2' %>
         <% end %>
         <div class="flex text-center justify-center text-md p-4">
           <div class="text-gray-500 grid">

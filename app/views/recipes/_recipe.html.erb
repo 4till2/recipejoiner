@@ -4,13 +4,13 @@
       <p class="font-bold tracking-wide font-bold text-lg md:text-3xl">
         <%= recipe.title %>
       </p>
-      <div class="flex">
-        <div class="text-gray-600 mt-1 text-sm max-h-24 max-w-24">
-          <% if recipe.image.attached? %>
-            <%= image_tag recipe.image, class: 'rounded mr-2' %>
-          <% end %>
-        </div>
-        <div class="text-gray-700">
+      <div class="flex w-full">
+        <% if recipe.image.attached? %>
+          <div class="w-1/2 mr-2 mb-2">
+            <%= image_tag recipe.image, class: 'w-full' %>
+          </div>
+        <% end %>
+        <div class="grow w-full text-gray-700">
           <%= recipe.description %>
         </div>
       </div>
