@@ -68,7 +68,7 @@
         <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Ingredients</h1>
         <div class="w-full grid grid-cols-3">
           <% @recipe.ingredients.each do |ingredient| %>
-            <%= render 'ingredient_embed', ingredient: ingredient %>
+            <%= render 'ingredient', ingredient: ingredient %>
           <% end %>
         </div>
       </div>
@@ -77,7 +77,7 @@
         <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Instructions</h1>
         <div class="w-full grid grid-cols-1">
           <% @recipe.instructions.each.with_index do |instruction, index| %>
-            <%= render 'instruction_embed', instruction: instruction, index: index + 1 %>
+            <%= render 'instruction', instruction: instruction, index: index + 1 %>
           <% end %>
         </div>
       </div>

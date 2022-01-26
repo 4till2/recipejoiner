@@ -53,10 +53,8 @@ class CookbooksController < ApplicationController
     respond_to do |format|
       if @cookbook.save
         format.html { redirect_to cookbook_url(@cookbook), notice: "Cookbook was successfully created." }
-        format.json { render :show, status: :created, location: @cookbook }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @cookbook.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -66,10 +64,8 @@ class CookbooksController < ApplicationController
     respond_to do |format|
       if @cookbook.update(cookbook_params)
         format.html { redirect_to cookbook_url(@cookbook), notice: "Cookbook was successfully updated." }
-        format.json { render :show, status: :ok, location: @cookbook }
       else
         format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @cookbook.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -80,7 +76,6 @@ class CookbooksController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to cookbooks_url, notice: "Cookbook was successfully destroyed." }
-      format.json { head :no_content }
     end
   end
 
