@@ -3,6 +3,13 @@
     <h1 class="font-extrabold text-4xl text-gray-800 mb-1"><%= title %></h1>
     <div class="w-full flex items-end text-xs md:text-lg text-gray-600 hover:text-gray-800">
       <div class="pr-3">
+        <% if current_page?(:controller => 'feeds') %>
+          <div class="text-gray-300 font-semibold">Feed</div>
+        <% else %>
+          <%= link_to 'Feed', feeds_path, class: 'hover:border-b hover:border-b-gray-400' %>
+        <% end %>
+      </div>
+      <div class="pr-3">
         <% if current_page?(:controller => 'recipes') %>
           <div class="text-gray-300 font-semibold">Recipes</div>
         <% else %>
@@ -14,6 +21,13 @@
           <div class="text-gray-300 font-semibold">Cookbooks</div>
         <% else %>
           <%= link_to 'Cookbooks', cookbooks_path, class: 'hover:border-b hover:border-b-gray-400' %>
+        <% end %>
+      </div>
+      <div class="pr-3">
+        <% if current_page?(:controller => 'chefs') %>
+          <div class="text-gray-300 font-semibold">Chefs</div>
+        <% else %>
+          <%= link_to 'Chefs', chefs_path, class: 'hover:border-b hover:border-b-gray-400' %>
         <% end %>
       </div>
     </div>

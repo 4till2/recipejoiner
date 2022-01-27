@@ -1,18 +1,17 @@
 <%= turbo_frame_tag cookbook do %>
- <div class="w-full grid p-2 bg-gray-100/50 rounded-md rounded-l-none">
-   <div class="flex justify-between truncate whitespace-normal">
-     <div class="text-lg font-semibold">
-       <%= cookbook.title %>
-     </div>
-     <div class="text-center">
-       "Save"
-     </div>
-   </div>
-   <% if cookbook.image.attached? %>
-     <%= image_tag cookbook.image, class: 'py-2' %>
-   <% end %>
-   <div>
-     <%= cookbook.description %>
-   </div>
- </div>
+  <div class="w-full grid p-2 my-4 border-dotted border shadow rounded-md rounded-l-none">
+    <div class="flex justify-between truncate whitespace-normal">
+      <div class="font-bold tracking-wide font-bold text-lg md:text-3xl">
+        <%= cookbook.title %>
+      </div>
+    </div>
+    <% unless local_assigns[:mini] %>
+      <% if cookbook.image.attached? %>
+        <%= image_tag cookbook.image, class: 'py-2' %>
+      <% end %>
+      <div>
+        <%= cookbook.description %>
+      </div>
+    <% end %>
+  </div>
 <% end %>

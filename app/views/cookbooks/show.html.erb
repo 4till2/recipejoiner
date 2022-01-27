@@ -3,7 +3,7 @@
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
-    <div class="flex w-full justify-between pb-4 pt-0 rounded">
+    <div class="flex w-full justify-between items-center pb-4 pt-0 rounded">
       <%= link_to cookbooks_path do %>
         <div class="font-medium text-lg flex">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -12,11 +12,32 @@
         </div>
       <% end %>
       <% if current_user == @cookbook.user %>
-        <%= link_to edit_cookbook_path(@cookbook), class: 'self-center' do %>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
-          </svg>
-        <% end %>
+        <div class="flex gap-6">
+          <%= link_to edit_cookbook_path(@cookbook), class: 'self-center' do %>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+            </svg>
+          <% end %>
+          <div
+            data-controller='modal'
+            data-modal-target='wrapper'
+            data-action='keydown@window->modal#closeWithKeyboard'
+            data-modal-turbo-value="true"
+            data-modal-url-value='/new_join_cookbook_recipe?cookbook_id=<%= @cookbook.id %>'
+            class="w-full flex"
+          >
+            <button data-action='modal#view' class="items-center flex text-center mx-auto p-2 border border-dashed rounded">
+              <span class="font-semibold">Add Recipe</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      <% else %>
+        <div class="text-center">
+          <%= render 'shared/subscription_button', subscribable_id: @cookbook.id, subscribable_type: 'Cookbook' %>
+        </div>
       <% end %>
     </div>
 
@@ -33,23 +54,8 @@
           </div>
         </div>
       </div>
-      <div class="p-2 mt-4 my-2">
+      <div class="p-2 mb-2">
         <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Recipes</h1>
-        <div
-          data-controller='modal'
-          data-modal-target='wrapper'
-          data-action='keydown@window->modal#closeWithKeyboard'
-          data-modal-turbo-value="true"
-          data-modal-url-value='/new_join_cookbook_recipe?cookbook_id=<%= @cookbook.id %>'
-          class="w-full flex"
-        >
-          <button data-action='modal#view' class="items-center flex text-center mx-auto p-4 border border-dashed rounded mt-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span class="font-semibold">Add Recipe</span>
-          </button>
-        </div>
         <div class="w-full grid grid-cols-1">
           <% @cookbook.recipes.each do |recipe| %>
             <%= link_to recipe do %>

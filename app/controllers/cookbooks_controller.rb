@@ -43,7 +43,7 @@ class CookbooksController < ApplicationController
     return unless recipe && cookbook
 
     cookbook.add_or_remove_recipe(recipe)
-    render partial: 'cookbook_recipe_join', locals: { recipe: recipe, cookbook: cookbook, select: params[:select] }
+    render partial: 'cookbook_recipe_join_button', locals: { recipe: recipe, cookbook: cookbook, select: params[:select] }
   end
 
   # POST /cookbooks or /cookbooks.json

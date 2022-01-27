@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_25_150908) do
+ActiveRecord::Schema.define(version: 2022_01_27_153403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -88,6 +88,17 @@ ActiveRecord::Schema.define(version: 2022_01_25_150908) do
     t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 
+  create_table "subscriptions", force: :cascade do |t|
+    t.bigint "subscriber_id", null: false
+    t.string "subscribable_type"
+    t.bigint "subscribable_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["subscribable_type", "subscribable_id", "subscriber_id"], name: "index_subscription_uniqueness", unique: true
+    t.index ["subscribable_type", "subscribable_id"], name: "index_subscriptions_on_subscribable"
+    t.index ["subscriber_id"], name: "index_subscriptions_on_subscriber_id"
+  end
+
   create_table "taggings", force: :cascade do |t|
     t.integer "tag_id"
     t.string "taggable_type"
@@ -140,5 +151,6 @@ ActiveRecord::Schema.define(version: 2022_01_25_150908) do
   add_foreign_key "instructions", "recipes"
   add_foreign_key "recipes", "recipes", column: "original_id"
   add_foreign_key "recipes", "users"
+  add_foreign_key "subscriptions", "users", column: "subscriber_id"
   add_foreign_key "taggings", "tags"
 end
