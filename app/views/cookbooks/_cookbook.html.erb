@@ -2,17 +2,24 @@
   <%= render 'cookbooks/cookbook_link', cookbook: cookbook %>
 <% else %>
   <%= turbo_frame_tag cookbook do %>
-    <div class="w-full text-center grid p-2 my-4 border-dotted border shadow rounded-md rounded-l-none">
-      <div class="flex justify-center truncate whitespace-normal">
-        <div class="font-bold tracking-wide font-bold text-lg md:text-3xl">
-          <%= cookbook.title %>
+    <div class="mx-auto h-72 w-72 md:h-80 md:w-80 shadow hover:shadow-lgß">
+      <div class="w-full relative rounded rounded-l-md border-black border-2 border-l-8 border-b-4
+      shadow overflow-hidden text-gray-900 bg-cover bg-no-repeat bg-center text-center grid p-2 w-full h-full">
+        <div class="flex flex-col justify-between h-full w-full text-center p-2 overflow-hidden text-ellipsis">
+          <div>
+            <h2 class="text-xl md:text-3xl font-extrabold "><%= cookbook.title %></h2>
+          </div>
+          <% if cookbook.image.attached? %>
+            <span class="h-24 w-full bg-contain bg-no-repeat bg-center" style="background-image: url(<%= url_for(cookbook.image) %>);"></span>
+        <% else %>
+            <div class="text-sm  overflow-hidden"><%= truncate(cookbook.description, length: 75)%></div>
+        <% end %>
+          <div class="align-bottom"><span class="italic text-gray-500 text-xs font-light">Cookbook by</span>
+            <span class="text-sm md:text-lg font-light"><%= cookbook.user.username %></span>
+          </div>
+<!--          <div class="self-end text-gray-500 text-xs md:text-sm"><%#= render 'cookbooks/details', cookbook: cookbook, class: 'text-gray-200' %>-->
+<!--          </div>-->
         </div>
-      </div>
-      <% if cookbook.image.attached? %>
-        <%= image_tag cookbook.image, class: 'py-2 mx-auto' %>
-      <% end %>
-      <div>
-        <%= cookbook.description %>
       </div>
     </div>
   <% end %>

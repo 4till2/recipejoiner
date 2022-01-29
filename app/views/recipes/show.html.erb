@@ -1,4 +1,4 @@
-<div class="mx-auto md:w-2/3 flex">
+<div class="mx-auto flex w-full">
   <div class="mx-auto w-full md:w-3/4">
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
@@ -6,12 +6,20 @@
     <div class="flex w-full justify-between pb-4 pt-0 rounded">
       <a href='javascript:history.go(-1)'>
         <div class="font-medium text-lg flex">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-700 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/>
           </svg>
         </div>
       </a>
-      <div class="flex gap-2">
+
+      <div class="flex">
+        <% if current_user == @recipe.user %>
+          <%= link_to edit_recipe_path(@recipe), class:'self-center' do %>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-300 hover:text-black mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+            </svg>
+          <% end %>
+        <% end %>
         <div
           data-controller='modal'
           data-modal-target='wrapper'
@@ -22,67 +30,51 @@
           class="w-full flex"
         >
           <button data-action='modal#view' class="self-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-700 hover:text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
             </svg>
           </button>
         </div>
-        <% if current_user == @recipe.user %>
-          <%= link_to edit_recipe_path(@recipe), class:'self-center' do %>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
-              </svg>
-          <% end %>
-        <% end %>
       </div>
     </div>
 
     <div id="<%= dom_id @recipe %>">
-      <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl w-full text-center"><%= @recipe.title %></h1>
-      <div class="text-gray-600 mx-auto w-full">
+      <h1 class="font-bold tracking-wide text-2xl md:text-4xl w-full text-center"><%= @recipe.title %></h1>
+      <div class="text-center text-gray-500 text-sm md:text-lg">
+        Recipe by <%= link_to @recipe.user.username, @recipe.user, data: { 'turbo-frame': "_top" }, class: 'text-gray-700 font-medium' %>
+      </div>
+      <div class="text-gray-700 text-lg md:text-xl mx-auto w-full text-center pt-4 md:w-3/4">
+        <%= @recipe.description %>
         <% if @recipe.image.attached? %>
-          <%= image_tag @recipe.image, class: 'mx-auto w-full my-2' %>
+          <%= image_tag @recipe.image, class: 'mx-auto w-full my-2 rounded' %>
         <% end %>
-        <div class="flex text-center justify-center text-md p-4">
-          <div class="text-gray-500 grid">
-            <span><%= @recipe.time %></span>
-            <span>Minutes</span>
-          </div>
-          <span class="border-l mx-2"></span>
-          <div class="text-gray-500 grid">
-            <span><%= @recipe.servings %></span>
-            <span>Servings</span>
-          </div>
-          <span class="border-l mx-2"></span>
-          <div class="text-gray-500 grid">
-            <span><%= @recipe.ingredients.count %></span>
-            <span>Ingredients</span>
-          </div>
-          <span class="border-l mx-2"></span>
-          <div class="text-gray-500 grid">
-            <span><%= @recipe.instructions.count %></span>
-            <span>Steps</span>
-          </div>
+        <div class="text-sm md:text-lg flex justify-center mt-4 my-2">
+          <%= render 'recipes/details', recipe: @recipe %>
         </div>
       </div>
+      <div class="md:grid md:grid-cols-3">
       <div class="p-2">
         <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Ingredients</h1>
-        <div class="w-full grid grid-cols-3">
+        <div class="w-full ">
           <% @recipe.ingredients.each do |ingredient| %>
+            <div class="my-2 text-xl px-4 text-gray-700">
             <%= render 'ingredient', ingredient: ingredient %>
-          <% end %>
+            </div>
+        <% end %>
         </div>
       </div>
 
-      <div class="p-2 my-2">
+      <div class="p-2 md:col-span-2">
         <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Instructions</h1>
         <div class="w-full grid grid-cols-1">
           <% @recipe.instructions.each.with_index do |instruction, index| %>
+            <div class="my-2 text-xl px-4">
             <%= render 'instruction', instruction: instruction, index: index + 1 %>
+            </div>
           <% end %>
         </div>
       </div>
-
+      </div>
     </div>
   </div>
 </div>

@@ -1,10 +1,10 @@
-<div class="mx-auto md:w-2/3 w-full flex">
+<div class="mx-auto  w-full flex">
   <div class="mx-auto w-full">
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
     <%= render 'shared/navbar', title: 'Recipes' %>
-    <div id="recipes" class="my-3 mx-2">
+    <div id="recipes" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 my-3 mx-2">
       <% unless @recipes.present? %>
         <%= link_to 'Create your first Recipe!', new_recipe_path, class: "rounded-lg p-24 text-center font-semibold border-dashed border border-black text-gray-600 block font-large md:text-md hover:bg-gray-600 hover:text-gray-200 m-4" %>
       <% end %>
