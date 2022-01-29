@@ -20,21 +20,15 @@ class CookbooksController < ApplicationController
   def edit
   end
 
+  # options = cookbooks, or recipes depending on whose asking.
+  # when options == cookbooks the user is selecting a cookbook to add a recipe to.
+  # when options == recipes the user is selecting recipes to add to a cookbook.
   def new_join_cookbook_recipe
-    if params[:recipe_id]
-      recipe = Recipe.find(params[:recipe_id])
-      cookbooks = Cookbook.where(user_id: current_user.id)
-      render turbo_stream: turbo_stream.replace('modal_content', partial: 'join_cookbook_recipe',
-                                                                 locals: { cookbooks: cookbooks, recipe: recipe,
-                                                                           select: 'cookbook' })
-    elsif params[:cookbook_id]
-      cookbook = Cookbook.find(params[:cookbook_id])
-      recipes = Recipe.where(user_id: current_user.id)
-      render turbo_stream: turbo_stream.replace('modal_content', partial: 'join_cookbook_recipe',
-                                                                 locals: { cookbook: cookbook, recipes: recipes,
-                                                                           select: 'recipe' })
-    end
-    return
+    options = params[:recipe_id] ? Cookbook.where(user_id: current_user.id) : Recipe.where(user_id: current_user.id)
+    recipe = params[:recipe_id] ? Recipe.find(params[:recipe_id]) : nil
+    cookbook = params[:cookbook_id] ? Cookbook.find(params[:cookbook_id]) : nil
+    render turbo_stream: turbo_stream.replace('modal_content', partial: 'join_cookbook_recipe',
+                                                               locals: { options: options, cookbook: cookbook, recipe: recipe })
   end
 
   def join_cookbook_recipe
@@ -43,7 +37,7 @@ class CookbooksController < ApplicationController
     return unless recipe && cookbook
 
     cookbook.add_or_remove_recipe(recipe)
-    render partial: 'cookbook_recipe_join_button', locals: { recipe: recipe, cookbook: cookbook, select: params[:select] }
+    render partial: 'cookbook_recipe_join_button', locals: { recipe: recipe, cookbook: cookbook }
   end
 
   # POST /cookbooks or /cookbooks.json

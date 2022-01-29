@@ -1,14 +1,19 @@
 class User < ApplicationRecord
+  include PgSearch::Model
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
   has_many :subscribees, as: :subscribable, class_name: 'Subscriptions'
   has_many :subscriptions, foreign_key: 'subscriber_id', dependent: :destroy, class_name: 'Subscriptions'
   has_many :subscribers, through: :subscribees
   has_many :recipes, dependent: :destroy, class_name: 'Recipe'
   has_many :cookbooks, dependent: :destroy
   has_one_attached :avatar, dependent: :destroy
+
+  multisearchable against: [:username]
 
   def feed
     subscriptions.includes(:subscribable).map(&:recipes).flatten.uniq

@@ -1,23 +1,10 @@
 <div>
-  <% if local_assigns[:select] == 'cookbook' %>
-    <div class="font-semibold text-xl">
-      Save <%= recipe.title %> to Cookbook
+  <% options.each do |option| %>
+    <div class="flex items-center">
+      <div class="grow"><%= render option, link: true %></div>
+      <%= render 'cookbooks/cookbook_recipe_join_button',
+                 cookbook: option.class.name == 'Cookbook' ? option : cookbook,
+                 recipe: option.class.name == 'Recipe' ? option : recipe %>
     </div>
-    <% cookbooks.each do |cookbook| %>
-      <div class="flex items-center">
-        <div class="grow"><%= render cookbook, mini: true %></div>
-        <%= render 'cookbooks/cookbook_recipe_join_button', cookbook: cookbook, recipe: recipe, select: 'cookbook' %>
-      </div>
-    <% end %>
-  <% elsif local_assigns[:select] == 'recipe' %>
-    <div class="font-semibold text-xl">
-      Add recipe to <%= cookbook.title %>
-    </div>
-    <% recipes.each do |recipe| %>
-      <div class="flex items-center">
-        <div class="grow"><%= render recipe, mini: true %></div>
-        <%= render 'cookbooks/cookbook_recipe_join_button', cookbook: cookbook, recipe: recipe, select: 'recipe' %>
-      </div>
-    <% end %>
   <% end %>
 </div>

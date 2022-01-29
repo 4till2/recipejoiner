@@ -1,17 +1,19 @@
-<%= turbo_frame_tag cookbook do %>
-  <div class="w-full grid p-2 my-4 border-dotted border shadow rounded-md rounded-l-none">
-    <div class="flex justify-between truncate whitespace-normal">
-      <div class="font-bold tracking-wide font-bold text-lg md:text-3xl">
-        <%= cookbook.title %>
+<% if local_assigns[:link] %>
+  <%= render 'cookbooks/cookbook_link', cookbook: cookbook %>
+<% else %>
+  <%= turbo_frame_tag cookbook do %>
+    <div class="w-full text-center grid p-2 my-4 border-dotted border shadow rounded-md rounded-l-none">
+      <div class="flex justify-center truncate whitespace-normal">
+        <div class="font-bold tracking-wide font-bold text-lg md:text-3xl">
+          <%= cookbook.title %>
+        </div>
       </div>
-    </div>
-    <% unless local_assigns[:mini] %>
       <% if cookbook.image.attached? %>
-        <%= image_tag cookbook.image, class: 'py-2' %>
+        <%= image_tag cookbook.image, class: 'py-2 mx-auto' %>
       <% end %>
       <div>
         <%= cookbook.description %>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 <% end %>

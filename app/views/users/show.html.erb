@@ -4,39 +4,39 @@
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
     <div class="flex w-full justify-between items-center pb-4 pt-0 p-2 rounded">
-      <%= link_to chefs_path do %>
+      <a href='javascript:history.go(-1)'>
         <div class="font-medium text-lg flex">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
           </svg>
         </div>
-      <% end %>
-      <% if current_user == @chef %>
+      </a>
+      <% if current_user == @user %>
         <div class="flex">
-<!--          edit user-->
+          <!--          edit user-->
         </div>
       <% else %>
         <div class="text-center">
-          <%= turbo_frame_tag 'subscription_button_container', src: load_subscription_path(subscribable_id: @chef.id, subscribable_type: 'User' ) do %>
+          <%= turbo_frame_tag 'subscription_button_container', src: load_subscription_path(subscribable_id: @user.id, subscribable_type: 'User') do %>
             <%= render 'shared/subscription_button' %>
           <% end %>
         </div>
       <% end %>
     </div>
 
-    <div id="<%= dom_id @chef %>">
-      <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl w-full text-center"><%= @chef.username %></h1>
+    <div id="<%= dom_id @user %>">
+      <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl w-full text-center"><%= @user.username %></h1>
       <div class="text-gray-600 mx-auto">
-        <% if @chef.avatar.attached? %>
-          <%= image_tag @chef.avatar, class: 'rounded mx-auto w-full my-2' %>
+        <% if @user.avatar.attached? %>
+          <%= image_tag @user.avatar, class: 'rounded mx-auto w-full my-2' %>
         <% end %>
         <div class="flex text-center justify-center text-md p-4">
           <div class="text-gray-500 grid mx-2">
-            <span><%= @chef.recipes.count %></span>
+            <span><%= @user.recipes.count %></span>
             <span>Recipes</span>
           </div>
           <div class="text-gray-500 grid mx-2">
-            <span><%= @chef.cookbooks.count %></span>
+            <span><%= @user.cookbooks.count %></span>
             <span>Cookbooks</span>
           </div>
         </div>
@@ -44,9 +44,9 @@
       <div class="p-2 mb-2">
         <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Recipes</h1>
         <div class="w-full grid grid-cols-1">
-          <% @chef.recipes.each do |recipe| %>
+          <% @user.recipes.each do |recipe| %>
             <%= link_to recipe do %>
-              <%= render recipe %>
+              <%= render recipe, link: true %>
             <% end %>
           <% end %>
         </div>
@@ -55,9 +55,9 @@
       <div class="p-2 mb-2">
         <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Cookbooks</h1>
         <div class="grid grid-cols-2 gap-4 my-3 mx-2">
-          <% @chef.cookbooks.each do |cookbook| %>
+          <% @user.cookbooks.each do |cookbook| %>
             <%= link_to cookbook do %>
-              <%= render cookbook %>
+              <%= render cookbook, link: true %>
             <% end %>
           <% end %>
         </div>

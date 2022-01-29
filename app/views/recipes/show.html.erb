@@ -4,19 +4,20 @@
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
     <div class="flex w-full justify-between pb-4 pt-0 rounded">
-      <%= link_to recipes_path do %>
+      <a href='javascript:history.go(-1)'>
         <div class="font-medium text-lg flex">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
           </svg>
         </div>
-      <% end %>
+      </a>
       <div class="flex gap-2">
         <div
           data-controller='modal'
           data-modal-target='wrapper'
           data-action='keydown@window->modal#closeWithKeyboard'
           data-modal-turbo-value="true"
+          data-modal-title-value="Save to Cookbook"
           data-modal-url-value='/new_join_cookbook_recipe?recipe_id=<%= @recipe.id %>'
           class="w-full flex"
         >

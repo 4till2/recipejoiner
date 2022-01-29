@@ -1,0 +1,25 @@
+<%= turbo_frame_tag 'search' do %>
+  <div class="mx-auto w-full grid">
+    <div class="w-full" data-controller="search-bar">
+      <% query ||= nil %>
+      <%= form_with url: search_path do |form| %>
+        <%= form.text_field :query, data:{ 'search-bar-target': 'input' }, placeholder: 'Search', value: query, autofocus: true %>
+        <div data-action="click->search-bar-target#reset">Clear</div>
+        <%= form.submit 'Search' %>
+      <% end %>
+    </div>
+
+    <% if results ||= nil && results %>
+      <div class="grid">
+        <% results.each do |result| %>
+          <div class="my-2 p-2 border-dotted border rounded">
+          <%= link_to result.searchable, data:{'turbo-frame': "_top"} do %>
+            <%= render result.searchable, link: true %>
+          <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+

@@ -1,0 +1,21 @@
+<%= turbo_frame_tag recipe do %>
+  <div class="flex w-full items-center">
+    <% if recipe.image.attached? %>
+      <div class="mr-2 w-16">
+        <%= image_tag recipe.image, class: 'w-full' %>
+      </div>
+    <% end %>
+    <div class="grid w-full grow">
+      <p class="font-bold tracking-wide font-bold ">
+        <%= recipe.title %>
+      </p>
+      <div class="inline-flex text-gray-500 text-xs truncate">
+        <span>Recipe</span>
+        <span class="px-1">&#8226;</span>
+        <span>By <%= recipe.user.username %> </span>
+        <span class="px-1">&#8226;</span>
+        <span class="truncate"><%= recipe.description %></span>
+      </div>
+    </div>
+  </div>
+<% end %>

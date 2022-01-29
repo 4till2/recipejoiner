@@ -8,33 +8,32 @@ export default class extends Controller {
     static get values() {
         return {
             url: String,
-            turbo: { type: Boolean, default: true }
+            title: String,
+            turbo: {type: Boolean, default: true}
         }
     }
 
     initialize() {
-        this.open = false
+        this.documentOverflowVal = document.body.style.overflow
+
     }
+
 
     view(e) {
         if (e.target !== this.wrapperTarget &&
             !this.wrapperTarget.contains(e.target)) return
 
-        if (!this.open) {
-            this.wrapperTarget.insertAdjacentHTML('afterbegin', this.template())
-            this.getContent(this.urlValue)
-            this.open = true
-        }
+        this.wrapperTarget.insertAdjacentHTML('afterbegin', this.template())
+        this.getContent(this.urlValue)
+        document.body.style.overflow = 'hidden'
     }
 
     close(e) {
         e.preventDefault()
 
-        if (this.open) {
-            if (this.hasContainerTarget) {
-                this.containerTarget.remove()
-                this.open = false
-            }
+        if (this.hasContainerTarget) {
+            this.containerTarget.remove()
+            document.body.style.overflow = this.documentOverflowVal
         }
     }
 
@@ -51,7 +50,7 @@ export default class extends Controller {
     }
 
     getContent(url) {
-        if (this.turboValue){
+        if (this.turboValue) {
             this.contentTarget.innerHTML = `
             <turbo-frame id="modal_content" src=${this.urlValue}>
             Loading..
@@ -71,13 +70,16 @@ export default class extends Controller {
 
     template() {
         return `      
-        <div data-modal-target='container' class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div data-modal-target='container' class="fixed z-10 inset-0 overflow-y-auto min-h-screen" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
             <div data-modal-target='background' data-action='click->modal#closeBackground' class="fixed inset-0 backdrop-blur-md bg-gray-200/50 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
             <!-- This element is to trick the browser into centering the modal contents. -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <div class="inline-block align-bottom bg-white border border-black px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
-                <div class="hidden sm:block absolute top-0 right-0 pt-4 pr-4">
+<!--        REPLACE THE FOLLOWING 2 LINES FOR A DYNAMICALLY SIZED CENTERED MODAL-->
+<!--        <div class="inline-block align-bottom bg-white border border-black px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">-->
+            <div class="absolute top-0 bottom-0 left-0 right-0 p-4 m-4 md:mx-auto md:my-12 align-bottom bg-white border border-black text-left overflow-y-scroll shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                <div class="py-2">${this.titleValue}</div>
+                <div class=" sm:block absolute top-0 right-0 pt-4 pr-4">
                     <button data-action='click->modal#close' type="button" class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         <span class="sr-only">Close</span>
                         <!-- Heroicon name: outline/x -->

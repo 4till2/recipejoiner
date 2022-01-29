@@ -14,7 +14,7 @@ class ApplicationPolicy
   end
 
   def show?
-    owner? || public? || subscriber?
+    public?
   end
 
   # Handled by authorization
@@ -57,7 +57,7 @@ class ApplicationPolicy
   private
 
   def public?
-    false
+    true
   end
 
   def owner?

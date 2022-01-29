@@ -5,9 +5,9 @@
     <% end %>
     <%= render 'shared/navbar', title: 'Chefs' %>
     <div id="chefs" class="my-3 mx-2">
-      <% @chefs.each do |chef| %>
-        <%= link_to '/chefs/'+ chef.id.to_s do %>
-          <%= render 'chefs/chef', chef: chef%>
+      <% @users.each do |user| %>
+        <%= link_to user do %>
+          <%= render 'users/user', user: user%>
         <% end %>
       <% end %>
     </div>
