@@ -2,7 +2,7 @@ class ChefsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @users = User.all_chefs
+    @users = current_user.chefs_feed
     render 'users/index'
   end
 

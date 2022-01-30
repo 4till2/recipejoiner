@@ -10,9 +10,7 @@
         <%= recipe.title %>
       </p>
       <div class="inline-flex text-gray-500 text-xs truncate">
-        <span>Recipe</span>
-        <span class="px-1">&#8226;</span>
-        <span>By <%= recipe.user.username %> </span>
+        <span>Recipe by <%= recipe.user.username %> </span>
         <span class="px-1">&#8226;</span>
         <span class="truncate"><%= recipe.description %></span>
       </div>

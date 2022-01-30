@@ -12,7 +12,8 @@
 </head>
 
 <body>
-<main class="container mx-auto mt-4 md:mt-12 px-5 flex">
+<main class="container mx-auto mt-21 md:mt-24 px-5 flex">
+  <%= render 'shared/navbar', title: controller_name.capitalize %>
   <%= yield %>
 </main>
 </body>

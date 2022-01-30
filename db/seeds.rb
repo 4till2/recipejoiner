@@ -8,22 +8,22 @@
 
 5.times do
   u = User.create! email: Faker::Internet.email, password: 'asdfasdf', password_confirmation: 'asdfasdf', username: Faker::Lorem.unique.word
-  10.times do
-    r = Recipe.create user: u, title: Faker::Food.unique.dish, description: Faker::Food.description, time: rand(120), servings: rand(24)
-    r.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg')
-    3.times do
+  30.times do
+    r = Recipe.create user: u, title: Faker::Food.dish, description: Faker::Food.description, time: rand(120), servings: rand(24)
+    rand(5).positive? ? r.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
+    10.times do
       Ingredient.create!(recipe: r, body: Faker::Food.measurement + ' ' +Faker::Food.ingredient)
     end
-    3.times do
+    7.times do
       Instruction.create!(recipe: r, body: Faker::Quotes::Shakespeare.romeo_and_juliet_quote)
     end
   end
 
-  5.times do
-    c = Cookbook.create! title: Faker::Movie.unique.title, user: u, description: Faker::Movies::Lebowski.quote
-    c.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg')
-    3.times do
-      c.recipes << Recipe.find(rand(9)+1)
+  30.times do
+    c = Cookbook.create! title: Faker::Movie.title, user: u, description: Faker::Movies::Lebowski.quote
+    rand(2).positive? ? c.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
+    20.times do
+      c.recipes << Recipe.find(rand(20)+1)
     end
   end
 end

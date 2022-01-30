@@ -4,7 +4,7 @@ class CookbooksController < ApplicationController
 
   # GET /cookbooks or /cookbooks.json
   def index
-    @cookbooks = Cookbook.all
+    @cookbooks = current_user.cookbooks
   end
 
   # GET /cookbooks/1 or /cookbooks/1.json

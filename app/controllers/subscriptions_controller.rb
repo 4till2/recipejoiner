@@ -11,14 +11,20 @@ class SubscriptionsController < ApplicationController
 
   def show
     sub = subscription
-    # render partial: 'shared/subscription_button',
-    #        locals: { subscribable_id: params[:subscribable_id],
-    #                  subscribable_type: params[:subscribable_type],
-    #                  is_subscribed: sub.present? }
     render turbo_stream: turbo_stream.replace('subscription_button', partial: 'shared/subscription_button',
-                                                                     locals: { subscribable_id: params[:subscribable_id],
-                                                                               subscribable_type: params[:subscribable_type],
-                                                                               is_subscribed: sub.present? })
+                                              locals: { subscribable_id: params[:subscribable_id],
+                                                        subscribable_type: params[:subscribable_type],
+                                                        is_subscribed: sub.present? })
+  end
+
+  def paginated
+    pagy, items = pagy(current_user.paginated_collection(params[:source]).distinct, items: params[:limit] || 10)
+    render partial: 'shared/collection',
+           locals: { items: items,
+                     pagy: pagy,
+                     link: params[:link]
+           }
+
   end
 
   private
@@ -28,4 +34,5 @@ class SubscriptionsController < ApplicationController
                           subscribable_type: params[:subscribable_type],
                           subscriber: current_user)
   end
+
 end

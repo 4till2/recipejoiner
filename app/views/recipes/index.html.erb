@@ -1,18 +1,28 @@
-<div class="mx-auto  w-full flex">
+<div class="mx-auto w-full flex">
   <div class="mx-auto w-full">
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
-    <%= render 'shared/navbar', title: 'Recipes' %>
-    <div id="recipes" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 my-3 mx-2">
-      <% unless @recipes.present? %>
-        <%= link_to 'Create your first Recipe!', new_recipe_path, class: "rounded-lg p-24 text-center font-semibold border-dashed border border-black text-gray-600 block font-large md:text-md hover:bg-gray-600 hover:text-gray-200 m-4" %>
-      <% end %>
-      <% @recipes.each do |recipe| %>
-        <%= link_to recipe do %>
-          <%= render recipe %>
-        <% end %>
-      <% end %>
-    </div>
+    <%#= render 'shared/navbar', title: 'Recipes' %>
+    <% unless @recipes.present? %>
+      <%= link_to 'Create your first Recipe!', new_recipe_path, class: "rounded-lg p-24 text-center font-semibold border-dashed border border-black text-gray-600 block font-large md:text-md hover:bg-gray-600 hover:text-gray-200 m-4" %>
+    <% end %>
+
+    <div class="text-4xl p-2 ml-2 font-semibold mt-16">My Recipes</div>
+    <%= render 'shared/collection', items: @recipes %>
+
+    <div class="text-4xl p-2 ml-2 font-semibold mt-16">Saved Recipes</div>
+    <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'saved_recipes', link: true) do %>
+    <% end %>
+
+    <div class="text-4xl p-2 ml-2 font-semibold mt-16">From Cookbook Subscriptions</div>
+    <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'cookbook_subscriptions', link: true) do %>
+    <% end %>
+
+    <div class="text-4xl p-2 ml-2 font-semibold mt-16">From User Subscriptions</div>
+    <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'user_subscriptions', link: true) do %>
+    <% end %>
+
+
   </div>
 </div>

@@ -1,0 +1,31 @@
+<div class="mx-auto  w-full flex">
+  <div class="mx-auto w-full">
+    <% if notice.present? %>
+      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <% end %>
+    <%#= render 'shared/navbar', title: 'Discover' %>
+
+
+    <div class="text-4xl p-2 ml-2 font-semibold">From Your Feed</div>
+    <div id="my-feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+      <% @recipes_feed.each do |recipe| %>
+        <div class="m-4">
+          <%= link_to recipe do %>
+            <%= render recipe, link: true %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="text-4xl p-2 ml-2 font-semibold">Discover New</div>
+    <div id="discoverable-feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+      <% @discoverables.each do |recipe| %>
+        <div class="m-4">
+          <%= link_to recipe do %>
+            <%= render recipe %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

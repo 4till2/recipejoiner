@@ -3,11 +3,11 @@
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
-    <%= render 'shared/navbar', title: 'Chefs' %>
+    <%#= render 'shared/navbar', title: 'Chefs' %>
     <div id="chefs" class="my-3 mx-2">
       <% @users.each do |user| %>
         <%= link_to user do %>
-          <%= render 'users/user', user: user%>
+          <%= render 'users/user', user: user, link: true%>
         <% end %>
       <% end %>
     </div>

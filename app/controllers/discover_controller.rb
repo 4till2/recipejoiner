@@ -1,9 +1,9 @@
-class DiscoversController < ApplicationController
+class DiscoverController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @feed = current_user.feed
-    @discoverables = Recipe.last(10)
+    @recipes_feed = current_user.recipes_feed.last(10)
+    @discoverables = Recipe.last(20)
   end
 
   def new_search
@@ -12,7 +12,7 @@ class DiscoversController < ApplicationController
 
   def search
     results = PgSearch.multisearch(params[:query])
-    render partial: 'discovers/search', locals: { results: results, query: params[:query]}
+    render partial: 'discover/search', locals: { results: results, query: params[:query]}
   end
 
 end

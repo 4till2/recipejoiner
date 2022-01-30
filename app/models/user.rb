@@ -11,12 +11,33 @@ class User < ApplicationRecord
   has_many :subscribers, through: :subscribees
   has_many :recipes, dependent: :destroy, class_name: 'Recipe'
   has_many :cookbooks, dependent: :destroy
+
+  has_many :cookbook_subscriptions, -> { readonly }, through: :subscriptions, source: :subscribable, source_type: 'Cookbook'
+  has_many :user_subscriptions, -> { readonly }, through: :subscriptions, source: :subscribable, source_type: 'User'
+
+  has_many :recipes_from_cookbooks, -> { readonly }, through: :cookbooks, source: :recipes
+  has_many :recipes_from_cookbook_subscriptions, -> { readonly }, through: :cookbook_subscriptions, source: :recipes
+  has_many :recipes_from_user_subscriptions, -> { readonly }, through: :user_subscriptions, source: :recipes
+
   has_one_attached :avatar, dependent: :destroy
 
   multisearchable against: [:username]
 
-  def feed
-    subscriptions.includes(:subscribable).map(&:recipes).flatten.uniq
+  def paginated_collection(src)
+    case src
+    when 'owned_recipes'
+      recipes
+    when 'saved_recipes'
+      saved_recipes
+    when 'owned_cookbooks'
+      cookbooks
+    when 'saved_cookbooks'
+      cookbook_subscriptions
+    when 'cookbook_subscriptions'
+      recipes_from_cookbook_subscriptions
+    when 'user_subscriptions'
+      recipes_from_user_subscriptions
+    end
   end
 
   def subscribe_or_unsubscribe(subscribable_id, subscribable_type)
@@ -28,6 +49,10 @@ class User < ApplicationRecord
                             subscribable_type: subscribable_type)
       true
     end
+  end
+
+  def saved_recipes
+    recipes_from_cookbooks.where.not(user_id: id)
   end
 
   def as_chef
