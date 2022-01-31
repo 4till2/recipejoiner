@@ -1,80 +1,92 @@
-<div class="mx-auto flex w-full">
-  <div class="mx-auto w-full md:w-3/4">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
-    <div class="flex w-full justify-between pb-4 pt-0 rounded">
-      <a href='javascript:history.go(-1)'>
-        <div class="font-medium text-lg flex">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-700 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/>
-          </svg>
-        </div>
-      </a>
+<div id="<%= dom_id @recipe %>" class="mx-auto w-full md:px-24">
+  <div class="flex w-full justify-between items-center pb-4">
 
-      <div class="flex">
-        <% if current_user == @recipe.user %>
-          <%= link_to edit_recipe_path(@recipe), class:'self-center' do %>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-300 hover:text-black mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
-            </svg>
-          <% end %>
-        <% end %>
-        <div
-          data-controller='modal'
-          data-modal-target='wrapper'
-          data-action='keydown@window->modal#closeWithKeyboard'
-          data-modal-turbo-value="true"
-          data-modal-title-value="Save to Cookbook"
-          data-modal-url-value='/new_join_cookbook_recipe?recipe_id=<%= @recipe.id %>'
-          class="w-full flex"
-        >
-          <button data-action='modal#view' class="self-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-700 hover:text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
-            </svg>
-          </button>
-        </div>
+    <a href='javascript:history.go(-1)'>
+      <div class="font-medium text-lg flex">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-700 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19l-7-7 7-7"/>
+        </svg>
+      </div>
+    </a>
+
+    <div class="grid">
+      <h1 class="font-bold tracking-wide text-2xl md:text-4xl w-full text-center"><%= @recipe.title %></h1>
+      <div class="text-center text-gray-500 text-sm md:text-lg">
+        recipe by
+        <%= link_to @recipe.user.username, @recipe.user, data: { 'turbo-frame': "_top" },
+                    class: 'text-gray-700 font-medium' %>
       </div>
     </div>
 
-    <div id="<%= dom_id @recipe %>">
-      <h1 class="font-bold tracking-wide text-2xl md:text-4xl w-full text-center"><%= @recipe.title %></h1>
-      <div class="text-center text-gray-500 text-sm md:text-lg">
-        Recipe by <%= link_to @recipe.user.username, @recipe.user, data: { 'turbo-frame': "_top" }, class: 'text-gray-700 font-medium' %>
-      </div>
-      <div class="text-gray-700 text-lg md:text-xl mx-auto w-full text-center pt-4 md:w-3/4">
-        <%= @recipe.description %>
-        <% if @recipe.image.attached? %>
-          <%= image_tag @recipe.image, class: 'mx-auto w-full my-2 rounded' %>
-        <% end %>
-        <div class="text-sm md:text-lg flex justify-center mt-4 my-2">
-          <%= render 'recipes/details', recipe: @recipe %>
-        </div>
-      </div>
-      <div class="md:grid md:grid-cols-3">
-      <div class="p-2">
-        <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Ingredients</h1>
-        <div class="w-full ">
-          <% @recipe.ingredients.each do |ingredient| %>
-            <div class="my-2 text-xl px-4 text-gray-700">
-            <%= render 'ingredient', ingredient: ingredient %>
-            </div>
-        <% end %>
-        </div>
-      </div>
-
-      <div class="p-2 md:col-span-2">
-        <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Instructions</h1>
-        <div class="w-full grid grid-cols-1">
-          <% @recipe.instructions.each.with_index do |instruction, index| %>
-            <div class="my-2 text-xl px-4">
-            <%= render 'instruction', instruction: instruction, index: index + 1 %>
-            </div>
-          <% end %>
-        </div>
-      </div>
+    <div class="flex">
+      <div
+        data-controller='modal'
+        data-modal-target='wrapper'
+        data-action='keydown@window->modal#closeWithKeyboard'
+        data-modal-turbo-value="true"
+        data-modal-title-value="Save to Cookbook"
+        data-modal-url-value='/new_join_cookbook_recipe?recipe_id=<%= @recipe.id %>'
+        class="w-full flex"
+      >
+        <button data-action='modal#view' class=" text-center mx-auto hover:text-blue-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
+
+  <% if current_user == @recipe.user %>
+    <%= link_to edit_recipe_path(@recipe), class: 'self-center' do %>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+           class="h-6 w-6 text-gray-300 hover:text-black mx-auto">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+              d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+      </svg>
+    <% end %>
+  <% end %>
+
+  <div class="text-gray-700 text-lg w-full mx-auto my-2 text-center md:w-3/4">
+    <%= @recipe.description %>
+    <% if @recipe.image.attached? %>
+      <div class="max-w-xl mx-auto">
+        <%= image_tag @recipe.image, class: 'mx-auto w-full h-full my-2 rounded' %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="flex justify-center text-center">
+    <%= render 'recipes/details', recipe: @recipe %>
+  </div>
+
+  <div class="grid md:grid-cols-4">
+    <div>
+      <h1 class="w-full font-extrabold px-6 mt-4 text-lg bg-black text-white text-center rounded">
+        <%= @recipe.ingredients.count %> INGREDIENTS
+      </h1>
+      <div id="recipes" class="grid my-3 mx-2">
+        <% @recipe.ingredients.each do |ingredient| %>
+          <div class="my-2 text-xl px-4">
+            <%= render 'recipes/ingredient', ingredient: ingredient %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="md:col-span-3 md:ml-4">
+      <h1 class="w-full font-extrabold px-6 mt-4 text-lg bg-black text-white text-center rounded">
+        <%= @recipe.instructions.count %> STEPS
+      </h1>
+      <div id="recipes" class="grid my-3 mx-2">
+        <% @recipe.instructions.each do |instruction| %>
+          <div class="my-2 text-xl px-4">
+            <%= render 'recipes/instruction', instruction: instruction %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
 </div>
+

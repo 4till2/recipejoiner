@@ -12,8 +12,11 @@
 </head>
 
 <body>
-<main class="container mx-auto mt-21 md:mt-24 px-5 flex">
-  <%= render 'shared/navbar', title: controller_name.capitalize %>
+<main class="w-full mt-24 md:mt-28 px-4 flex">
+  <%= render 'shared/navbar' %>
+  <% if notice.present? %>
+    <p class="absolute top-8 left-8 py-2 px-3 bg-green-50 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
   <%= yield %>
 </main>
 </body>

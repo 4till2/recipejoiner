@@ -1,0 +1,7 @@
+<% items && items.each do |item|%>
+  <div class="<%= local_assigns[:class] %>">
+  <%= link_to item do %>
+    <%= render item, link: local_assigns[:link], small: local_assigns[:small] %>
+  <% end %>
+  </div>
+<% end %>

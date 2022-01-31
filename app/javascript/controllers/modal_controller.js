@@ -77,15 +77,14 @@ export default class extends Controller {
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
 <!--        REPLACE THE FOLLOWING 2 LINES FOR A DYNAMICALLY SIZED CENTERED MODAL-->
 <!--        <div class="inline-block align-bottom bg-white border border-black px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">-->
-            <div class="absolute top-0 bottom-0 left-0 right-0 p-4 m-4 md:mx-auto md:my-12 align-bottom bg-white border border-black text-left overflow-y-scroll shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
-                <div class="py-2">${this.titleValue}</div>
-                <div class=" sm:block absolute top-0 right-0 pt-4 pr-4">
-                    <button data-action='click->modal#close' type="button" class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <div class="absolute top-0 bottom-0 left-0 right-0 p-4 m-4 md:mx-auto md:my-12 align-bottom bg-white rounded-md border border-black text-left overflow-y-scroll shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                    <div class="flex justify-between">
+                    <div class="py-2 font-semibold text-2xl">${this.titleValue}</div>
+                    <button data-action='click->modal#close' type="button" class="text-black hover:text-gray-500 focus:outline-none focus:ring-none">
                         <span class="sr-only">Close</span>
-                        <!-- Heroicon name: outline/x -->
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
                     </button>
                 </div>
                 <div data-modal-target='content'></div>

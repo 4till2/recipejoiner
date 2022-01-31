@@ -55,6 +55,72 @@ class User < ApplicationRecord
     recipes_from_cookbooks.where.not(user_id: id)
   end
 
+  def recent_subscriptions(total = 10)
+    return if total.negative?
+
+    l = total / 2
+    (cookbook_subscriptions.last(l) + user_subscriptions.last(l)).sort_by(&:created_at)
+  end
+
+  def discover_recipes(total = 40)
+    return if total.negative?
+
+    l = total / 6
+    list =
+      (recipes.last(l) +
+        saved_recipes.last(l) +
+        recipes_from_cookbook_subscriptions.last(l) +
+        recipes_from_user_subscriptions.last(l) +
+        recipes_from_cookbooks.last(l) +
+        Recipe.where.not(user_id: id).last(l)
+      ).shuffle
+
+    # Load with suggestions when user is not active
+    pad_with_suggestions(list, l, total, 'Recipe')
+  end
+
+  def discover_cookbooks(total = 40)
+    return if total.negative?
+
+    l = total / 3
+
+    list =
+      (cookbooks.last(l) +
+        cookbook_subscriptions.last(l) +
+        Cookbook.where.not(user_id: id).last(l)
+      ).shuffle
+
+    # Load with suggestions when user is not active
+    pad_with_suggestions(list, l, total, 'Cookbook')
+  end
+
+  def discover_users(total = 40)
+    return if total.negative?
+
+    l = total / 3
+
+    list =
+      (user_subscriptions.last(l) +
+        # owners of cookbook subscriptions
+        cookbook_subscriptions.includes(:user).last(l).map(&:user).flatten +
+        User.where.not(id: id).last(l)
+      ).shuffle
+
+    # Load with suggestions when user is not active
+    pad_with_suggestions(list, l, total, 'User')
+  end
+
+  def discover_recommendations(total = 40)
+    return if total.negative?
+
+    l = total / 3
+    (Recipe.where.not(user_id: id).last(l) +
+      Cookbook.where.not(user_id: id).last(l) +
+      User.where.not(id: id).last(l)
+    ).shuffle
+
+  end
+
   def as_chef
     User.chef.find(id)
   end
@@ -67,6 +133,16 @@ class User < ApplicationRecord
 
   def self.chef
     includes(:recipes, :cookbooks).select(:username, :recipes, :cookbooks).references(:recipes, :cookbooks)
+  end
+
+  def pad_with_suggestions(list, amount, total, klass)
+    list ||= []
+    offset = 0
+    while list.count < total - amount && offset <= 200
+      offset += amount
+      list += klass.constantize.offset(offset).last(amount)
+    end
+    list
   end
 
 end

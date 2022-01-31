@@ -1,28 +1,22 @@
-<div class="mx-auto w-full flex">
-  <div class="mx-auto w-full">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
-    <%#= render 'shared/navbar', title: 'Recipes' %>
-    <% unless @recipes.present? %>
-      <%= link_to 'Create your first Recipe!', new_recipe_path, class: "rounded-lg p-24 text-center font-semibold border-dashed border border-black text-gray-600 block font-large md:text-md hover:bg-gray-600 hover:text-gray-200 m-4" %>
-    <% end %>
+<div class="mx-auto w-full">
 
-    <div class="text-4xl p-2 ml-2 font-semibold mt-16">My Recipes</div>
-    <%= render 'shared/collection', items: @recipes %>
+  <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1">My Recipes</h1>
+  <% unless @recipes.present? %>
+    <%= link_to 'Create your first Recipe!', new_recipe_path, class: "rounded-lg p-24 text-center font-semibold border-dashed border border-black text-gray-500 block font-large md:text-md hover:bg-gray-500 hover:text-gray-200 m-4" %>
+  <% end %>
 
-    <div class="text-4xl p-2 ml-2 font-semibold mt-16">Saved Recipes</div>
-    <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'saved_recipes', link: true) do %>
-    <% end %>
+  <%= render 'shared/collection', items: @recipes, small: true, horizontal: true%>
 
-    <div class="text-4xl p-2 ml-2 font-semibold mt-16">From Cookbook Subscriptions</div>
-    <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'cookbook_subscriptions', link: true) do %>
-    <% end %>
+  <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">From my Cookbooks Recipes</h1>
+  <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'saved_recipes', link: true) do %>
+  <% end %>
 
-    <div class="text-4xl p-2 ml-2 font-semibold mt-16">From User Subscriptions</div>
-    <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'user_subscriptions', link: true) do %>
-    <% end %>
+  <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">From Followed Cookbook's</h1>
+  <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'cookbook_subscriptions', link: true) do %>
+  <% end %>
 
+  <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">From Followed Chef's</h1>
+  <%= turbo_frame_tag 'collection', src: paginated_collection_path(source: 'user_subscriptions', link: true) do %>
+  <% end %>
 
-  </div>
 </div>

@@ -2,8 +2,11 @@ class DiscoverController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @recipes_feed = current_user.recipes_feed.last(10)
-    @discoverables = Recipe.last(20)
+    @recommendations = current_user.discover_recommendations
+    @recipes = current_user.discover_recipes
+    @cookbooks = current_user.discover_cookbooks
+    @users = current_user.discover_users
+    @subscriptions = current_user.recent_subscriptions
   end
 
   def new_search

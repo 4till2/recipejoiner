@@ -1,31 +1,28 @@
-<div class="mx-auto  w-full flex">
-  <div class="mx-auto w-full">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
-    <%#= render 'shared/navbar', title: 'Discover' %>
+<div class="mx-auto w-full">
 
+  <% if @recommendations %>
+    <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1">Recommended for You</h1>
+    <%= render 'shared/collection', items: @recommendations, link: true, horizontal: true, rows: 3 %>
+  <% end %>
 
-    <div class="text-4xl p-2 ml-2 font-semibold">From Your Feed</div>
-    <div id="my-feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-      <% @recipes_feed.each do |recipe| %>
-        <div class="m-4">
-          <%= link_to recipe do %>
-            <%= render recipe, link: true %>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
+  <% if @recipes %>
+    <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">Recipes</h1>
+    <%= render 'shared/collection', items: @recipes, small: true, horizontal: true, rows: 1 %>
+  <% end %>
 
-    <div class="text-4xl p-2 ml-2 font-semibold">Discover New</div>
-    <div id="discoverable-feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-      <% @discoverables.each do |recipe| %>
-        <div class="m-4">
-          <%= link_to recipe do %>
-            <%= render recipe %>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
-  </div>
+  <% if @cookbooks %>
+    <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">Cookbooks</h1>
+    <%= render 'shared/collection', items: @cookbooks, small: true, horizontal: true, rows: 1 %>
+  <% end %>
+
+  <% if @users %>
+    <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">Chefs</h1>
+    <%= render 'shared/collection', items: @users, link: true, horizontal: true, rows: 3 %>
+  <% end %>
+
+  <% if @subscriptions %>
+    <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">Recently Subscribed</h1>
+    <%= render 'shared/collection', items: @subscriptions, link: true, horizontal: true, rows: 4 %>
+  <% end %>
+
 </div>

@@ -1,25 +1,24 @@
 <%= turbo_frame_tag 'collection' do %>
   <% items ||= nil && pagy ||= nil %>
   <% if items.present? %>
-    <% if local_assigns[:link] %>
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 truncate">
-    <% else %>
+    <% if local_assigns[:horizontal] %>
       <div class="flex overflow-x-scroll flex flex-row scrollbar-none snap-x">
-    <% end %>
-    <% items.each do |item| %>
-      <div class="p-4 <%= local_assigns[:link] ? 'w-full' : 'w-80 md:w-96 px-4 flex-shrink-0 snap-center' %>">
-        <%= link_to item do %>
-          <%= render item, link: local_assigns[:link] %>
-        <% end %>
+        <div class="grid grid-flow-col grid-rows-<%= local_assigns[:rows] || 1 %>">
+        <%= render 'shared/items', items: items, link: local_assigns[:link], small: local_assigns[:small],
+                   class: "p-4 w-80 md:w-96 px-4 flex-shrink-0 snap-center" %>
+        </div>
+      </div>
+    <% else %>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 truncate">
+        <%= render 'shared/items', items: items, link: local_assigns[:link], small: local_assigns[:small], class: "p-4 w-full" %>
       </div>
     <% end %>
-    </div>
     <% if pagy.present? %>
       <div class="mx-auto text-center mb-4">
         <%== render 'shared/pagy_nav', pagy: pagy %>
       </div>
     <% end %>
-    <% else %>
+  <% else %>
     <div class="mx-auto w-full text-center text-gray-500 p-4"> Nothing to show here ... yet!</div>
   <% end %>
 <% end %>

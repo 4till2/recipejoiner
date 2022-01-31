@@ -1,10 +1,10 @@
 <%= turbo_frame_tag cookbook do %>
   <div class="flex w-full items-center">
-    <% if cookbook.image.attached? %>
-      <div class="mr-2 w-16">
-        <%= image_tag cookbook.image, class: 'w-full rounded-lg' %>
-      </div>
-    <% end %>
+    <div class="mr-2 w-16">
+      <% if cookbook.image.attached? %>
+        <%= image_tag cookbook.image, class: 'w-full' %>
+      <% end %>
+    </div>
     <div class="grid w-full grow">
       <p class="font-bold tracking-wide font-bold ">
         <%= cookbook.title %>

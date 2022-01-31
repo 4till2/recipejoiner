@@ -1,20 +1,28 @@
 <% if local_assigns[:link] %>
   <%= render 'recipes/recipe_link', recipe: recipe %>
+<% elsif local_assigns[:small] %>
+  <%= render 'recipes/recipe_small', recipe: recipe %>
 <% else %>
   <%= turbo_frame_tag recipe do %>
     <div class="mx-auto border-2 rounded border-gray-500 shadow hover:shadow-lg">
-      <div class="w-full rounded-md overflow-hidden text-gray-900 bg-cover bg-no-repeat bg-center text-center grid p-2 w-full h-64">
-          <div class="grid justify-between h-full w-full text-left p-2 overflow-hidden text-ellipsis">
-            <div>
-              <h2 class="text-xl md:text-3xl font-extrabold "><%= recipe.title %></h2>
-              <div class="self-end"><span class=" text-gray-500 text-xs font-light">Recipe by</span>
-                <span class="text-sm md:text-xl font-light"><%= recipe.user.username %></span>
-              </div>
-            </div>
-            <div class="text-sm md:text-lg overflow-hidden"><%= truncate(recipe.description, length: 75)%></div>
-            <div class="self-end text-gray-500 text-xs md:text-sm"><%= render 'recipes/details', recipe: recipe, class: 'text-gray-200' %>
+      <div class="w-full rounded-md overflow-hidden text-gray-900 bg-cover bg-no-repeat bg-center text-center grid p-2 w-full">
+        <div class="flex flex-col justify-between h-full w-full text-left p-2 overflow-hidden text-ellipsis">
+          <div>
+            <h2 class="text-xl md:text-3xl font-extrabold "><%= recipe.title %></h2>
+            <div class="self-end"><span class=" text-gray-500 text-xs font-light">Recipe by</span>
+              <span class="text-sm md:text-xl font-light"><%= recipe.user.username %></span>
             </div>
           </div>
+          <div class="my-3 w-full">
+            <% if recipe.image.attached? %>
+              <%= image_tag recipe.image, class: 'w-24 md:w-48 float-right ml-2 self-end' %>
+            <% end %>
+            <div class="text-sm md:text-lg grow"><%= truncate(recipe.description, length: 300) %></div>
+
+          </div>
+          <div class="text-gray-500 text-xs md:text-sm text-left"><%= render 'recipes/details', recipe: recipe, class: 'text-gray-200' %>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>

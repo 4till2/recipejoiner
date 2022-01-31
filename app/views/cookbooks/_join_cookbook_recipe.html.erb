@@ -1,7 +1,7 @@
 <div>
   <% options.each do |option| %>
-    <div class="flex items-center">
-      <div class="grow"><%= render option, link: true %></div>
+    <div class="flex items-center my-4">
+      <div class="grow mr-4"><%= render option, link: true %></div>
       <%= render 'cookbooks/cookbook_recipe_join_button',
                  cookbook: option.class.name == 'Cookbook' ? option : cookbook,
                  recipe: option.class.name == 'Recipe' ? option : recipe %>
