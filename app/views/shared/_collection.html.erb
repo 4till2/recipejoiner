@@ -10,7 +10,7 @@
       </div>
     <% else %>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 truncate">
-        <%= render 'shared/items', items: items, link: local_assigns[:link], small: local_assigns[:small], class: "p-4 w-full" %>
+        <%= render 'shared/items', items: items, link: local_assigns[:link], small: local_assigns[:small], class: "#{local_assigns[:class]} p-4 w-full" %>
       </div>
     <% end %>
     <% if pagy.present? %>

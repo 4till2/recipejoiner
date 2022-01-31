@@ -9,13 +9,10 @@ class DiscoverController < ApplicationController
     @subscriptions = current_user.recent_subscriptions
   end
 
-  def new_search
-    render turbo_stream: turbo_stream.replace('modal_content', partial: 'search')
-  end
-
   def search
-    results = PgSearch.multisearch(params[:query])
-    render partial: 'discover/search', locals: { results: results, query: params[:query]}
+    results = PgSearch.multisearch(params[:query]).limit(10)
+    recommendations = current_user.discover_recommendations(10)
+    render partial: 'discover/search', locals: { results: results, query: params[:query], recommendations: recommendations}
   end
 
 end

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'paginated_collection', to: 'subscriptions#paginated', as: 'paginated_collection'
 
   get 'discover', to: 'discover#index', as: 'discover'
-  get 'search', to: 'discover#new_search', as: 'new_search'
+  get 'search', to: 'discover#search', as: 'new_search'
   post 'search', to: 'discover#search', as: 'search'
 
   get 'subscriptions', to: 'subscriptions#show', as: 'load_subscription'

@@ -1,4 +1,4 @@
-<div>
+<%= turbo_frame_tag 'modal' do %>
   <% options.each do |option| %>
     <div class="flex items-center my-4">
       <div class="grow mr-4"><%= render option, link: true %></div>
@@ -7,4 +7,4 @@
                  recipe: option.class.name == 'Recipe' ? option : recipe %>
     </div>
   <% end %>
-</div>
+<% end %>

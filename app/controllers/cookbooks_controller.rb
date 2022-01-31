@@ -27,8 +27,8 @@ class CookbooksController < ApplicationController
     options = params[:recipe_id] ? Cookbook.where(user_id: current_user.id) : Recipe.where(user_id: current_user.id)
     recipe = params[:recipe_id] ? Recipe.find(params[:recipe_id]) : nil
     cookbook = params[:cookbook_id] ? Cookbook.find(params[:cookbook_id]) : nil
-    render turbo_stream: turbo_stream.replace('modal_content', partial: 'join_cookbook_recipe',
-                                                               locals: { options: options, cookbook: cookbook, recipe: recipe })
+    render partial: 'join_cookbook_recipe',
+           locals: { options: options, cookbook: cookbook, recipe: recipe }
   end
 
   def join_cookbook_recipe

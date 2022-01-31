@@ -22,9 +22,8 @@
           </button>
         </div>
         <div data-modal-target='content'>
-          <turbo-frame id="modal_content" src="<%= local_assigns[:src] %>">
-            Loading..
-          </turbo-frame>
+          <%= turbo_frame_tag 'modal', src: local_assigns[:src] do %>
+          <% end %>
         </div>
       </div>
     </div>

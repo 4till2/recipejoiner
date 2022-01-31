@@ -1,25 +1,45 @@
-<%= turbo_frame_tag 'search' do %>
-  <div class="mx-auto w-full grid">
-    <div class="w-full" data-controller="search-bar">
-      <% query ||= nil %>
-      <%= form_with url: search_path do |form| %>
-        <%= form.text_field :query, data:{ 'search-bar-target': 'input' }, placeholder: 'Search', value: query, autofocus: true %>
-        <div data-action="click->search-bar-target#reset">Clear</div>
-        <%= form.submit 'Search' %>
-      <% end %>
-    </div>
-
-    <% if results ||= nil && results %>
-      <div class="grid">
-        <% results.each do |result| %>
-          <div class="my-2 p-2 border-dotted border rounded">
-          <%= link_to result.searchable, data:{'turbo-frame': "_top"} do %>
-            <%= render result.searchable, link: true %>
-          <% end %>
+<%= turbo_frame_tag 'modal' do %>
+  <%= turbo_frame_tag 'search' do %>
+    <% query ||= nil && results ||= nil && recommendations ||= nil %>
+    <div class="mx-auto w-full grid">
+      <div class="w-full" data-controller="search-bar">
+        <%= form_with url: search_path, data: { 'search-bar-target': 'form' } do |form| %>
+          <div class="w-full flex items-center">
+            <%= form.text_field :query,
+                                data: { 'search-bar-target': 'input' },
+                                placeholder: 'Search',
+                                value: query,
+                                autofocus: true,
+                                class: 'w-full grow border-gray-400 rounded p-4 outline-none focus:outline-none focus:ring-0 focus:border-gray-400'
+            %>
+            <div data-action="click->search-bar#reset" class="ml-4 cursor-pointer text-gray-500">Clear</div>
           </div>
         <% end %>
       </div>
-    <% end %>
-  </div>
+
+      <div class="grid w-full">
+        <% if results.present? %>
+          <% results.each do |result| %>
+            <div class="my-2 p-2 border-dotted border rounded">
+              <%= link_to result.searchable, data: { 'turbo-frame': "_top" } do %>
+                <%= render result.searchable, link: true %>
+              <% end %>
+            </div>
+          <% end %>
+        <% elsif query.present? %>
+          <div class="m-auto p-12 text-gray-500 font-bold">No Results</div>
+        <% elsif recommendations.present? %>
+          <h1 class="font-bold text-lg text-gray-400 mt-8 text-center">Recommended for You</h1>
+          <% recommendations.each do |rec| %>
+            <div class="my-2 p-2 border-dotted border rounded">
+              <%= link_to rec, data: { 'turbo-frame': "_top" } do %>
+                <%= render rec, link: true %>
+              <% end %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
 <% end %>
 
