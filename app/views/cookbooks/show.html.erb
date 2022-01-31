@@ -20,16 +20,11 @@
 
     <div class="justify-self-end">
       <% if current_user == @cookbook.user %>
-        <div
-          data-controller='modal'
-          data-modal-target='wrapper'
-          data-action='keydown@window->modal#closeWithKeyboard'
-          data-modal-turbo-value="true"
-          data-modal-title-value="Add Recipe"
-          data-modal-url-value='/new_join_cookbook_recipe?cookbook_id=<%= @cookbook.id %>'
-          class="w-full flex"
-        >
-          <button data-action='modal#view' class=" text-center mx-auto hover:text-blue-800">
+        <div data-controller='modal-wrapper'>
+          <template data-modal-wrapper-target="template">
+            <%= render 'shared/modal', title: 'Add Recipe', src: '/new_join_cookbook_recipe?cookbook_id='+ @cookbook.id.to_s %>
+          </template>
+          <button data-action='modal-wrapper#open' class=" text-center mx-auto hover:text-blue-800">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
