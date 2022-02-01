@@ -22,7 +22,7 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(recipe_params)
     @recipe.user = current_user
-    @recipe.attach(params[:images])
+    @recipe.attach(params[:images]) if params[:images]
     respond_to do |format|
       if @recipe.save
         format.html { redirect_to recipe_url(@recipe), notice: "Recipe was successfully created." }
@@ -34,7 +34,6 @@ class RecipesController < ApplicationController
 
   # PATCH/PUT /recipes/1 or /recipes/1.json
   def update
-    puts recipe_params
     respond_to do |format|
       if @recipe.update(recipe_params)
         format.html { redirect_to recipe_url(@recipe), notice: "Recipe was successfully updated." }

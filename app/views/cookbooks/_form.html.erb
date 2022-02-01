@@ -1,69 +1,72 @@
-<div>
-  <%= form_with(model: cookbook, class: "contents", id: 'cookbook-form') do |form| %>
+<%= form_with(model: cookbook, class: "mx-auto w-full md:px-24", remote: true, data: { turbo: false }) do |form| %>
 
-    <div class="w-full">
-      <div class="flex w-full justify-between flex-center  p-4 rounded">
-        <%= link_to "Cancel", cookbook.id ? cookbook_path(cookbook.id) : cookbooks_path, class: "rounded-lg py-2 px-3 bg-gray-700 text-gray-200 block font-medium -rotate-2" %>
-        <h1 class="font-semibold text-xl">
-          <% if action_name == "new" || action_name == "create" %>
-            New cookbook
-          <% elsif action_name == "edit" %>
-            Edit cookbook
-          <% end %>
-        </h1>
-        <div class="inline">
-          <!--   NO BUTTONS ALLOWED ON PAGE: This is not a button since enter is not a cancellable event for smart input, and a button here is double clicked when using js-->
-          <div class="cursor-pointer rounded-lg py-2 px-3 bg-gray-700 text-gray-200 block font-medium rotate-3" onclick="document.getElementById('cookbook-form').requestSubmit()">Save</div>
-        </div>
+  <div class="flex w-full justify-between items-center pb-4">
+    <a href='javascript:history.go(-1)'>
+      <div class=" text-lg flex text-gray-700">
+        Cancel
       </div>
-
-      <div class="md:w-3/4 mx-auto p-4 md:p-1">
-
-        <h4 class="text-gray-500 text-lg font-semibold">Image</h4>
-        <div class="my-5">
-          <div data-controller="preview-image" class="block bg-gray-100 text-lg text-gray-700 shadow rounded-md overflow-hidden border border-gray-200">
-            <% if cookbook.image.attached? %>
-              <%= image_tag cookbook&.image, data: { 'preview-image-target': 'output' } %>
-            <% else %>
-              <%= image_tag '', data: { 'preview-image-target': 'output' } %>
-            <% end %>
-            <%= form.file_field :image, accept: 'image/png,image/gif,image/jpeg', data: { 'preview-image-target': 'input', action: 'preview-image#readURL' }, class: "block bg-gray-100 text-lg text-gray-700  outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" do %>
-              <span>Upload</span>
-            <% end %>
-          </div>
-
-          <% if cookbook.errors.any? && cookbook.errors.full_messages_for(:images) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= cookbook.errors.full_messages_for(:images).first %>
-            </div>
-          <% end %>
-        </div>
-
-        <h4 class="text-gray-500 text-lg font-semibold">About</h4>
-
-        <div class="my-5">
-          <%= form.text_field :title, placeholder: "Add Title", class: "block bg-gray-100 text-lg text-gray-700 shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" %>
-          <% if cookbook.errors.any? && cookbook.errors.full_messages_for(:title) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= cookbook.errors.full_messages_for(:title).first %>
-            </div>
-          <% end %>
-        </div>
-
-        <div class="my-5" data-controller="textarea-autogrow">
-          <%= form.text_area :description, placeholder: "Describe the cookbook", data: { 'textarea-autogrow-target': "element" }, class: "block bg-gray-100 text-lg text-gray-700 resize-none shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" %>
-          <% if cookbook.errors.any? && cookbook.errors.full_messages_for(:description) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= cookbook.errors.full_messages_for(:description).first %>
-            </div>
-          <% end %>
-        </div>
-      </div>
+    </a>
+    <h1 class="font-semibold text-3xl">
+      <% if action_name == "new" || action_name == "create" %>
+        New cookbook
+      <% elsif action_name == "edit" %>
+        Edit cookbook
+      <% end %>
+    </h1>
+    <div class="inline">
+      <%= form.submit 'Save', class: "cursor-pointer rounded-lg py-2 px-3 border border-dashed border-gray-900 text-gray-900 block font-medium hover:text-gray-100 hover:bg-gray-900 hover:border-gray-100" %>
     </div>
-  <% end %>
+  </div>
+  <div class="md:w-3/4 mx-auto p-4 md:p-1">
+
+    <div class="">
+      <h4 class="text-gray-500 text-lg font-semibold">Title</h4>
+      <%= form.text_field :title, placeholder: "Add Title", class: "block bg-gray-100 text-lg text-gray-700 shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 w-full" %>
+      <% if cookbook.errors.any? && cookbook.errors.full_messages_for(:title) %>
+        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+          <%= cookbook.errors.full_messages_for(:title).first %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="my-5" data-controller="textarea-autogrow">
+      <h4 class="text-gray-500 text-lg font-semibold">Description</h4>
+      <%= form.text_area :description, data: { 'textarea-autogrow-target': "element" }, placeholder: "Describe the cookbook", class: "block resize-none bg-gray-100 text-lg text-gray-700 shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 w-full" %>
+      <% if cookbook.errors.any? && cookbook.errors.full_messages_for(:description) %>
+        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+          <%= cookbook.errors.full_messages_for(:description).first %>
+        </div>
+      <% end %>
+    </div>
+
+    <!--    <div class="my-5">-->
+    <!--      <h4 class="text-gray-500 text-lg font-semibold">Image</h4>-->
+    <!--      <div data-controller="preview-image" class="block bg-gray-100 text-lg text-gray-700 shadow rounded-md overflow-hidden border border-gray-200">-->
+    <%# if cookbook.image.attached? %>
+    <%#= image_tag cookbook&.image, data: { 'preview-image-target': 'output' } %>
+    <%# else %>
+    <%#= image_tag '', data: { 'preview-image-target': 'output' } %>
+    <%# end %>
+    <%#= form.file_field :image, accept: 'image/png,image/gif,image/jpeg', data: { 'preview-image-target': 'input', action: 'preview-image#readURL' }, class: "block bg-gray-100 text-lg text-gray-700  outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" do %>
+    <!--          <span>Upload</span>-->
+    <%# end %>
+    <!--      </div>-->
+
+    <%# if cookbook.errors.any? && cookbook.errors.full_messages_for(:images) %>
+    <!--        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">-->
+    <%#= cookbook.errors.full_messages_for(:images).first %>
+    <!--        </div>-->
+    <%# end %>
+    <!--    </div>-->
+
+
+
+  </div>
+
   <% if action_name == "edit" %>
     <div class="w-full text-center my-8">
       <%= button_to 'Delete this cookbook', cookbook_path(@cookbook), form: { data: { turbo_confirm: 'Are you sure?' } }, method: :delete, class: "text-gray-600/50 hover:text-red-900/50 font-medium" %>
     </div>
   <% end %>
-  </div>
+
+<% end %>

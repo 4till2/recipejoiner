@@ -1,10 +1,12 @@
 <%= turbo_frame_tag user do %>
   <div class="flex w-full items-center">
-    <% if user.avatar.attached? %>
-      <div class="mr-2 w-16 rounded-full">
+    <div class="mr-2 w-16 rounded-full">
+
+      <% if user.avatar.attached? %>
         <%= image_tag user.avatar, class: 'w-full' %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
+
     <div class="grid w-full grow">
       <p class="font-bold tracking-wide font-bold ">
         <%= user.username %>

@@ -1,129 +1,130 @@
-<div>
-  <%= form_with(model: recipe, class: "contents", id: 'recipe-form') do |form| %>
+<%= form_with(model: recipe, class: "mx-auto w-full md:px-24", id: 'recipe-form', remote: true, data: { turbo: false }) do |form| %>
 
-    <div class="w-full">
-      <div class="flex w-full justify-between flex-center  p-4 rounded">
-        <%= link_to "Cancel", recipe.id ? recipe_path(recipe.id) : recipes_path, class: "rounded-lg py-2 px-3 bg-gray-700 text-gray-200 block font-medium -rotate-2" %>
-        <h1 class="font-semibold text-xl">
-          <% if action_name == "new" || action_name == "create" %>
-            New Recipe
-          <% elsif action_name == "edit" %>
-            Edit Recipe
-          <% end %>
-        </h1>
-        <div class="inline">
-          <!--   NO BUTTONS ALLOWED ON PAGE: This is not a button since enter is not a cancellable event for smart input, and a button here is double clicked when using js-->
-          <div class="cursor-pointer rounded-lg py-2 px-3 bg-gray-700 text-gray-200 block font-medium rotate-3" onclick="document.getElementById('recipe-form').requestSubmit()">Save</div>
-        </div>
+  <div class="flex w-full justify-between items-center pb-4">
+    <a href='javascript:history.go(-1)'>
+      <div class=" text-lg flex text-gray-700">
+        Cancel
       </div>
+    </a>
+    <h1 class="font-semibold text-3xl">
+      <% if action_name == "new" || action_name == "create" %>
+        New Recipe
+      <% elsif action_name == "edit" %>
+        Edit Recipe
+      <% end %>
+    </h1>
+    <div class="inline">
+      <%= form.submit 'Save', class: "cursor-pointer rounded-lg py-2 px-3 border border-dashed border-gray-900 text-gray-900 block font-medium hover:text-gray-100 hover:bg-gray-900 hover:border-gray-100" %>
+    </div>
+  </div>
+  <div class="md:w-3/4 mx-auto p-4 md:p-1">
 
-      <div class="md:w-3/4 mx-auto p-4 md:p-1">
-
-        <h4 class="text-gray-500 text-lg font-semibold">Image</h4>
-        <div class="my-5">
-          <div data-controller="preview-image" class="block bg-gray-100 text-lg text-gray-700 shadow rounded-md overflow-hidden border border-gray-200">
-            <% if recipe.image.attached? %>
-              <%= image_tag recipe&.image, data: { 'preview-image-target': 'output' } %>
-            <% else %>
-              <%= image_tag '', data: { 'preview-image-target': 'output' } %>
-            <% end %>
-            <%= form.file_field :image, accept: 'image/png,image/gif,image/jpeg', data: { 'preview-image-target': 'input', action: 'preview-image#readURL' }, class: "block bg-gray-100 text-lg text-gray-700  outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" do %>
-              <span>Upload</span>
-            <% end %>
-          </div>
-
-          <% if recipe.errors.any? && recipe.errors.full_messages_for(:images) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= recipe.errors.full_messages_for(:images).first %>
-            </div>
-          <% end %>
+    <div class="">
+      <h4 class="text-gray-500 text-lg font-semibold">Title</h4>
+      <%= form.text_field :title, placeholder: "Add Title", class: "block bg-gray-100 text-lg text-gray-700 shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 w-full" %>
+      <% if recipe.errors.any? && recipe.errors.full_messages_for(:title) %>
+        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+          <%= recipe.errors.full_messages_for(:title).first %>
         </div>
+      <% end %>
+    </div>
 
-        <h4 class="text-gray-500 text-lg font-semibold">About</h4>
-
-        <div class="my-5">
-          <%= form.text_field :title, placeholder: "Add Name", class: "block bg-gray-100 text-lg text-gray-700 shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" %>
-          <% if recipe.errors.any? && recipe.errors.full_messages_for(:title) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= recipe.errors.full_messages_for(:title).first %>
-            </div>
-          <% end %>
+    <div class="my-5" data-controller="textarea-autogrow">
+      <h4 class="text-gray-500 text-lg font-semibold">Description</h4>
+      <%= form.text_area :description, data: { 'textarea-autogrow-target': "element" }, placeholder: "Describe the Recipe", class: "block resize-none bg-gray-100 text-lg text-gray-700 shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 w-full" %>
+      <% if recipe.errors.any? && recipe.errors.full_messages_for(:description) %>
+        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+          <%= recipe.errors.full_messages_for(:description).first %>
         </div>
+      <% end %>
+    </div>
 
-        <div class="my-5">
-          <%= form.text_area :description, placeholder: "Describe the Recipe", class: "block bg-gray-100 text-lg text-gray-700 shadow rounded-md border border-gray-200 outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" %>
-          <% if recipe.errors.any? && recipe.errors.full_messages_for(:description) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= recipe.errors.full_messages_for(:description).first %>
-            </div>
-          <% end %>
-        </div>
+<!--    <div class="my-5">-->
+<!--      <h4 class="text-gray-500 text-lg font-semibold">Image</h4>-->
+<!--      <div data-controller="preview-image" class="block bg-gray-100 text-lg text-gray-700 shadow rounded-md overflow-hidden border border-gray-200">-->
+        <%# if recipe.image.attached? %>
+          <%#= image_tag recipe&.image, data: { 'preview-image-target': 'output' } %>
+        <%# else %>
+          <%#= image_tag '', data: { 'preview-image-target': 'output' } %>
+        <%# end %>
+        <%#= form.file_field :image, accept: 'image/png,image/gif,image/jpeg', data: { 'preview-image-target': 'input', action: 'preview-image#readURL' }, class: "block bg-gray-100 text-lg text-gray-700  outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4 mt-2 w-full" do %>
+<!--          <span>Upload</span>-->
+        <%# end %>
+<!--      </div>-->
 
-        <div class="my-5">
-          <div class="grid grid-cols-4 bg-gray-100 font-semibold shadow rounded-md ">
-            <%= form.number_field :time, placeholder: "Time", class: "block col-span-3 text-lg bg-gray-100 text-gray-700 border-none outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4  w-full" %>
-            <div class="text-gray-500 text-center self-center">Minutes</div>
-          </div>
-          <% if recipe.errors.any? && recipe.errors.full_messages_for(:time) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= recipe.errors.full_messages_for(:time).first %>
-            </div>
-          <% end %>
-        </div>
+      <%# if recipe.errors.any? && recipe.errors.full_messages_for(:images) %>
+<!--        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">-->
+          <%#= recipe.errors.full_messages_for(:images).first %>
+<!--        </div>-->
+      <%# end %>
+<!--    </div>-->
 
-        <div class="my-5">
-          <div class="grid grid-cols-4 bg-gray-100 font-semibold shadow rounded-md ">
-            <%= form.number_field :servings, placeholder: "Amount", class: "block col-span-3 bg-gray-100 text-lg text-gray-700 border-none outline-none focus:outline-none focus:border-none focus:ring-0  px-3 py-4 w-full" %>
-            <div class="text-gray-500 text-center self-center">Servings</div>
-          </div>
-          <% if recipe.errors.any? && recipe.errors.full_messages_for(:servings) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= recipe.errors.full_messages_for(:servings).first %>
-            </div>
-          <% end %>
+    <div class="my-5">
+      <h4 class="text-gray-500 text-lg font-semibold">Time</h4>
+      <div class="grid grid-cols-4 bg-gray-100 font-semibold shadow rounded-md ">
+        <%= form.number_field :time, placeholder: "Enter Time in", class: "block col-span-3 text-lg bg-gray-100 text-gray-700 border-none outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4  w-full" %>
+        <div class="text-gray-500 text-center self-center">Minutes</div>
+      </div>
+      <% if recipe.errors.any? && recipe.errors.full_messages_for(:time) %>
+        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+          <%= recipe.errors.full_messages_for(:time).first %>
         </div>
+      <% end %>
+    </div>
 
-        <div class="my-5" data-controller="nested-form">
-          <h4 class="text-gray-500 text-lg font-semibold">Ingredients</h4>
-          <div data-nested-form-target="fields">
-            <%= form.fields_for :ingredients do |ingredients_form| %>
-              <%= render "ingredient_field", f: ingredients_form %>
-            <% end %>
-          </div>
-          <div class="flex">
-            <%= link_to_add_fields "Add Ingredient", form, :ingredients %>
-          </div>
-          <% if recipe.errors.any? && recipe.errors.full_messages_for(:ingredients) %>
-            <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-              <%= recipe.errors.full_messages_for(:ingredients).first %>
-            </div>
-          <% end %>
+    <div class="my-5">
+      <h4 class="text-gray-500 text-lg font-semibold">Servings</h4>
+      <div class="grid grid-cols-4 bg-gray-100 font-semibold shadow rounded-md ">
+        <%= form.number_field :servings, placeholder: "Enter Number of", class: "block col-span-3 bg-gray-100 text-lg text-gray-700 border-none outline-none focus:outline-none focus:border-none focus:ring-0  px-3 py-4 w-full" %>
+        <div class="text-gray-500 text-center self-center">Servings</div>
+      </div>
+      <% if recipe.errors.any? && recipe.errors.full_messages_for(:servings) %>
+        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+          <%= recipe.errors.full_messages_for(:servings).first %>
         </div>
+      <% end %>
+    </div>
 
-        <div class="my-5" data-controller="nested-form">
-          <h4 class="text-gray-500 text-lg font-semibold">Instructions</h4>
-          <div data-nested-form-target="fields">
-            <%= form.fields_for :instructions do |instructions_form| %>
-              <%= render "instruction_field", f: instructions_form %>
-            <% end %>
-          </div>
-          <div class="flex">
-            <%= link_to_add_fields "Add Instruction", form, :instructions %>
-          </div>
-        </div>
-        <% if recipe.errors.any? && recipe.errors.full_messages_for(:instructions) %>
-          <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
-            <%= recipe.errors.full_messages_for(:instructions).first %>
-          </div>
+    <div class="my-5" data-controller="nested-form">
+      <h4 class="text-gray-500 text-lg font-semibold">Ingredients</h4>
+      <div data-nested-form-target="fields">
+        <%= form.fields_for :ingredients do |ingredients_form| %>
+          <%= render "ingredient_field", f: ingredients_form %>
         <% end %>
       </div>
+      <div class="flex">
+        <%= link_to_add_fields "Add Ingredient", form, :ingredients %>
+      </div>
+      <% if recipe.errors.any? && recipe.errors.full_messages_for(:ingredients) %>
+        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+          <%= recipe.errors.full_messages_for(:ingredients).first %>
+        </div>
+      <% end %>
+    </div>
 
+    <div class="my-5" data-controller="nested-form">
+      <h4 class="text-gray-500 text-lg font-semibold">Instructions</h4>
+      <div data-nested-form-target="fields">
+        <%= form.fields_for :instructions do |instructions_form| %>
+          <%= render "instruction_field", f: instructions_form %>
+        <% end %>
+      </div>
+      <div class="flex">
+        <%= link_to_add_fields "Add Instruction", form, :instructions %>
+      </div>
     </div>
-    </div>
-  <% end %>
+    <% if recipe.errors.any? && recipe.errors.full_messages_for(:instructions) %>
+      <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">
+        <%= recipe.errors.full_messages_for(:instructions).first %>
+      </div>
+    <% end %>
+
+  </div>
+
   <% if action_name == "edit" %>
     <div class="w-full text-center my-8">
       <%= button_to 'Delete this Recipe', recipe_path(@recipe), form: { data: { turbo_confirm: 'Are you sure?' } }, method: :delete, class: "text-gray-600/50 hover:text-red-900/50 font-medium" %>
     </div>
   <% end %>
-  </div>
+
+<% end %>

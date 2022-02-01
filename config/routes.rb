@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   post 'join_cookbook_recipe', to: 'cookbooks#join_cookbook_recipe', as: 'join_cookbook_recipe'
 
 
-  root 'welcome#index'
+  root 'discover#index'
 
 end

@@ -7,12 +7,12 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 5.times do
-  u = User.create! email: Faker::Internet.email, password: 'asdfasdf', password_confirmation: 'asdfasdf', username: Faker::Lorem.unique.word
+  u = User.create! email: Faker::Internet.email, password: 'asdfasdf', password_confirmation: 'asdfasdf', username: Faker::Movies::Lebowski.unique.actor.truncate(12, omission: '').gsub(' ','_').underscore, full_name: Faker::Movies::Lebowski.unique.character
   30.times do
     r = Recipe.create user: u, title: Faker::Food.dish, description: Faker::Food.description, time: rand(120), servings: rand(24)
-    rand(5).positive? ? r.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
+    # rand(5).positive? ? r.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
     10.times do
-      Ingredient.create!(recipe: r, body: Faker::Food.measurement + ' ' +Faker::Food.ingredient)
+      Ingredient.create!(recipe: r, body: Faker::Food.measurement + ' ' + Faker::Food.ingredient)
     end
     7.times do
       Instruction.create!(recipe: r, body: Faker::Quotes::Shakespeare.romeo_and_juliet_quote)
@@ -21,20 +21,20 @@
 
   30.times do
     c = Cookbook.create! title: Faker::Movie.title, user: u, description: Faker::Movies::Lebowski.quote
-    rand(2).positive? ? c.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
+    # rand(2).positive? ? c.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
     20.times do
       c.recipes << Recipe.find(rand(20)+1)
     end
   end
 end
 
-# u = User.first
-# 3.times.with_index do |i|
-#   c = Cookbook.last(i + 1).first
-#   s = User.last(i + 1).first
-#   Subscriptions.create! subscriber: u, subscribable: c
-#   Subscriptions.create! subscriber: u, subscribable: s
-# end
+u = User.first
+3.times.with_index do |i|
+  c = Cookbook.last(i + 1).first
+  s = User.last(i + 1).first
+  Subscriptions.create! subscriber: u, subscribable: c
+  Subscriptions.create! subscriber: u, subscribable: s
+end
 
 puts 'First User Email: ' + User.first.email
 puts 'First User Password: asdfasdf'

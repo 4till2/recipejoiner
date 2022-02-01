@@ -1,11 +1,11 @@
 <div class="flex">
   <div class="grid">
-    <span><%= recipe.time %></span>
+    <span><%= recipe.time || 0 %></span>
     <span>Minutes</span>
   </div>
   <span class="border-l mx-2 border-gray-200"></span>
   <div class="grid">
-    <span><%= recipe.servings %></span>
+    <span><%= recipe.servings || 0 %></span>
     <span>Servings</span>
   </div>
   <span class="border-l mx-2 border-gray-200"></span>

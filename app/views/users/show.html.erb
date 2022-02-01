@@ -1,67 +1,99 @@
-<div class="mx-auto  flex">
-  <div class="mx-auto w-full md:w-3/4">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
-    <div class="flex w-full justify-between items-center pb-4 pt-0 p-2 rounded">
-      <a href='javascript:history.go(-1)'>
-        <div class="font-medium text-lg flex">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
-          </svg>
-        </div>
-      </a>
+<div id="<%= dom_id @user %>" class="mx-auto w-full md:px-24">
+  <div class="grid grid-cols-4 md:grid-cols-6 w-full items-center pb-4">
+
+    <a href='javascript:history.go(-1)'>
+      <div class="font-medium text-lg flex">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-700 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19l-7-7 7-7"/>
+        </svg>
+      </div>
+    </a>
+
+    <div class="grid col-span-2 md:col-span-4">
+      <h1 class="font-bold tracking-wide text-2xl md:text-4xl w-full text-center"><%= @user.full_name %></h1>
+      <div class="text-center text-gray-700 font-medium text-sm md:text-lg">
+        @<%= @user.username %>
+      </div>
+    </div>
+
+    <div class="justify-self-end">
       <% if current_user == @user %>
         <div class="flex">
-          <!--          edit user-->
+          <div data-controller='modal-wrapper'>
+            <template data-modal-wrapper-target="template">
+              <%= render 'shared/modal', title: 'Edit Profile', src: 'edit_user_path(@user)' %>
+            </template>
+            <button data-action='modal-wrapper#open' class="text-center mx-auto hover:text-blue-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                   class="h-8 w-8 text-gray-300 hover:text-black mx-auto">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+              </svg>
+            </button>
+          </div>
+          <%= button_to destroy_user_session_url, method: :delete, form: { data: { turbo_confirm: "Logout?" } } do %>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-4 h-8 w-8 text-gray-300 hover:text-black mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+            </svg>
+          <% end %>
         </div>
       <% else %>
-        <div class="text-center">
-          <%= turbo_frame_tag 'subscription_button_container', src: load_subscription_path(subscribable_id: @user.id, subscribable_type: 'User') do %>
+        <div class="text-center text-xs md:text-lg">
+          <%= turbo_frame_tag 'subscription_button_container',
+                              src: load_subscription_path(subscribable_id: @user.id,
+                                                          subscribable_type: 'User') do %>
             <%= render 'shared/subscription_button' %>
           <% end %>
         </div>
       <% end %>
     </div>
+  </div>
 
-    <div id="<%= dom_id @user %>">
-      <h1 class="font-bold tracking-wide font-bold text-lg md:text-3xl w-full text-center"><%= @user.username %></h1>
-      <div class="text-gray-600 mx-auto">
-        <% if @user.avatar.attached? %>
-          <%= image_tag @user.avatar, class: 'rounded mx-auto w-full my-2' %>
-        <% end %>
-        <div class="flex text-center justify-center text-md p-4">
-          <div class="text-gray-500 grid mx-2">
-            <span><%= @user.recipes.count %></span>
-            <span>Recipes</span>
-          </div>
-          <div class="text-gray-500 grid mx-2">
-            <span><%= @user.cookbooks.count %></span>
-            <span>Cookbooks</span>
-          </div>
-        </div>
-      </div>
-      <div class="p-2 mb-2">
-        <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Recipes</h1>
-        <div class="w-full grid grid-cols-1">
-          <% @user.recipes.each do |recipe| %>
-            <%= link_to recipe do %>
-              <%= render recipe, link: true %>
-            <% end %>
-          <% end %>
-        </div>
-      </div>
+  <!--  <div class="text-gray-700 text-lg w-full mx-auto my-2 text-center md:w-3/4">-->
+  <%#= @user.description %>
+  <%# if @user.image.attached? %>
+  <!--      <div class="md:max-w-xl mx-auto">-->
+  <%#= image_tag @user.image, class: 'mx-auto w-full h-full my-2 rounded' %>
+  <!--      </div>-->
+  <%# end %>
+  <!--  </div>-->
 
-      <div class="p-2 mb-2">
-        <h1 class="w-full font-extrabold px-5 bg-gray-500/80 text-gray-100 rounded">Cookbooks</h1>
-        <div class="grid grid-cols-2 gap-4 my-3 mx-2">
-          <% @user.cookbooks.each do |cookbook| %>
-            <%= link_to cookbook do %>
-              <%= render cookbook, link: true %>
-            <% end %>
-          <% end %>
-        </div>
-      </div>
+  <div>
+    <h1 class="w-full font-extrabold px-6 mt-4 text-lg bg-black text-white text-center rounded">
+      <%= @user.recipes.count %> RECIPES
+    </h1>
+    <div class="my-3 mx-2">
+      <%= render 'shared/collection', items: @user.recipes, small: true, horizontal: true %>
     </div>
   </div>
+
+  <div>
+    <h1 class="w-full font-extrabold px-6 mt-4 text-lg bg-black text-white text-center rounded">
+      <%= @user.cookbooks.count %> COOKBOOKS
+    </h1>
+    <div class="my-3 mx-2">
+      <%= render 'shared/collection', items: @user.cookbooks, small: true, horizontal: true %>
+    </div>
+  </div>
+
+  <%# if current_user == @user %>
+  <div>
+    <h1 class="w-full font-extrabold px-6 mt-4 text-lg bg-black text-white text-center rounded">
+      <%= pluralize(@user.user_subscriptions.count, 'subscription').upcase %>
+    </h1>
+    <div class="my-3 mx-2">
+      <%= render 'shared/collection', items: @user.user_subscriptions, link: true %>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="w-full font-extrabold px-6 mt-4 text-lg bg-black text-white text-center rounded">
+      <%= pluralize(@user.subscribers.count, 'subscriber').upcase %>
+    </h1>
+    <div class="my-3 mx-2">
+      <%= render 'shared/collection', items: @user.subscribers, link: true %>
+    </div>
+  </div>
+  <%# end %>
 </div>
+

@@ -5,6 +5,19 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  validates :username,
+            uniqueness: {
+              # object = person object being validated
+              # data = { model: "User", attribute: "Username", value: <username> }
+              message: ->(object, data) do
+                "#{object.name}, #{data[:value]} is already taken."
+              end
+            }
+  validates :username, presence: { message: "must be given please." }
+  validates :username, length: { minimum: 4, maximum: 12, message: 'must be between 4 and 12 characters.' }
+  validates :username, format: { with: /\A\w+\Z/, message: "can only contain letters, numbers and underscores." }
+  validates :full_name, presence: { message: "must be given please." }
+
 
   has_many :subscribees, as: :subscribable, class_name: 'Subscriptions'
   has_many :subscriptions, foreign_key: 'subscriber_id', dependent: :destroy, class_name: 'Subscriptions'
@@ -132,7 +145,7 @@ class User < ApplicationRecord
   private
 
   def self.chef
-    includes(:recipes, :cookbooks).select(:username, :recipes, :cookbooks).references(:recipes, :cookbooks)
+    includes(:recipes, :cookbooks).select(:full_name, :username, :recipes, :cookbooks).references(:recipes, :cookbooks)
   end
 
   def pad_with_suggestions(list, amount, total, klass)

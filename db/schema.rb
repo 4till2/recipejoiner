@@ -115,7 +115,7 @@ ActiveRecord::Schema.define(version: 2022_01_28_155234) do
     t.string "tagger_type"
     t.integer "tagger_id"
     t.string "context", limit: 128
-    t.datetime "created_at", precision: 6
+    t.datetime "created_at"
     t.string "tenant", limit: 128
     t.index ["context"], name: "index_taggings_on_context"
     t.index ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "taggings_idx", unique: true
@@ -143,6 +143,7 @@ ActiveRecord::Schema.define(version: 2022_01_28_155234) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "username", default: "", null: false
+    t.string "full_name", default: ""
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at", precision: 6
     t.datetime "remember_created_at", precision: 6

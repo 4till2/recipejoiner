@@ -1,5 +1,5 @@
 <div class="fixed top-0 right-0 backdrop-blur-md flex w-full justify-between items-center p-4">
-  <div class="w-full flex items-center text-sm font-medium md:text-xl text-gray-900">
+  <div class=" flex items-center grow text-sm font-medium md:text-xl text-gray-900">
 
     <div class="mr-3 md:mr-10">
       <%= link_to root_path do %>
@@ -7,60 +7,72 @@
       <% end %>
     </div>
 
-    <div class="pr-3">
-      <% if current_page?(:controller => 'recipes') %>
-        <div class="text-gray-500 font-semibold">Recipes</div>
-      <% else %>
-        <%= link_to 'Recipes', recipes_path, class: 'hover:border-b hover:border-b-gray-400' %>
-      <% end %>
-    </div>
+    <div class="grid grid-rows-2 md:flex">
+      <div class="pr-3">
+        <% if current_page?(recipes_path) %>
+          <div class="text-gray-500 font-semibold">Recipes</div>
+        <% else %>
+          <%= link_to 'Recipes', recipes_path, class: 'hover:border-b hover:border-b-gray-400' %>
+        <% end %>
+      </div>
 
-    <div class="pr-3">
-      <% if current_page?(:controller => 'cookbooks') %>
-        <div class="text-gray-500 font-semibold">Cookbooks</div>
-      <% else %>
-        <%= link_to 'Cookbooks', cookbooks_path, class: 'hover:border-b hover:border-b-gray-400' %>
-      <% end %>
-    </div>
+      <div class="pr-3">
+        <% if current_page?(cookbooks_path) %>
+          <div class="text-gray-500 font-semibold">Cookbooks</div>
+        <% else %>
+          <%= link_to 'Cookbooks', cookbooks_path, class: 'hover:border-b hover:border-b-gray-400' %>
+        <% end %>
+      </div>
 
-    <div class="pr-3">
-      <% if current_page?(:controller => 'discover') %>
-        <div class="text-gray-500 font-semibold">Discover</div>
-      <% else %>
-        <%= link_to 'Discover', discover_path, class: 'hover:border-b hover:border-b-gray-400' %>
-      <% end %>
+      <div class="pr-3">
+        <% if current_page?(discover_path) %>
+          <div class="text-gray-500 font-semibold">Discover</div>
+        <% else %>
+          <%= link_to 'Discover', discover_path, class: 'hover:border-b hover:border-b-gray-400' %>
+        <% end %>
+      </div>
     </div>
+  </div>
+
+  <%= link_to current_user ||  new_user_registration_path do %>
+    <button class="rounded-md p-1 font-light border-gray-500 text-gray-600 text-md hover:border-white hover:bg-black hover:text-white">
+      <%= current_user ? 'Profile' : 'Log in / Register' %>
+    </button>
+  <% end %>
+  <div class="flex items-center">
+
+    <% if current_page?(recipes_path) %>
+      <%= link_to new_recipe_path do %>
+        <button class="ml-4 rounded-lg p-2 font-semibold border-dashed border border-black text-gray-600 block font-large md:text-lg hover:border-white hover:bg-black hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </button>
+      <% end %>
+    <% end %>
+
+    <% if current_page?(cookbooks_path) %>
+      <%= link_to new_cookbook_path do %>
+        <button class="ml-4 rounded-lg p-2 font-semibold border-dashed border border-black text-gray-600 block font-large md:text-lg hover:border-white hover:bg-black hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </button>
+      <% end %>
+    <% end %>
+
+    <% if current_page?(discover_path) %>
+      <div data-controller='modal-wrapper'>
+        <template data-modal-wrapper-target="template">
+          <%= render 'shared/modal', src: '/search' %>
+        </template>
+        <button data-action='modal-wrapper#open' class="ml-4 rounded-lg p-2 font-semibold border-dashed border border-black text-gray-600 block font-large md:text-lg hover:border-white hover:bg-black hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </button>
+      </div>
+    <% end %>
 
   </div>
-  <% if current_page?(:controller => 'discover') %>
-    <div data-controller='modal-wrapper'>
-      <template data-modal-wrapper-target="template">
-        <%= render 'shared/modal', src: '/search' %>
-      </template>
-      <button data-action='modal-wrapper#open' class="rounded-lg p-2 font-semibold border-dashed border border-black text-gray-600 block font-large md:text-lg hover:border-white hover:bg-black hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-        </svg>
-      </button>
-    </div>
-  <% end %>
-  <% if current_page?(:controller => 'recipes') %>
-    <%= link_to new_recipe_path do %>
-      <button class="rounded-lg p-2 font-semibold border-dashed border border-black text-gray-600 block font-large md:text-lg hover:border-white hover:bg-black hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-        </svg>
-      </button>
-    <% end %>
-  <% end %>
-  <% if current_page?(:controller => 'cookbooks') %>
-    <%= link_to new_cookbook_path do %>
-      <button class="rounded-lg p-2 font-semibold border-dashed border border-black text-gray-600 block font-large md:text-lg hover:border-white hover:bg-black hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-        </svg>
-      </button>
-    <% end %>
-  <% end %>
 </div>
-
