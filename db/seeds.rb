@@ -8,7 +8,7 @@
 
 5.times do
   u = User.create! email: Faker::Internet.email, password: 'asdfasdf', password_confirmation: 'asdfasdf', username: Faker::Movies::Lebowski.unique.actor.truncate(12, omission: '').gsub(' ','_').underscore, full_name: Faker::Movies::Lebowski.unique.character
-  30.times do
+  20.times do
     r = Recipe.create user: u, title: Faker::Food.dish, description: Faker::Food.description, time: rand(120), servings: rand(24)
     # rand(5).positive? ? r.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
     10.times do
@@ -19,11 +19,11 @@
     end
   end
 
-  30.times do
+  20.times do
     c = Cookbook.create! title: Faker::Movie.title, user: u, description: Faker::Movies::Lebowski.quote
     # rand(2).positive? ? c.image.attach(io: File.open(File.join(Rails.root, 'app/assets/images/sample.jpeg')), filename: 'sample.jpeg') : nil
-    20.times do
-      c.recipes << Recipe.find(rand(20)+1)
+    10.times do
+      c.recipes << Recipe.find(rand(10)+1)
     end
   end
 end
