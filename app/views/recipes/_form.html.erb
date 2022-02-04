@@ -121,10 +121,9 @@
 
   </div>
 
-  <% if action_name == "edit" %>
-    <div class="w-full text-center my-8">
-      <%= button_to 'Delete this Recipe', recipe_path(@recipe), form: { data: { turbo_confirm: 'Are you sure?' } }, method: :delete, class: "text-gray-600/50 hover:text-red-900/50 font-medium" %>
-    </div>
-  <% end %>
-
+<% end %>
+<% if action_name == "edit" %>
+  <div class="w-full text-center my-8">
+    <%= button_to 'Delete this Recipe', recipe_path(@recipe), form: { data: { turbo_confirm: 'Are you sure?' } }, method: :delete, class: "text-gray-600/50 hover:text-red-900/50 font-medium" %>
+  </div>
 <% end %>

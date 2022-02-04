@@ -2,7 +2,7 @@
 
   <% if @recommendations %>
     <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1">Recommended for You</h1>
-    <%= render 'shared/collection', items: @recommendations, link: true, horizontal: true, rows: 3 %>
+    <%= render 'shared/collection', items: @recommendations, link: true, horizontal: true, rows: 2 %>
   <% end %>
 
   <% if @recipes %>
@@ -17,10 +17,10 @@
 
   <% if @users %>
     <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">Chefs</h1>
-    <%= render 'shared/collection', items: @users, link: true, horizontal: true, rows: 3 %>
+    <%= render 'shared/collection', items: @users, link: true, horizontal: true, rows: 1 %>
   <% end %>
 
-  <% if @subscriptions %>
+  <% if @subscriptions.present? %>
     <h1 class="font-extrabold text-4xl md:text-5xl text-gray-800 mb-1 mt-12">Recently Subscribed</h1>
     <%= render 'shared/collection', items: @subscriptions, link: true, horizontal: true, rows: 4 %>
   <% end %>
