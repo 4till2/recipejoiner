@@ -4,8 +4,8 @@
     <% if local_assigns[:horizontal] %>
       <div class="flex overflow-x-scroll flex flex-row scrollbar-none snap-x">
         <div class="grid grid-flow-col grid-rows-<%= local_assigns[:rows] || 1 %>">
-        <%= render 'shared/items', items: items, link: local_assigns[:link], small: local_assigns[:small],
-                   class: "p-4 w-80 md:w-96 px-4 flex-shrink-0 snap-center" %>
+          <%= render 'shared/items', items: items, link: local_assigns[:link], small: local_assigns[:small],
+                     class: "p-4 w-80 md:w-96 px-4 flex-shrink-0 snap-center" %>
         </div>
       </div>
     <% else %>
@@ -19,6 +19,12 @@
       </div>
     <% end %>
   <% else %>
-    <div class="mx-auto w-full text-center text-gray-500 p-4"> Nothing to show here ... yet!</div>
+    <div class="mx-auto w-full text-center text-gray-500 p-4">
+      <% if fallback ||= nil && fallback.present? %>
+          <%= yield %>
+      <% else %>
+        Nothing to show here ... yet!
+        </div>
+      <% end %>
   <% end %>
 <% end %>
