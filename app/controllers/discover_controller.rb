@@ -1,5 +1,4 @@
 class DiscoverController < ApplicationController
-  # before_action :authenticate_user!
 
   def index
     user = user_signed_in? ? current_user : User.new

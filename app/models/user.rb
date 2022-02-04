@@ -159,7 +159,6 @@ class User < ApplicationRecord
     pad_count = [total - list_count, klass_count].min
 
     list += klass.constantize.offset(offset).last(pad_count) if pad_count.positive?
-
     list
   end
 end
