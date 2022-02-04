@@ -36,6 +36,8 @@ class User < ApplicationRecord
 
   multisearchable against: [:username]
 
+  DEFAULT_FEED_COUNT = 10
+
   def paginated_collection(src)
     case src
     when 'owned_recipes'
@@ -68,14 +70,14 @@ class User < ApplicationRecord
     recipes_from_cookbooks.where.not(user_id: id)
   end
 
-  def recent_subscriptions(total = 10)
+  def recent_subscriptions(total = DEFAULT_FEED_COUNT)
     return if total.negative?
 
     l = total / 2
     (cookbook_subscriptions.last(l) + user_subscriptions.last(l)).sort_by(&:created_at)
   end
 
-  def discover_recipes(total = 40)
+  def discover_recipes(total = DEFAULT_FEED_COUNT)
     return if total.negative?
 
     l = total / 6
@@ -92,7 +94,7 @@ class User < ApplicationRecord
     pad_with_suggestions(list, l, total, 'Recipe')
   end
 
-  def discover_cookbooks(total = 40)
+  def discover_cookbooks(total = DEFAULT_FEED_COUNT)
     return if total.negative?
 
     l = total / 3
@@ -107,7 +109,7 @@ class User < ApplicationRecord
     pad_with_suggestions(list, l, total, 'Cookbook')
   end
 
-  def discover_users(total = 40)
+  def discover_users(total = DEFAULT_FEED_COUNT)
     return if total.negative?
 
     l = total / 3
@@ -123,7 +125,7 @@ class User < ApplicationRecord
     pad_with_suggestions(list, l, total, 'User')
   end
 
-  def discover_recommendations(total = 40)
+  def discover_recommendations(total = DEFAULT_FEED_COUNT)
     return if total.negative?
 
     l = total / 3
@@ -151,7 +153,7 @@ class User < ApplicationRecord
   def pad_with_suggestions(list, amount, total, klass)
     list ||= []
     offset = 0
-    while list.count < total - amount && offset <= 200
+    while list.count < total - amount && offset <= 100
       offset += amount
       list += klass.constantize.offset(offset).last(amount)
     end
