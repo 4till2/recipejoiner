@@ -17,6 +17,7 @@ class User < ApplicationRecord
   validates :username, length: { minimum: 4, maximum: 12, message: 'must be between 4 and 12 characters.' }
   validates :username, format: { with: /\A\w+\Z/, message: "can only contain letters, numbers and underscores." }
   validates :full_name, presence: { message: "must be given please." }
+  
 
 
   has_many :subscribees, as: :subscribable, class_name: 'Subscriptions'
