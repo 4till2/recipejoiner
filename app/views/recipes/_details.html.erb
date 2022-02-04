@@ -1,21 +1,28 @@
 <div class="flex">
   <div class="grid">
-    <span><%= recipe.time || 0 %></span>
-    <span>Minutes</span>
-  </div>
-  <span class="border-l mx-2 border-gray-200"></span>
-  <div class="grid">
-    <span><%= recipe.servings || 0 %></span>
-    <span>Servings</span>
-  </div>
-  <span class="border-l mx-2 border-gray-200"></span>
-  <div class="grid">
     <span><%= recipe.ingredients.count %></span>
     <span>Ingredients</span>
   </div>
+
   <span class="border-l mx-2 border-gray-200"></span>
   <div class="grid">
     <span><%= recipe.instructions.count %></span>
     <span>Steps</span>
   </div>
+
+  <% unless recipe.time.nil? %>
+    <span class="border-l mx-2 border-gray-200"></span>
+    <div class="grid">
+      <span><%= recipe.time || 0 %></span>
+      <span>Minutes</span>
+    </div>
+  <% end %>
+
+  <% unless recipe.servings.nil? %>
+    <span class="border-l mx-2 border-gray-200"></span>
+    <div class="grid">
+      <span><%= recipe.servings || 0 %></span>
+      <span>Servings</span>
+    </div>
+  <% end %>
 </div>

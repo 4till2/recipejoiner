@@ -17,8 +17,6 @@ class User < ApplicationRecord
   validates :username, length: { minimum: 4, maximum: 12, message: 'must be between 4 and 12 characters.' }
   validates :username, format: { with: /\A\w+\Z/, message: "can only contain letters, numbers and underscores." }
   validates :full_name, presence: { message: "must be given please." }
-  
-
 
   has_many :subscribees, as: :subscribable, class_name: 'Subscriptions'
   has_many :subscriptions, foreign_key: 'subscriber_id', dependent: :destroy, class_name: 'Subscriptions'
@@ -151,14 +149,17 @@ class User < ApplicationRecord
     includes(:recipes, :cookbooks).select(:full_name, :username, :recipes, :cookbooks).references(:recipes, :cookbooks)
   end
 
-  def pad_with_suggestions(list, amount, total, klass)
+  def pad_with_suggestions(list, offset, total, klass)
     list ||= []
-    offset = 0
-    while list.count < total - amount && offset <= 100
-      offset += amount
-      list += klass.constantize.offset(offset).last(amount)
-    end
+    # Total available records to pad with after the offset
+    klass_count = klass.constantize.count - offset
+    # Total records already in list
+    list_count = list.count
+    # The lesser of either, the difference between the desired total and the current total or the classes available records
+    pad_count = [total - list_count, klass_count].min
+
+    list += klass.constantize.offset(offset).last(pad_count) if pad_count.positive?
+
     list
   end
-
 end
