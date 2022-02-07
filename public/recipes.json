@@ -1,0 +1,2968 @@
+{
+  "data": [
+    {
+      "name": "Pizza Dough I",
+      "ingredients": [
+        "3 cups all-purpose flour",
+        "1 (.25 ounce) package active dry yeast",
+        "2 tablespoons vegetable oil",
+        "1 teaspoon salt",
+        "1 tablespoon white sugar",
+        "1 cup warm water (110 degrees F/45 degrees C)"
+      ],
+      "instructions": [
+        "Combine flour, salt, sugar, and yeast in a large bowl. Mix in oil and warm water. Spread out on a large pizza pan. Top as desired.",
+        "Bake at 375 degrees C (190 degrees C) for 20 to 25 minutes."
+      ],
+      "nutrients": {
+        "protein": "2.8g",
+        "carbohydrates": "20.1g",
+        "dietary fiber": "0.8g",
+        "sugars": "0.9g",
+        "fat": "2.1g",
+        "saturated fat": "0.3g",
+        "niacin equivalents": "2.2mg",
+        "folate": "56.7mcg",
+        "calcium": "4.6mg",
+        "iron": "1.2mg",
+        "magnesium": "6.1mg",
+        "potassium": "36.3mg",
+        "sodium": "156.2mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "18.9"
+      },
+      "tags": [],
+      "servings": "15",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3024&h=1512&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5291342.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "25 mins ",
+        "additional_time": "",
+        "total": "35 mins "
+      }
+    },
+    {
+      "name": "Rotisserie Chicken",
+      "ingredients": [
+        "1 (3 pound) whole chicken",
+        "1 pinch salt",
+        "¼ cup butter, melted",
+        "1 tablespoon salt",
+        "1 tablespoon paprika",
+        "¼ tablespoon ground black pepper"
+      ],
+      "instructions": [
+        "Season the inside of the chicken with a pinch of salt. Place the chicken onto a rotisserie and set the grill on high. Cook for 10 minutes.",
+        "During that time, quickly mix together the butter, 1 tablespoon of salt, paprika and pepper. Turn the grill down to medium and baste the chicken with the butter mixture. Close the lid and cook for 1 to 1 1/2 hours, basting occasionally, until the internal temperature reaches 180 degrees F (83 degrees C) when taken in the thigh with a meat thermometer.",
+        "Remove from the rotisserie and let stand for 10 to 15 minutes before cutting into pieces and serving."
+      ],
+      "nutrients": {
+        "protein": "30.9g",
+        "carbohydrates": "0.8g",
+        "dietary fiber": "0.5g",
+        "sugars": "0.1g",
+        "fat": "24.9g",
+        "saturated fat": "9.7g",
+        "cholesterol": "117.4mg",
+        "vitamin a iu": "944.5IU",
+        "niacin equivalents": "9.7mg",
+        "vitamin b6": "0.5mg",
+        "vitamin c": "0.9mg",
+        "folate": "7.9mcg",
+        "calcium": "21.5mg",
+        "iron": "2mg",
+        "magnesium": "28.4mg",
+        "potassium": "302mg",
+        "sodium": "1310.9mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "224.3"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8539040.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "1 hr 30 mins ",
+        "additional_time": "",
+        "total": "1 hr 45 mins "
+      }
+    },
+    {
+      "name": "Roast Sticky Chicken-Rotisserie Style",
+      "ingredients": [
+        "4 teaspoons salt",
+        "2 teaspoons paprika",
+        "1 teaspoon onion powder",
+        "1 teaspoon dried thyme",
+        "1 teaspoon white pepper",
+        "½ teaspoon cayenne pepper",
+        "½ teaspoon black pepper",
+        "½ teaspoon garlic powder",
+        "2 onions, quartered",
+        "2 (4 pound) whole chickens"
+      ],
+      "instructions": [
+        "In a small bowl, mix together salt, paprika, onion powder, thyme, white pepper, black pepper, cayenne pepper, and garlic powder. Remove and discard giblets from chicken. Rinse chicken cavity, and pat dry with paper towel. Rub each chicken inside and out with spice mixture. Place 1 onion into the cavity of each chicken. Place chickens in a resealable bag or double wrap with plastic wrap. Refrigerate overnight, or at least 4 to 6 hours.",
+        "Preheat oven to 250 degrees F (120 degrees C).",
+        "Place chickens in a roasting pan. Bake uncovered for 5 hours, to a minimum internal temperature of 180 degrees F (85 degrees C). Let the chickens stand for 10 minutes before carving."
+      ],
+      "nutrients": {
+        "protein": "61.7g",
+        "carbohydrates": "3.7g",
+        "dietary fiber": "0.9g",
+        "sugars": "1.4g",
+        "fat": "34.3g",
+        "saturated fat": "9.6g",
+        "cholesterol": "194.1mg",
+        "vitamin a iu": "567.2IU",
+        "niacin equivalents": "19.2mg",
+        "vitamin b6": "1mg",
+        "vitamin c": "2.8mg",
+        "folate": "19.7mcg",
+        "calcium": "44.7mg",
+        "iron": "3.7mg",
+        "magnesium": "56.4mg",
+        "potassium": "602.6mg",
+        "sodium": "1350.8mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "309.1"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2740&h=1370&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F46458.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "5 hrs ",
+        "additional_time": "4 hrs ",
+        "total": "9 hrs 10 mins "
+      }
+    },
+    {
+      "name": "The Ultimate Chicken Noodle Soup",
+      "ingredients": [
+        "2-1/2 pounds bone-in chicken thighs",
+        "1/2 teaspoon salt",
+        "1/2 teaspoon pepper",
+        "1 tablespoon canola oil",
+        "1 large onion, chopped",
+        "1 garlic clove, minced",
+        "10 cups chicken broth",
+        "4 celery ribs, chopped",
+        "4 medium carrots, chopped",
+        "2 bay leaves",
+        "1 teaspoon minced fresh thyme or 1/4 teaspoon dried thyme",
+        "3 cups uncooked kluski or other egg noodles (about 8 ounces)",
+        "1 tablespoon chopped fresh parsley",
+        "1 tablespoon lemon juice",
+        "Optional: Additional salt and pepper"
+      ],
+      "instructions": [
+        "Pat chicken dry with paper towels; sprinkle with salt and pepper. In a 6-qt. stockpot, heat oil over medium-high heat. Add chicken in batches, skin side down; cook until dark golden brown, 3-4 minutes. Remove chicken from pan; remove and discard skin. Discard drippings, reserving 2 tablespoons.",
+        "Add onion to drippings; cook and stir over medium-high heat until tender, 4-5 minutes. Add garlic; cook 1 minute longer. Add broth, stirring to loosen browned bits from pan. Bring to a boil. Return chicken to pan. Add celery, carrots, bay leaves and thyme. Reduce heat; simmer, covered, until chicken is tender, 25-30 minutes.",
+        "Transfer chicken to a plate. Remove soup from heat. Add noodles; let stand, covered, until noodles are tender, 20-22 minutes.",
+        "Meanwhile, when chicken is cool enough to handle, remove meat from bones; discard bones. Shred meat into bite-sized pieces. Return meat to stockpot. Stir in parsley and lemon juice. If desired, adjust seasoning with additional salt and pepper. Discard bay leaves."
+      ],
+      "nutrients": {},
+      "tags": [],
+      "servings": "",
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps192832_TH163619D09_30_2b-51.jpg",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": ""
+      }
+    },
+    {
+      "name": "Homemade Chicken Soup",
+      "ingredients": [
+        "1 (3 pound) whole chicken",
+        "4 carrots, halved",
+        "4 stalks celery, halved",
+        "1 large onion, halved",
+        "water to cover",
+        "salt and pepper to taste",
+        "1 teaspoon chicken bouillon granules (Optional)"
+      ],
+      "instructions": [
+        "Put the chicken, carrots, celery and onion in a large soup pot and cover with cold water. Heat and simmer, uncovered, until the chicken meat falls off of the bones (skim off foam every so often).",
+        "Take everything out of the pot. Strain the broth. Pick the meat off of the bones and chop the carrots, celery and onion. Season the broth with salt, pepper and chicken bouillon to taste, if desired. Return the chicken, carrots, celery and onion to the pot, stir together, and serve."
+      ],
+      "nutrients": {
+        "protein": "13.1g",
+        "carbohydrates": "4.2g",
+        "dietary fiber": "1.2g",
+        "sugars": "2g",
+        "fat": "8.9g",
+        "saturated fat": "2.4g",
+        "cholesterol": "36.9mg",
+        "vitamin a iu": "4209.6IU",
+        "niacin equivalents": "5.4mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "3mg",
+        "folate": "15.6mcg",
+        "calcium": "24mg",
+        "iron": "0.8mg",
+        "magnesium": "15.5mg",
+        "potassium": "226.6mg",
+        "sodium": "67.6mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "80.2"
+      },
+      "tags": [],
+      "servings": "10",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F04%2F13%2F8814_HomemadeChickenSoup_SoupLovingNicole_LSH-2000.jpg",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": ""
+      }
+    },
+    {
+      "name": "Grandma's Lemon Meringue Pie",
+      "ingredients": [
+        "1 cup white sugar",
+        "2 tablespoons all-purpose flour",
+        "3 tablespoons cornstarch",
+        "¼ teaspoon salt",
+        "1 ½ cups water",
+        "2 lemons, juiced and zested",
+        "2 tablespoons butter",
+        "4 egg yolks, beaten",
+        "1 (9 inch) pie crust, baked",
+        "4 egg whites",
+        "6 tablespoons white sugar"
+      ],
+      "instructions": [
+        "Preheat oven to 350 degrees F (175 degrees C).",
+        "To Make Lemon Filling: In a medium saucepan, whisk together 1 cup sugar, flour, cornstarch, and salt. Stir in water, lemon juice and lemon zest. Cook over medium-high heat, stirring frequently, until mixture comes to a boil. Stir in butter. Place egg yolks in a small bowl and gradually whisk in 1/2 cup of hot sugar mixture. Whisk egg yolk mixture back into remaining sugar mixture. Bring to a boil and continue to cook while stirring constantly until thick. Remove from heat. Pour filling into baked pastry shell.",
+        "To Make Meringue: In a large glass or metal bowl, whip egg whites until foamy. Add sugar gradually, and continue to whip until stiff peaks form. Spread meringue over pie, sealing the edges at the crust.",
+        "Bake in preheated oven for 10 minutes, or until meringue is golden brown."
+      ],
+      "nutrients": {
+        "protein": "4.4g",
+        "carbohydrates": "49.7g",
+        "dietary fiber": "1.5g",
+        "sugars": "35.2g",
+        "fat": "10.3g",
+        "saturated fat": "4.3g",
+        "cholesterol": "110.1mg",
+        "vitamin a iu": "216.5IU",
+        "niacin equivalents": "1.4mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "20.8mg",
+        "folate": "27mcg",
+        "calcium": "34.6mg",
+        "iron": "0.9mg",
+        "magnesium": "9.4mg",
+        "potassium": "96.9mg",
+        "sodium": "229.2mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "93.1"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=960&h=480&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F07%2F20%2Fimage.jpg",
+      "time": {
+        "prepration_time": "30 mins ",
+        "cooking_time": "10 mins ",
+        "additional_time": "",
+        "total": "40 mins "
+      }
+    },
+    {
+      "name": "Traditional White Bread",
+      "ingredients": [
+        "2 (.25 ounce) packages active dry yeast",
+        "3 tablespoons white sugar",
+        "2 ½ cups warm water (110 degrees F/45 degrees C)",
+        "3 tablespoons lard, softened",
+        "1 tablespoon salt",
+        "6 ½ cups bread flour"
+      ],
+      "instructions": [
+        "In a large bowl, dissolve yeast and sugar in warm water. Stir in lard, salt and two cups of the flour. Stir in the remaining flour, 1/2 cup at a time, beating well after each addition. When the dough has pulled together, turn it out onto a lightly floured surface and knead until smooth and elastic, about 8 minutes.",
+        "Lightly oil a large bowl, place the dough in the bowl and turn to coat with oil. Cover with a damp cloth and let rise in a warm place until doubled in volume, about 1 hour.",
+        "Deflate the dough and turn it out onto a lightly floured surface. Divide the dough into two equal pieces and form into loaves. Place the loaves into two lightly greased 9x5 inch loaf pans. Cover the loaves with a damp cloth and let rise until doubled in volume, about 40 minutes.",
+        "Preheat oven to 425 degrees F (220 degrees C).",
+        "Place bread in the preheated oven and lower temperature to 375 degrees F (190 degrees C). Bake until the top is golden brown and the bottom of the loaf sounds hollow when tapped, about 30 minutes."
+      ],
+      "nutrients": {
+        "protein": "4.9g",
+        "carbohydrates": "30.4g",
+        "dietary fiber": "1.1g",
+        "sugars": "2g",
+        "fat": "2.6g",
+        "saturated fat": "0.9g",
+        "cholesterol": "1.8mg",
+        "vitamin a iu": "0.8IU",
+        "niacin equivalents": "4.2mg",
+        "folate": "87.8mcg",
+        "calcium": "7.4mg",
+        "iron": "1.8mg",
+        "magnesium": "10.7mg",
+        "potassium": "53.4mg",
+        "sodium": "350.8mg",
+        "thiamin": "0.3mg",
+        "calories from fat": "23.4"
+      },
+      "tags": [],
+      "servings": "20",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7865109.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "30 mins ",
+        "additional_time": "1 hr 40 mins ",
+        "total": "2 hrs 30 mins "
+      }
+    },
+    {
+      "name": "Spicy Baked Tofu",
+      "ingredients": [
+        "1 serving cooking spray",
+        "1 (12 ounce) package tofu",
+        "2 tablespoons Japanese low-sodium soy sauce",
+        "2 tablespoons Asian chili sauce",
+        "2 tablespoons minced fresh ginger root",
+        "1 ½ tablespoons hoisin sauce"
+      ],
+      "instructions": [
+        "Lay the tofu on a plate lined with a couple sheets of paper towel. Layer more paper towel atop tofu and place another plate atop the stack to press water from the tofu. Let sit at least 5 minutes.",
+        "Cut tofu into 1/2-inch strips and put into a large, sealable plastic bag; add soy sauce, chili sauce, ginger, and hoisin sauce. Squeeze bag to remove excess air and seal. Marinate tofu in the refrigerator for at least 1 hour.",
+        "Preheat oven to 375 degrees F (190 degrees C). Prepare a baking sheet with cooking spray.",
+        "Remove tofu from the marinade, shake to remove excess moisture, and arrange onto the prepared baking sheet. Discard the remaining marinade.",
+        "Bake in preheated oven for 15 minutes, flip, and continue baking until firm, 15 to 20 minutes more."
+      ],
+      "nutrients": {
+        "protein": "7.4g",
+        "carbohydrates": "6.1g",
+        "dietary fiber": "0.8g",
+        "sugars": "2.2g",
+        "fat": "4.3g",
+        "saturated fat": "0.6g",
+        "cholesterol": "0.2mg",
+        "vitamin a iu": "321.8IU",
+        "niacin equivalents": "2.4mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "1.1mg",
+        "folate": "15.6mcg",
+        "calcium": "297.7mg",
+        "iron": "5mg",
+        "magnesium": "30.6mg",
+        "potassium": "134.7mg",
+        "sodium": "686.2mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "38.8"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=1600&h=800&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2258469.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "30 mins ",
+        "additional_time": "1 hr 5 mins ",
+        "total": "1 hr 45 mins "
+      }
+    },
+    {
+      "name": "Taiwanese Fried Tofu",
+      "ingredients": [
+        "1 (16 ounce) package extra firm tofu",
+        "⅓ cup soy sauce",
+        "2 teaspoons Chinese black vinegar",
+        "1 teaspoon sesame oil",
+        "1 teaspoon white sugar",
+        "3 tablespoons olive oil",
+        "3 cloves garlic, minced",
+        "¼ cup chopped green onions",
+        "salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cut the tofu in half lengthwise down the top. Slice into squares 1/4 inch thick. Stir together the soy sauce, vinegar, sesame oil, and sugar in a small bowl, set aside.",
+        "Heat oil in a large, nonstick pan over medium heat. Add garlic and green onions, and cook until fragrant, about 20 seconds. Brown tofu well on each side, then pour in sauce and cook until the sauce has been incorporated by the tofu, 2 to 3 minutes. Season to taste with salt and pepper."
+      ],
+      "nutrients": {
+        "protein": "15.6g",
+        "carbohydrates": "7.3g",
+        "dietary fiber": "2.4g",
+        "sugars": "1.6g",
+        "fat": "17g",
+        "saturated fat": "2.4g",
+        "vitamin a iu": "203IU",
+        "niacin equivalents": "4.8mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "1.7mg",
+        "folate": "32.1mcg",
+        "calcium": "631.2mg",
+        "iron": "2.9mg",
+        "magnesium": "61.5mg",
+        "potassium": "275.6mg",
+        "sodium": "1092.8mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "153.1"
+      },
+      "tags": [],
+      "servings": "5",
+      "image": "https://www.allrecipes.com/img/misc/og-default.png",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "10 mins ",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Bunny Pretzels",
+      "ingredients": [
+        "cooking spray",
+        "4 cups water",
+        "¼ cup baking soda",
+        "1 (11 ounce) package refrigerated French bread dough (such as Pillsbury®)",
+        "1 egg yolk",
+        "1 tablespoon water",
+        "1 tablespoon coarse sea salt",
+        "2 tablespoons butter, melted"
+      ],
+      "instructions": [
+        "Preheat oven to 350 degrees F (175 degrees C). Grease a baking sheet with cooking spray.",
+        "Mix 4 cups water and baking soda together in a large saucepan; bring to a boil. Pour into a shallow dish.",
+        "Flatten bread dough on a floured work surface; cut into 3 pieces, each about 6 inches long. Slice each piece into 4 long strips. Break a 1-inch piece off each strip; roll into a ball for the tail. Roll the remainder of each strip into a log about 9 inches long.",
+        "Wrap 1 log around the tail to make the body; twist twice to make the head and ears. Repeat with remaining 11 strips.",
+        "Submerge \"bunnies,\" 2 at a time, into the water-baking soda mixture for 30 seconds. Transfer to the prepared baking sheet. Adjust ears if they became untwisted.",
+        "Whisk egg yolk and 1 tablespoon water together in a small bowl. Brush over bunnies. Sprinkle salt on top.",
+        "Bake in the preheated oven until warmed through, about 5 minutes. Move around with a spatula to ensure they don't stick. Continue baking until golden brown, about 10 minutes. Transfer to cooling racks. Brush with melted butter while still warm."
+      ],
+      "nutrients": {
+        "protein": "2.3g",
+        "carbohydrates": "11.4g",
+        "dietary fiber": "0.4g",
+        "sugars": "1.3g",
+        "fat": "3.1g",
+        "saturated fat": "1.8g",
+        "cholesterol": "22.2mg",
+        "vitamin a iu": "79.1IU",
+        "folate": "2.1mcg",
+        "calcium": "4.9mg",
+        "iron": "5.9mg",
+        "magnesium": "7.8mg",
+        "potassium": "6.5mg",
+        "sodium": "1864.4mg",
+        "calories from fat": "28.3"
+      },
+      "tags": [],
+      "servings": "12",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2122&h=1061&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4478032.jpg",
+      "time": {
+        "prepration_time": "25 mins ",
+        "cooking_time": "20 mins ",
+        "additional_time": "",
+        "total": "45 mins "
+      }
+    },
+    {
+      "name": "Chow Chow I",
+      "ingredients": [
+        "12 ½ pounds green tomatoes, chopped",
+        "8 large onions, chopped",
+        "10 green bell peppers, chopped",
+        "3 teaspoons salt",
+        "6 chopped green chile peppers",
+        "1 quart distilled white vinegar",
+        "1 ¾ cups white sugar",
+        "½ cup prepared horseradish",
+        "1 tablespoon ground cinnamon",
+        "1 tablespoon ground allspice",
+        "¼ teaspoon ground cloves"
+      ],
+      "instructions": [
+        "In a large bowl combine tomatoes, onions, bell peppers and salt. Let stand overnight.",
+        "Drain the tomato/pepper mixture and add the hot chile peppers, vinegar, sugar, and horseradish. Wrap the cinnamon, allspice, and cloves in cheesecloth or a porous bag, and add to tomato/pepper mixture.",
+        "Boil for 15 minutes, or until tender.",
+        "Pack tightly in sterilized jars and seal."
+      ],
+      "nutrients": {
+        "protein": "0.9g",
+        "carbohydrates": "8.5g",
+        "dietary fiber": "0.9g",
+        "sugars": "6.3g",
+        "fat": "0.1g",
+        "vitamin a iu": "381.1IU",
+        "niacin equivalents": "0.6mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "30.5mg",
+        "folate": "12.9mcg",
+        "calcium": "12.8mg",
+        "iron": "0.5mg",
+        "magnesium": "9.1mg",
+        "potassium": "183.9mg",
+        "sodium": "282.2mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "1.2"
+      },
+      "tags": [],
+      "servings": "96",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2573&h=1287&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1049380.jpg",
+      "time": {
+        "prepration_time": "45 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "12 hrs ",
+        "total": "13 hrs "
+      }
+    },
+    {
+      "name": "Best Ever Fried Chicken Wings",
+      "ingredients": [
+        "4 pounds chicken wings",
+        "2 teaspoons kosher salt",
+        "Oil for deep-fat frying",
+        "BUFFALO WING SAUCE:",
+        "3/4 cup Louisiana-style hot sauce",
+        "1/4 cup unsalted butter, cubed",
+        "2 tablespoons molasses",
+        "1/4 teaspoon cayenne pepper",
+        "SPICY THAI SAUCE:",
+        "1 tablespoon canola oil",
+        "1 teaspoon grated fresh gingerroot",
+        "1 garlic clove, minced",
+        "1 minced Thai chile pepper or 1/4 teaspoon crushed red pepper flakes",
+        "1/4 cup packed dark brown sugar",
+        "2 tablespoons lime juice",
+        "2 tablespoons minced fresh cilantro",
+        "1 tablespoon fish sauce",
+        "SPICY BARBECUE SAUCE:",
+        "3/4 cup barbecue sauce",
+        "2 chipotle peppers in adobo sauce, finely chopped",
+        "2 tablespoons honey",
+        "1 tablespoon cider vinegar",
+        "Thinly sliced green onions, optional"
+      ],
+      "instructions": [
+        "Using a sharp knife, cut through the 2 wing joints; discard wing tips. Pat chicken dry with paper towels. Toss wings with kosher salt. Place on a wire rack in a 15x10x1-in. baking pan. Refrigerate at least 1 hour or overnight.",
+        "In an electric skillet or deep-fat fryer, heat oil to 375°. Fry wings in batches until skin is crisp and meat is tender, 8-10 minutes. Drain on paper towels.",
+        "For Buffalo wing sauce, bring hot sauce just to a boil in a small saucepan. Remove from heat; whisk in butter 1 piece at a time. Stir in molasses and cayenne pepper.",
+        "For Thai sauce, heat oil in a small saucepan over medium heat. Add ginger, garlic and chile pepper; cook and stir until fragrant, about 2 minutes. Stir in brown sugar and lime juice. Bring to a boil; cook until slightly thickened, about 5 minutes. Stir in cilantro and fish sauce.",
+        "For barbecue sauce, heat prepared barbecue sauce in a small saucepan over medium heat. Stir in chipotle peppers, honey and vinegar. Bring to a boil; cook and stir until slightly thickened, about 5 minutes.",
+        "Toss wings with 1 of the sauces. If desired, sprinkle with green onion slices."
+      ],
+      "nutrients": {},
+      "tags": [],
+      "servings": "",
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Best-Ever-Fried-Chicken-Wings_EXPS_THFM18_208490_D09_19_4b-1.jpg",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": ""
+      }
+    },
+    {
+      "name": "Baked Chicken Wings",
+      "ingredients": [
+        "3 tablespoons olive oil",
+        "3 cloves garlic, pressed",
+        "2 teaspoons chili powder",
+        "1 teaspoon garlic powder",
+        "salt and ground black pepper to taste",
+        "10 chicken wings"
+      ],
+      "instructions": [
+        "Preheat the oven to 375 degrees F (190 degrees C).",
+        "Combine the olive oil, garlic, chili powder, garlic powder, salt, and pepper in a large, resealable bag; seal and shake to combine. Add the chicken wings; reseal and shake to coat. Arrange the chicken wings on a baking sheet.",
+        "Cook the wings in the preheated oven 1 hour, or until crisp and cooked through."
+      ],
+      "nutrients": {
+        "protein": "31.7g",
+        "carbohydrates": "3.9g",
+        "dietary fiber": "1.1g",
+        "sugars": "0.6g",
+        "fat": "43.1g",
+        "saturated fat": "9.1g",
+        "cholesterol": "96.6mg",
+        "vitamin a iu": "967.1IU",
+        "niacin equivalents": "13.5mg",
+        "vitamin b6": "0.7mg",
+        "vitamin c": "3.4mg",
+        "folate": "6.3mcg",
+        "calcium": "34.1mg",
+        "iron": "2.1mg",
+        "magnesium": "28.3mg",
+        "potassium": "295.9mg",
+        "sodium": "122.6mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "388"
+      },
+      "tags": [],
+      "servings": "2",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=843&h=422&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F05%2F04%2F187822_BakedChickenWings_Square_DanielleK.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "1 hr ",
+        "additional_time": "",
+        "total": "1 hr 10 mins "
+      }
+    },
+    {
+      "name": "Baked Teriyaki Chicken",
+      "ingredients": [
+        "1 tablespoon cornstarch",
+        "1 tablespoon cold water",
+        "½ cup white sugar",
+        "½ cup soy sauce",
+        "¼ cup cider vinegar",
+        "1 clove garlic, minced",
+        "½ teaspoon ground ginger",
+        "¼ teaspoon ground black pepper",
+        "12 skinless chicken thighs"
+      ],
+      "instructions": [
+        "In a small saucepan over low heat, combine the cornstarch, cold water, sugar, soy sauce, vinegar, garlic, ginger and ground black pepper. Let simmer, stirring frequently, until sauce thickens and bubbles.",
+        "Preheat oven to 425 degrees F (220 degrees C).",
+        "Place chicken pieces in a lightly greased 9x13 inch baking dish. Brush chicken with the sauce. Turn pieces over, and brush again.",
+        "Bake in the preheated oven for 30 minutes. Turn pieces over, and bake for another 30 minutes, until no longer pink and juices run clear. Brush with sauce every 10 minutes during cooking."
+      ],
+      "nutrients": {
+        "protein": "24.7g",
+        "carbohydrates": "19.9g",
+        "dietary fiber": "0.2g",
+        "sugars": "17.1g",
+        "fat": "9.8g",
+        "saturated fat": "2.7g",
+        "cholesterol": "85.2mg",
+        "vitamin a iu": "58.8IU",
+        "niacin equivalents": "11.2mg",
+        "vitamin b6": "0.4mg",
+        "vitamin c": "0.2mg",
+        "folate": "10.2mcg",
+        "calcium": "17.2mg",
+        "iron": "1.7mg",
+        "magnesium": "31.8mg",
+        "potassium": "272.5mg",
+        "sodium": "1282.3mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "88"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F04%2F06%2F4530047-baked-teriyaki-chicken-photo-by-happyschmoopies-2000.jpg",
+      "time": {
+        "prepration_time": "30 mins ",
+        "cooking_time": "1 hr ",
+        "additional_time": "",
+        "total": "1 hr 30 mins "
+      }
+    },
+    {
+      "name": "Oyako Donburi",
+      "ingredients": [
+        "1 tablespoon vegetable oil",
+        "¾ pound skinless, boneless chicken breast halves - cut into strips",
+        "½ onion, thinly sliced",
+        "1 cup chicken broth",
+        "6 dried shiitake mushrooms, soaked until soft, then sliced into strips",
+        "1 carrot, julienned",
+        "2 tablespoons white sugar",
+        "4 tablespoons soy sauce",
+        "½ teaspoon salt",
+        "½ cup chopped green onions",
+        "5 eggs, beaten"
+      ],
+      "instructions": [
+        "Heat oil in a large skillet over medium-high heat. Saute chicken strips and onion until the chicken is cooked through, about 5 to 7 minutes. Drain off as much liquid as possible.",
+        "Stir in the chicken broth, and simmer for 2 minutes. Add the mushrooms and carrot, and let simmer for a few minutes before stirring in the sugar, soy sauce and salt. Simmer for 3 more minutes. Sprinkle in half of the green onions, stirring gently. Pour beaten eggs over the chicken mixture, and simmer until the eggs are cooked through, about 10 minutes. Serve over Japanese sticky rice."
+      ],
+      "nutrients": {
+        "protein": "29.6g",
+        "carbohydrates": "15.7g",
+        "dietary fiber": "1.7g",
+        "sugars": "8.7g",
+        "fat": "10.8g",
+        "saturated fat": "2.8g",
+        "cholesterol": "281.9mg",
+        "vitamin a iu": "3000.4IU",
+        "niacin equivalents": "16.8mg",
+        "vitamin b6": "0.7mg",
+        "vitamin c": "5.6mg",
+        "folate": "57.7mcg",
+        "calcium": "64mg",
+        "iron": "2.4mg",
+        "magnesium": "51.2mg",
+        "potassium": "523.7mg",
+        "sodium": "1349.3mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "97.3"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2305&h=1153&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5293596.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "20 mins ",
+        "additional_time": "",
+        "total": "40 mins "
+      }
+    },
+    {
+      "name": "Peking Duck",
+      "ingredients": [
+        "1 (4 pound) whole duck, dressed",
+        "½ teaspoon ground cinnamon",
+        "½ teaspoon ground ginger",
+        "¼ teaspoon ground nutmeg",
+        "¼ teaspoon ground white pepper",
+        "⅛ teaspoon ground cloves",
+        "3 tablespoons soy sauce",
+        "1 tablespoon honey",
+        "1 orange, sliced in rounds",
+        "1 tablespoon chopped fresh parsley, for garnish",
+        "5 green onions",
+        "½ cup plum jam",
+        "1 ½ teaspoons sugar",
+        "1 ½ teaspoons distilled white vinegar",
+        "¼ cup finely chopped chutney"
+      ],
+      "instructions": [
+        "Rinse the duck inside and out, and pat dry. Cut off tail and discard. In a small bowl, mix together the cinnamon, ginger, nutmeg, white pepper and cloves. Sprinkle one teaspoon of the mixture into the cavity of the duck. Stir one tablespoon of the soy sauce into the remaining spice mixture and rub evenly over the entire outside of the bird. Cut one of the green onions in half and tuck inside the cavity. Cover and refrigerate the bird for at least 2 hours, or overnight.",
+        "Place duck breast side up on a rack in a big enough wok or pot and steam for an hour adding a little more water, if necessary, as it evaporates. Lift duck with two large spoons, and drain juices and green onion.",
+        "Preheat the oven to 375 degrees F (190 degrees C). Place duck breast side up in a roasting pan and prick skin all over using a fork.",
+        "Roast for 30 minutes in the preheated oven. While the duck is roasting, mix together the remaining 2 tablespoons of soy sauce and honey. After 30 minutes, brush the honey mixture onto the duck and return it to the oven. Turn the heat up to 500 degrees F (260 degrees C). Roast for 5 minutes, or until the skin is richly browned. Do not allow the skin to char.",
+        "Prepare the duck sauce by mixing the plum jam with the sugar, vinegar and chutney in a small serving bowl. Chop remaining green onions and place them into a separate bowl. Place whole duck onto a serving platter and garnish with orange slices and fresh parsley. Use plum sauce and onions for dipping."
+      ],
+      "nutrients": {
+        "protein": "22.4g",
+        "carbohydrates": "48.1g",
+        "dietary fiber": "2.3g",
+        "sugars": "42g",
+        "fat": "31g",
+        "saturated fat": "10.6g",
+        "cholesterol": "91.1mg",
+        "vitamin a iu": "698.3IU",
+        "niacin equivalents": "6.2mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "31.1mg",
+        "folate": "36.9mcg",
+        "calcium": "55.7mg",
+        "iron": "3.8mg",
+        "magnesium": "37mg",
+        "potassium": "458.4mg",
+        "sodium": "747.8mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "279.4"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=4000&h=2000&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F662217.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "1 hr 35 mins ",
+        "additional_time": "2 hrs ",
+        "total": "3 hrs 50 mins "
+      }
+    },
+    {
+      "name": "Linguine with Clams",
+      "ingredients": [
+        "1 (16 ounce) package linguine pasta",
+        "8 tablespoons unsalted butter",
+        "1 medium white onion, chopped",
+        "8 ounces fresh mushrooms, sliced",
+        "4 cloves garlic, pressed",
+        "1 cup dry white wine",
+        "4 (6.5 ounce) cans chopped clams, drained and rinsed with juices reserved",
+        "2 tablespoons sour cream",
+        "freshly ground black pepper",
+        "¼ cup chopped flat leaf parsley"
+      ],
+      "instructions": [
+        "Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes, or until al dente. Drain and set aside.",
+        "Melt butter over medium-high heat in a large skillet. Add onions, mushrooms, and garlic, and saute until tender. Pour in wine and simmer for 10 minutes, reducing heat if necessary.",
+        "Stir in clams, reserved clam juice, sour cream, pepper, and parsley, and simmer another 20 minutes. Toss with linguine, and serve. Enjoy!"
+      ],
+      "nutrients": {
+        "protein": "21.1g",
+        "carbohydrates": "32.2g",
+        "dietary fiber": "2g",
+        "sugars": "0.9g",
+        "fat": "10.1g",
+        "saturated fat": "5.4g",
+        "cholesterol": "62.6mg",
+        "vitamin a iu": "729.2IU",
+        "niacin equivalents": "7.5mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "16.7mg",
+        "folate": "90.6mcg",
+        "calcium": "77mg",
+        "iron": "18.8mg",
+        "magnesium": "34.2mg",
+        "potassium": "521.8mg",
+        "sodium": "75.5mg",
+        "thiamin": "0.3mg",
+        "calories from fat": "90.9"
+      },
+      "tags": [],
+      "servings": "12",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2476&h=1238&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F372498.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "43 mins ",
+        "additional_time": "",
+        "total": "58 mins "
+      }
+    },
+    {
+      "name": "Linguine with Clam Sauce",
+      "ingredients": [
+        "2 (6.5 ounce) cans minced clams, with juice",
+        "¼ cup butter",
+        "½ cup vegetable oil",
+        "½ teaspoon minced garlic",
+        "1 tablespoon dried parsley",
+        "ground black pepper to taste",
+        "¼ tablespoon dried basil",
+        "1 (16 ounce) package linguini pasta"
+      ],
+      "instructions": [
+        "Bring a large pot of salted water to boil. Cook pasta according to package directions.",
+        "Combine clams with juice, butter, oil, minced garlic, parsley, basil, and pepper in a large saucepan. Place over medium heat until boiling. Serve warm over pasta."
+      ],
+      "nutrients": {
+        "protein": "37.2g",
+        "carbohydrates": "84.6g",
+        "dietary fiber": "5g",
+        "fat": "42.7g",
+        "saturated fat": "11.3g",
+        "cholesterol": "92.3mg",
+        "vitamin a iu": "972.3IU",
+        "niacin equivalents": "12.3mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "21.1mg",
+        "folate": "224.6mcg",
+        "calcium": "119.5mg",
+        "iron": "30.2mg",
+        "magnesium": "69.4mg",
+        "potassium": "693.7mg",
+        "sodium": "189.6mg",
+        "thiamin": "0.7mg",
+        "calories from fat": "384.4"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://www.allrecipes.com/img/misc/og-default.png",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "12 mins ",
+        "additional_time": "",
+        "total": "32 mins "
+      }
+    },
+    {
+      "name": "Linguine with Clams",
+      "ingredients": [
+        "8 ounces uncooked linguine",
+        "2 tablespoons olive oil",
+        "2 large garlic cloves, minced",
+        "¼ teaspoon crushed red pepper",
+        "3 (10-ounce) cans whole baby clams (such as Chicken of the Sea), undrained",
+        "⅓ cup dry white wine",
+        "⅓ cup fat-free, less-sodium chicken broth",
+        "3 tablespoons chopped fresh parsley"
+      ],
+      "instructions": [
+        "Cook pasta according to package directions, omitting salt and fat.",
+        "While pasta cooks, heat oil in a large nonstick skillet over medium-high heat. Add garlic and crushed red pepper, and sauté 1 minute.",
+        "Drain clams, reserving juice. Add reserved juice, wine, and broth to pan. Bring to a boil; reduce heat to medium-high, and cook 5 minutes. Stir in clams; cook 1 minute. Stir in parsley. Toss with hot pasta."
+      ],
+      "nutrients": {},
+      "tags": [],
+      "servings": "6 servings (serving size: 1 1/4 cups)",
+      "image": "https://www.myrecipes.com/img/misc/og-default.png",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "20 mins"
+      }
+    },
+    {
+      "name": "Gourmet Mushroom Risotto",
+      "ingredients": [
+        "6 cups chicken broth, divided",
+        "3 tablespoons olive oil, divided",
+        "1 pound portobello mushrooms, thinly sliced",
+        "1 pound white mushrooms, thinly sliced",
+        "2 shallots, diced",
+        "1 ½ cups Arborio rice",
+        "½ cup dry white wine",
+        "sea salt to taste",
+        "freshly ground black pepper to taste",
+        "3 tablespoons finely chopped chives",
+        "4 tablespoons butter",
+        "⅓ cup freshly grated Parmesan cheese"
+      ],
+      "instructions": [
+        "In a saucepan, warm the broth over low heat.",
+        "Warm 2 tablespoons olive oil in a large saucepan over medium-high heat. Stir in the mushrooms, and cook until soft, about 3 minutes. Remove mushrooms and their liquid, and set aside.",
+        "Add 1 tablespoon olive oil to skillet, and stir in the shallots. Cook 1 minute. Add rice, stirring to coat with oil, about 2 minutes. When the rice has taken on a pale, golden color, pour in wine, stirring constantly until the wine is fully absorbed. Add 1/2 cup broth to the rice, and stir until the broth is absorbed. Continue adding broth 1/2 cup at a time, stirring continuously, until the liquid is absorbed and the rice is al dente, about 15 to 20 minutes.",
+        "Remove from heat, and stir in mushrooms with their liquid, butter, chives, and parmesan. Season with salt and pepper to taste."
+      ],
+      "nutrients": {
+        "protein": "11.3g",
+        "carbohydrates": "56.6g",
+        "dietary fiber": "2.7g",
+        "sugars": "4.4g",
+        "fat": "16.6g",
+        "saturated fat": "6.6g",
+        "cholesterol": "29.3mg",
+        "vitamin a iu": "520.3IU",
+        "niacin equivalents": "7.5mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "3.8mg",
+        "folate": "36.9mcg",
+        "calcium": "70.1mg",
+        "iron": "2.1mg",
+        "magnesium": "24.1mg",
+        "potassium": "692mg",
+        "sodium": "1130.8mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "149.8"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B451%2C451%5D&w=960&h=480&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F09%2F10%2F246711-gourmet-mushroom-risotto-photo-by-cookinmama.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "30 mins ",
+        "additional_time": "",
+        "total": "50 mins "
+      }
+    },
+    {
+      "name": "Mushroom Risotto",
+      "ingredients": [
+        "1 tablespoon olive oil",
+        "3 small onions, finely chopped",
+        "1 clove garlic, crushed",
+        "1 teaspoon minced fresh parsley",
+        "1 teaspoon minced celery",
+        "salt and pepper to taste",
+        "1 ½ cups sliced fresh mushrooms",
+        "1 cup whole milk",
+        "¼ cup heavy cream",
+        "1 cup rice",
+        "5 cups vegetable stock",
+        "1 teaspoon butter",
+        "1 cup grated Parmesan cheese"
+      ],
+      "instructions": [
+        "Heat olive oil in a large skillet over medium-high heat. Saute the onion and garlic in the olive oil until onion is tender and garlic is lightly browned. Remove garlic, and stir in the parsley, celery, salt, and pepper. Cook until celery is tender, then add the mushrooms. Reduce heat to low, and continue cooking until the mushrooms are soft.",
+        "Pour the milk and cream into the skillet, and stir in the rice. Heat to a simmer. Stir the vegetable stock into the rice one cup at a time, until it is absorbed.",
+        "When the rice has finished cooking, stir in the butter and Parmesan cheese, and remove from heat. Serve hot."
+      ],
+      "nutrients": {
+        "protein": "16.9g",
+        "carbohydrates": "48.7g",
+        "dietary fiber": "2g",
+        "sugars": "6.9g",
+        "fat": "19.5g",
+        "saturated fat": "9.8g",
+        "cholesterol": "49.9mg",
+        "vitamin a iu": "907.4IU",
+        "niacin equivalents": "6.5mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "4.9mg",
+        "folate": "125.9mcg",
+        "calcium": "393.7mg",
+        "iron": "2.8mg",
+        "magnesium": "36.9mg",
+        "potassium": "402.6mg",
+        "sodium": "767.6mg",
+        "thiamin": "0.3mg",
+        "calories from fat": "175.5"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3648&h=1824&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1397542.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "35 mins ",
+        "additional_time": "",
+        "total": "45 mins "
+      }
+    },
+    {
+      "name": "Classic Fish and Chips",
+      "ingredients": [
+        "4 large potatoes, peeled and cut into strips",
+        "1 cup all-purpose flour",
+        "1 teaspoon baking powder",
+        "1 teaspoon salt",
+        "1 teaspoon ground black pepper",
+        "1 cup milk",
+        "1 egg",
+        "1 quart vegetable oil for frying",
+        "1 ½ pounds cod fillets"
+      ],
+      "instructions": [
+        "Place potatoes in a medium-size bowl of cold water. In a separate medium-size mixing bowl, mix together flour, baking powder, salt, and pepper. Stir in the milk and egg; stir until the mixture is smooth. Let mixture stand for 20 minutes.",
+        "Preheat the oil in a large pot or electric skillet to 350 degrees F (175 degrees C).",
+        "Fry the potatoes in the hot oil until they are tender. Drain them on paper towels.",
+        "Dredge the fish in the batter, one piece at a time, and place them in the hot oil. Fry until the fish is golden brown. If necessary, increase the heat to maintain the 350 degrees F (175 degrees C) temperature. Drain well on paper towels.",
+        "Fry the potatoes again for 1 to 2 minutes for added crispness."
+      ],
+      "nutrients": {
+        "protein": "44.6g",
+        "carbohydrates": "91.9g",
+        "dietary fiber": "9.1g",
+        "sugars": "5.9g",
+        "fat": "26.2g",
+        "saturated fat": "4.3g",
+        "cholesterol": "124.6mg",
+        "vitamin a iu": "253.2IU",
+        "niacin equivalents": "18.3mg",
+        "vitamin b6": "1.6mg",
+        "vitamin c": "74.6mg",
+        "folate": "137.1mcg",
+        "calcium": "224.4mg",
+        "iron": "5.5mg",
+        "magnesium": "155.8mg",
+        "potassium": "2405.3mg",
+        "sodium": "860.7mg",
+        "thiamin": "0.7mg",
+        "calories from fat": "236.2"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=960&h=480&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F-0001%2F11%2F30%2F970421.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "25 mins ",
+        "additional_time": "10 mins ",
+        "total": "45 mins "
+      }
+    },
+    {
+      "name": "Fish and Chips",
+      "ingredients": [
+        "1 quart vegetable oil for frying",
+        "1 pound red snapper fillets",
+        "1 egg, beaten",
+        "½ cup dry bread crumbs"
+      ],
+      "instructions": [
+        "In a large heavy skillet, heat oil to 375 degrees F (190 degrees C).",
+        "Dip fillets into beaten egg and dredge in bread crumbs.",
+        "Gently slide fish into hot oil and fry until golden brown. Drain briefly on paper towels. Serve hot."
+      ],
+      "nutrients": {
+        "protein": "26.8g",
+        "carbohydrates": "9.8g",
+        "dietary fiber": "0.6g",
+        "sugars": "0.9g",
+        "fat": "26.2g",
+        "saturated fat": "3.8g",
+        "cholesterol": "91.8mg",
+        "vitamin a iu": "193.1IU",
+        "niacin equivalents": "6.3mg",
+        "vitamin b6": "0.4mg",
+        "vitamin c": "1.4mg",
+        "folate": "26.1mcg",
+        "calcium": "67.5mg",
+        "iron": "1.1mg",
+        "magnesium": "40.2mg",
+        "potassium": "507.6mg",
+        "sodium": "175.2mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "235.4"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://www.allrecipes.com/img/misc/og-default.png",
+      "time": {
+        "prepration_time": "5 mins ",
+        "cooking_time": "10 mins ",
+        "additional_time": "",
+        "total": "15 mins "
+      }
+    },
+    {
+      "name": "Scotch Eggs",
+      "ingredients": [
+        "1 quart oil for frying",
+        "4 eggs",
+        "2 pounds pork sausage",
+        "4 cups dried bread crumbs, seasoned",
+        "1 cup all-purpose flour",
+        "4 eggs, beaten"
+      ],
+      "instructions": [
+        "Preheat oven to 350 degrees F (175 degrees C). Heat oil in deep-fryer to 375 degrees F (190 degrees C).",
+        "Place eggs in saucepan and cover with water. Bring to boil. Cover, remove from heat, and let eggs sit in hot water for 10 to 12 minutes. Remove from hot water, cool and peel.",
+        "Flatten the sausage and make a patty to surround each egg. Very lightly flour the sausage and coat with beaten egg. Roll in bread crumbs to cover evenly.",
+        "Deep fry until golden brown, or pan fry while making sure each side is well cooked. Bake in the preheated oven for 10 minutes.",
+        "Cut in half and serve over a bed of lettuce and sliced tomatoes for garnish. If mustard is desired it looks beautiful over this."
+      ],
+      "nutrients": {
+        "protein": "63.5g",
+        "carbohydrates": "108.4g",
+        "dietary fiber": "6.7g",
+        "sugars": "7.7g",
+        "fat": "87.6g",
+        "saturated fat": "24.5g",
+        "cholesterol": "503.2mg",
+        "vitamin a iu": "718.6IU",
+        "niacin equivalents": "27.3mg",
+        "vitamin b6": "0.9mg",
+        "vitamin c": "6.4mg",
+        "folate": "250.1mcg",
+        "calcium": "326.2mg",
+        "iron": "11.1mg",
+        "magnesium": "100.7mg",
+        "potassium": "1010.1mg",
+        "sodium": "4278.2mg",
+        "thiamin": "1.7mg",
+        "calories from fat": "788.7"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2592&h=1296&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5119.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "25 mins ",
+        "additional_time": "",
+        "total": "45 mins "
+      }
+    },
+    {
+      "name": "Chef John's Scotch Eggs",
+      "ingredients": [
+        "oil for frying",
+        "6 cold large eggs",
+        "21 ounces bulk Italian sausage",
+        "¼ teaspoon dry mustard",
+        "1 pinch freshly grated nutmeg",
+        "1 pinch cayenne pepper",
+        "1 cup panko bread crumbs, or as needed",
+        "½ cup all-purpose flour, or as needed",
+        "2 eggs, beaten"
+      ],
+      "instructions": [
+        "Heat oil in a deep-fryer or large saucepan to 350 degrees F (175 degrees C).",
+        "Fill a saucepan with 1/2-inch water; bring to a boil. Carefully place cold eggs into saucepan, cover the saucepan with a lid, reduce heat to medium-high, and cook until eggs yolks are soft, about 6 minutes. Remove from heat and pour cold water over eggs to halt the cooking process. Cool eggs to room temperature in cold water; peel and dry eggs on paper towels.",
+        "Mix sausage, mustard, nutmeg, and cayenne pepper together in a bowl. Shape into 6 equal-size balls.",
+        "Lay a piece of plastic wrap on a flat work surface. Place 1 ball of sausage mixture into the center of the plastic wrap, fold the plastic wrap over sausage, and flatten into an 1/8-inch thick oval shape. Pull plastic wrap back and place 1 egg in the center of the sausage. Pick up plastic wrap, moisten fingertips, and press sausage around egg to cover completely, sealing sausage around egg. Repeat with remaining eggs and sausage.",
+        "Place bread crumbs in a shallow bowl. Pour flour into another shallow bowl. Beat remaining 2 eggs in another shallow bowl.",
+        "Gently press eggs into flour to coat; shake off excess flour. Dip eggs into the beaten egg, then press into bread crumbs. Gently toss between your hands so any bread crumbs that haven't stuck can fall away. Place the breaded eggs onto a plate.",
+        "Working in batches, cook eggs in the preheated oil until golden, 5 to 6 minutes. Transfer to a wire rack to cool, at least 5 minutes."
+      ],
+      "nutrients": {
+        "protein": "24.3g",
+        "carbohydrates": "24g",
+        "dietary fiber": "0.4g",
+        "sugars": "1.2g",
+        "fat": "40.5g",
+        "saturated fat": "10.6g",
+        "cholesterol": "286.5mg",
+        "vitamin a iu": "360.4IU",
+        "niacin equivalents": "7.3mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "0.1mg",
+        "folate": "53.9mcg",
+        "calcium": "51.7mg",
+        "iron": "2.7mg",
+        "magnesium": "22.8mg",
+        "potassium": "306.9mg",
+        "sodium": "996.3mg",
+        "thiamin": "0.5mg",
+        "calories from fat": "364.7"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=1333&h=667&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3956950.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "15 mins ",
+        "total": "50 mins "
+      }
+    },
+    {
+      "name": "Spicy Salmon Maki",
+      "ingredients": [
+        "1 cup glutinous white rice (sushi rice)",
+        "1 ½ cups water",
+        "¼ cup rice wine vinegar",
+        "2 tablespoons white sugar",
+        "½ teaspoon salt",
+        "1 (1 ounce) package nori (dry seaweed)",
+        "1 medium avocado, thinly sliced",
+        "1 (8 ounce) farmed Atlantic salmon",
+        "3 stalks green onions, halved lengthwise",
+        "¼ cup sriracha mayonnaise (Kikkoman)",
+        "2 tablespoons hoisin sauce",
+        "2 teaspoons black sesame seeds",
+        "2 teaspoons toasted sesame seeds",
+        "½ teaspoon wasabi paste, or to taste",
+        "1 tablespoon pickled ginger, or to taste"
+      ],
+      "instructions": [
+        "Rinse rice in a strainer under cold running water until water runs clear. Combine rice and water in a saucepan. Bring to a boil over medium-high heat, reduce heat to low, cover, and cook for 20 minutes. Remove from heat.",
+        "Meanwhile, combine rice wine vinegar, sugar, and salt in a small saucepan. Cook over medium heat until sugar dissolves. Remove and allow to cool. Stir vinegar mixture into the cooked rice - rice will dry as it cools. Allow rice to cool completely, about 30 minutes.",
+        "Place a sheet of nori onto a sushi mat. Place about 1/2 cup rice on top and, using a rice paddle, spread rice onto the nori sheet.",
+        "Flip nori over so rice is facing down. Arrange 3 to 4 avocado slices, about 2 ounces salmon, 1 strip green onion, and 2 teaspoons Sriracha mayonnaise down the middle of the nori sheet.",
+        "Carefully, but tightly, roll nori up by closing in on the ingredients to form a roll. Drizzle each roll with hoisin sauce and more Sriracha mayonnaise and sprinkle with both types of sesame seeds.",
+        "Slice each sushi roll into 8 pieces. Serve with a dollop of wasabi and pickled ginger on the side."
+      ],
+      "nutrients": {
+        "protein": "16.8g",
+        "carbohydrates": "56.1g",
+        "dietary fiber": "5.6g",
+        "sugars": "9.6g",
+        "fat": "24.5g",
+        "saturated fat": "4.1g",
+        "cholesterol": "38.4mg",
+        "vitamin a iu": "587.5IU",
+        "niacin equivalents": "9.6mg",
+        "vitamin b6": "0.6mg",
+        "vitamin c": "12.1mg",
+        "folate": "79.3mcg",
+        "calcium": "68.5mg",
+        "iron": "2mg",
+        "magnesium": "51.5mg",
+        "potassium": "566.2mg",
+        "sodium": "630.9mg",
+        "thiamin": "0.3mg",
+        "calories from fat": "220.9"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9419692.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "25 mins ",
+        "additional_time": "30 mins ",
+        "total": "1 hr 15 mins "
+      }
+    },
+    {
+      "name": "Sushi Roll",
+      "ingredients": [
+        "⅔ cup uncooked short-grain white rice",
+        "3 tablespoons rice vinegar",
+        "3 tablespoons white sugar",
+        "1 ½ teaspoons salt",
+        "4 sheets nori seaweed sheets",
+        "½ cucumber, peeled, cut into small strips",
+        "2 tablespoons pickled ginger",
+        "1 avocado",
+        "½ pound imitation crabmeat, flaked"
+      ],
+      "instructions": [
+        "In a medium saucepan, bring 1 1/3 cups water to a boil. Add rice, and stir. Reduce heat, cover, and simmer for 20 minutes. In a small bowl, mix the rice vinegar, sugar ,and salt. Blend the mixture into the rice.",
+        "Preheat oven to 300 degrees F (150 degrees C). On a medium baking sheet, heat nori in the preheated oven 1 to 2 minutes, until warm.",
+        "Center one sheet nori on a bamboo sushi mat. Wet your hands. Using your hands, spread a thin layer of rice on the sheet of nori, and press into a thin layer. Arrange 1/4 of the cucumber, ginger, avocado, and imitation crabmeat in a line down the center of the rice. Lift the end of the mat, and gently roll it over the ingredients, pressing gently. Roll it forward to make a complete roll. Repeat with remaining ingredients.",
+        "Cut each roll into 4 to 6 slices using a wet, sharp knife."
+      ],
+      "nutrients": {
+        "protein": "3.9g",
+        "carbohydrates": "25.8g",
+        "dietary fiber": "2.4g",
+        "sugars": "7.4g",
+        "fat": "3.9g",
+        "saturated fat": "0.6g",
+        "cholesterol": "5.7mg",
+        "vitamin a iu": "131.7IU",
+        "niacin equivalents": "2mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "3.4mg",
+        "folate": "61.7mcg",
+        "calcium": "12.3mg",
+        "iron": "1mg",
+        "magnesium": "25mg",
+        "potassium": "186.1mg",
+        "sodium": "702.5mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "35.3"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2305&h=1153&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5360403.jpg",
+      "time": {
+        "prepration_time": "45 mins ",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "45 mins "
+      }
+    },
+    {
+      "name": "Bacon Stuffed Ravioli",
+      "ingredients": [
+        "8 slices bacon",
+        "1 (15 ounce) container ricotta cheese",
+        "½ cup shredded mozzarella cheese",
+        "1 (6 ounce) package shredded Parmesan cheese, divided",
+        "1 (16 ounce) package wonton wrappers",
+        "¼ cup butter",
+        "¼ cup bacon drippings",
+        "⅔ cup cream cheese, softened",
+        "1 ⅓ cups milk",
+        "1 tablespoon garlic powder",
+        "ground black pepper to taste",
+        "⅓ cup pasta boiling water"
+      ],
+      "instructions": [
+        "Preheat oven to 350 degrees F (175 degrees C). Line a baking sheet with parchment paper, and set aside.",
+        "Place a baking rack into a baking dish, and lay the bacon slices out flat onto the rack. Cover the bacon with another flat baking dish or other flat, heavy heatproof surface such as a baking sheet.",
+        "Bake the bacon in the preheated oven until golden brown, 25 to 30 minutes; retain 1/4 cup of the drippings. Allow bacon to cool, then chop finely.",
+        "In a bowl, thoroughly mix the chopped bacon with ricotta, mozzarella, and 1/3 of the Parmesan cheese. Place 1 rounded teaspoon of filling into the center of a wonton wrapper on a work surface; dip your finger in a little water, and moisten the edge of the wrapper. Fold the wrapper over the filling, matching points to make a triangular ravioli, and gently squeeze any air out of the little package. Press the edges down to seal the ravioli, and lay the finished ravioli onto the prepared baking sheet. Store finished ravioli in freezer after you make them, to prevent bottoms from becoming soggy.",
+        "Bring a large pot of salted water to a boil, and add the ravioli, a few at a time, stirring to prevent sticking. Gently boil the ravioli until they float to the top and become tender, 3 to 5 minutes; remove to a serving dish with a slotted spoon and keep warm.",
+        "While ravioli are cooking, melt butter and bacon drippings together in a saucepan over medium heat, and whisk in cream cheese until smooth. Whisk in the milk, a little at a time, the remaining 2/3 of the package of shredded Parmesan cheese, garlic powder, and black pepper. Bring the mixture to a bare simmer, and cook gently until the cheese has melted and the sauce is smooth, whisking constantly. Whisk in about 1/3 cup of the pasta water, or to desired consistency. Serve the ravioli topped with the sauce."
+      ],
+      "nutrients": {
+        "protein": "22.2g",
+        "carbohydrates": "31.5g",
+        "dietary fiber": "0.9g",
+        "sugars": "2g",
+        "fat": "29.2g",
+        "saturated fat": "15.8g",
+        "cholesterol": "78.6mg",
+        "vitamin a iu": "720.3IU",
+        "niacin equivalents": "7.4mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "0.2mg",
+        "folate": "49.9mcg",
+        "calcium": "448.4mg",
+        "iron": "2.2mg",
+        "magnesium": "33mg",
+        "potassium": "231mg",
+        "sodium": "903.3mg",
+        "thiamin": "0.3mg",
+        "calories from fat": "262.9"
+      },
+      "tags": [],
+      "servings": "10",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2988&h=1494&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5267718.jpg",
+      "time": {
+        "prepration_time": "1 hr 30 mins ",
+        "cooking_time": "10 mins ",
+        "additional_time": "",
+        "total": "1 hr 40 mins "
+      }
+    },
+    {
+      "name": "Homemade Four Cheese Ravioli",
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1 pinch salt",
+        "1 teaspoon olive oil",
+        "2 eggs",
+        "1 ½ tablespoons water",
+        "1 (8 ounce) container ricotta cheese",
+        "1 (4 ounce) package cream cheese, softened",
+        "½ cup shredded mozzarella cheese",
+        "½ cup provolone cheese, shredded",
+        "1 egg",
+        "1 ½ teaspoons dried parsley",
+        "2 tablespoons olive oil",
+        "2 cloves garlic, crushed",
+        "3 tablespoons prepared basil pesto sauce",
+        "2 cups heavy cream",
+        "¼ cup grated Parmesan cheese",
+        "1 (24 ounce) jar marinara sauce",
+        "1 egg",
+        "1 tablespoon water"
+      ],
+      "instructions": [
+        "Mound the flour and salt together on a work surface and form a well. Beat the teaspoon of olive oil, 2 eggs, and water in a bowl. Pour half the egg mixture into the well. Begin mixing the egg with the flour with one hand; use your other hand to keep the flour mound steady. Add the remaining egg mixture and knead to form a dough.",
+        "Knead the dough until smooth, 8 to 10 minutes; add more flour if the dough is too sticky. Form the dough into a ball and wrap tightly with plastic. Refrigerate for 1 hour.",
+        "While the dough is resting, prepare the ravioli filling. Combine the ricotta cheese, cream cheese, mozzarella cheese, provolone cheese, egg, and parsley and mix well. Set the filling aside.",
+        "Heat 2 tablespoons of olive oil in a skillet over medium heat. Add the crushed garlic and pesto sauce and cook for one minute. Pour in the heavy cream, raise the heat to high, and bring the sauce to a boil. Reduce the heat and simmer for 5 minutes. Add the Parmesan cheese and stir until the cheese melts. Remove the pan from the heat and keep warm.",
+        "Meanwhile, in a separate saucepan, warm the marinara sauce over medium-low heat.",
+        "Preheat an oven to 375 degrees F (190 degrees C). Beat the egg with the tablespoon of water to make the egg wash.",
+        "Roll out the pasta dough into thin sheets no thicker than a nickel. To assemble the ravioli, brush the egg wash over a sheet of pasta. Drop the filling mixture on the dough by teaspoonfuls about one inch apart. Cover the filling with the top sheet of pasta, pressing out the air from around each portion of filling. Press firmly around the filling to seal. Cut into individual ravioli with a knife or pizza cutter. Seal the edges.",
+        "Fill a large pot with lightly salted water and bring to a rolling boil over high heat. Stir in the ravioli, and return to a boil. Cook uncovered, stirring occasionally, until the ravioli float to the top and the filling is hot, 4 to 8 minutes. Drain well.",
+        "Grease a baking sheet. Place the cooked ravioli on the sheet pan and bake in the preheated oven until brown, about 4 minutes.",
+        "To serve the ravioli, divide them among four warmed serving bowls. Drizzle the marinara sauce over the ravioli and then top with the cream sauce."
+      ],
+      "nutrients": {
+        "protein": "37.8g",
+        "carbohydrates": "80.4g",
+        "dietary fiber": "6.5g",
+        "sugars": "16g",
+        "fat": "89.2g",
+        "saturated fat": "46.7g",
+        "cholesterol": "406.5mg",
+        "vitamin a iu": "3712.7IU",
+        "niacin equivalents": "17mg",
+        "vitamin b6": "0.5mg",
+        "vitamin c": "5.6mg",
+        "folate": "179.1mcg",
+        "calcium": "710mg",
+        "iron": "6.3mg",
+        "magnesium": "90.1mg",
+        "potassium": "936.8mg",
+        "sodium": "1358.9mg",
+        "thiamin": "0.7mg",
+        "calories from fat": "802.5"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B1060%2C501%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F04%2F21%2F8896331_original-2000.jpg",
+      "time": {
+        "prepration_time": "45 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "1 hr ",
+        "total": "2 hrs "
+      }
+    },
+    {
+      "name": "Roasted Cauliflower Penne with Cream Sauce",
+      "ingredients": [
+        "1 medium head cauliflower, cut into bite-sized florets",
+        "2 tablespoons olive oil",
+        "2 cloves garlic, minced",
+        "¼ cup butter",
+        "¼ cup all-purpose flour",
+        "1 (16 ounce) package penne pasta",
+        "4 cups hot skim milk",
+        "1 cup grated Romano cheese",
+        "½ teaspoon ground nutmeg",
+        "½ teaspoon salt",
+        "2 medium tomatoes, seeded and diced",
+        "freshly cracked black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat the oven to 425 degrees F (220 degrees C).",
+        "Toss cauliflower with olive oil. Transfer to a baking sheet.",
+        "Roast in the preheated oven for 15 minutes. Sprinkle garlic over cauliflower and toss to combine. Continue to cook until cauliflower is tender and beginning to brown, about 5 minutes longer. Remove from the oven.",
+        "While the cauliflower is roasting, melt butter in a skillet over medium-low heat, and bring a large pot of lightly salted water to a boil.",
+        "Add flour to the melted butter and stir until smooth. Increase heat to medium and cook, stirring often, until mixture turns a light, golden color, about 5 minutes.",
+        "At the same time, cook penne in the boiling water, stirring occasionally, until tender yet firm to the bite, about 11 minutes. Drain and reserve about 1/4 cup pasta water.",
+        "Add hot milk, 1 cup at a time, to the butter mixture, whisking continuously until very smooth. Bring to a boil. Cook, stirring constantly, for 10 minutes. Stir in Romano cheese and remove from the heat. Season with nutmeg and salt and set aside until ready to use.",
+        "Combine penne, roasted cauliflower, bechamel sauce, and tomatoes in a large bowl. If the sauce is too thick, stir in a little of the reserved pasta water. Serve immediately with black pepper."
+      ],
+      "nutrients": {
+        "protein": "18.2g",
+        "carbohydrates": "54.9g",
+        "dietary fiber": "3.8g",
+        "sugars": "10.3g",
+        "fat": "14.8g",
+        "saturated fat": "7.1g",
+        "cholesterol": "33.2mg",
+        "vitamin a iu": "752.7IU",
+        "niacin equivalents": "6.4mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "30.5mg",
+        "folate": "51.9mcg",
+        "calcium": "342.7mg",
+        "iron": "2.3mg",
+        "magnesium": "59.3mg",
+        "potassium": "563.1mg",
+        "sodium": "437.9mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "132.8"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://www.allrecipes.com/img/misc/og-default.png",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "25 mins ",
+        "additional_time": "",
+        "total": "40 mins "
+      }
+    },
+    {
+      "name": "Penne with Cauliflower and Beef Sauce",
+      "ingredients": [
+        "1 (14.5 ounce) package penne pasta",
+        "1 tablespoon olive oil",
+        "2 pounds cauliflower florets",
+        "1 pound ground beef",
+        "2 medium onions, thinly sliced",
+        "2 cloves garlic, minced",
+        "1 (28 ounce) can diced tomatoes, drained",
+        "1 tablespoon dried parsley",
+        "1 teaspoon salt",
+        "1 pinch red pepper flakes"
+      ],
+      "instructions": [
+        "Bring a large pot of lightly salted water to a boil. Add penne and cook, stirring occasionally, until tender yet firm to the bite, about 11 minutes. Drain.",
+        "While pasta cooks, heat oil in a large skillet over medium-high heat. Add cauliflower; cook and stir for 3 minutes. Add beef, onions, and garlic; cook and stir until beef is browned and crumbly, 5 to 7 minutes. Stir in tomatoes, parsley, salt, and pepper flakes. Cover and cook for 10 minutes.",
+        "Drain penne. Pour into the skillet and stir to combine. Serve."
+      ],
+      "nutrients": {
+        "protein": "26.4g",
+        "carbohydrates": "65.7g",
+        "dietary fiber": "7.9g",
+        "sugars": "10.7g",
+        "fat": "13.2g",
+        "saturated fat": "4.3g",
+        "cholesterol": "47.3mg",
+        "vitamin a iu": "1193.1IU",
+        "niacin equivalents": "11.1mg",
+        "vitamin b6": "0.6mg",
+        "vitamin c": "83.4mg",
+        "folate": "98.8mcg",
+        "calcium": "110.3mg",
+        "iron": "7.2mg",
+        "magnesium": "69.6mg",
+        "potassium": "970.3mg",
+        "sodium": "688mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "118.5"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://www.allrecipes.com/img/misc/og-default.png",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "20 mins ",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Braised Cauliflower & Squash Penne for Two",
+      "ingredients": [
+        "1 ½ teaspoons extra-virgin olive oil",
+        "2 cloves garlic, minced",
+        "½ teaspoon dried thyme",
+        "⅛ teaspoon crushed red pepper",
+        "2 cups &#8220;no-chicken&#8221; broth (see Tips) or vegetable broth",
+        "4 ounces whole-wheat penne (about 1 1/2 cups)",
+        "1 cup 1-inch cauliflower florets",
+        "1 cup 1-inch pieces peeled butternut squash (see Tips)",
+        "Freshly ground pepper to taste",
+        "2 tablespoons finely shredded Pecorino Romano cheese"
+      ],
+      "instructions": [
+        "Heat oil in a medium saucepan over medium-high heat. Add garlic, thyme and crushed red pepper and cook, stirring, for 1 minute. Add broth, penne, cauliflower and squash. Bring to a boil over high heat. Reduce heat to a lively simmer and cook, uncovered, until the pasta is tender and the liquid is thickened and greatly reduced, 10 to 15 minutes. Remove from heat, stir in pepper and let stand for 5 minutes. Serve topped with cheese."
+      ],
+      "nutrients": {},
+      "tags": [
+        "Low-Calorie",
+        "High Fiber",
+        "Vegetarian",
+        "Healthy Aging",
+        "Healthy Immunity",
+        "Low Added Sugars"
+      ],
+      "servings": "2 ",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=960&h=480&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2019%2F08%2F26232512%2F3749049.jpg",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Braised Cauliflower & Squash Penne Pasta",
+      "ingredients": [
+        "1 tablespoon extra-virgin olive oil",
+        "3 large cloves garlic, minced",
+        "1 teaspoon dried thyme",
+        "¼ teaspoon crushed red pepper",
+        "4 cups “no-chicken” broth (see Tips) or vegetable broth",
+        "8 ounces whole-wheat penne (about 3 cups)",
+        "2 cups 1-inch cauliflower florets",
+        "2 cups 1-inch pieces peeled butternut squash (see Tips)",
+        "Freshly ground pepper to taste",
+        "¼ cup finely shredded Pecorino Romano cheese"
+      ],
+      "instructions": [
+        "Heat oil in a large saucepan over medium-high heat. Add garlic, thyme and crushed red pepper and cook, stirring, for 1 minute. Add broth, penne, cauliflower and squash. Bring to a boil over high heat. Reduce heat to a lively simmer and cook, uncovered, until the pasta is tender and the liquid is thickened and greatly reduced, 14 to 16 minutes. Remove from heat, stir in pepper and let stand for 5 minutes. Serve topped with cheese."
+      ],
+      "nutrients": {},
+      "tags": [
+        "Low-Calorie",
+        "High Fiber",
+        "Vegetarian",
+        "Healthy Aging",
+        "Healthy Immunity",
+        "Low Added Sugars"
+      ],
+      "servings": "4 ",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=960&h=480&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2019%2F08%2F26232510%2F4473523.jpg",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Penne with Cauliflower and Leeks",
+      "ingredients": [
+        "1/3 cup extra-virgin olive oil",
+        "2 medium leeks, white and light-green parts thinly sliced crosswise",
+        "2 garlic cloves, thinly sliced",
+        "1 pound cauliflower, cut into 1-inch florets",
+        "1 fresh red chile, seeded and thinly sliced",
+        "1 cup dry white wine",
+        "1/2 cup water",
+        "8 cherry tomatoes, quartered",
+        "3/4 pound penne rigate",
+        "Salt and freshly ground black pepper"
+      ],
+      "instructions": [
+        "In a large, deep skillet, heat the olive oil. Add the leeks and garlic and cook over low heat, stirring often, until the leeks are softened but not browned, about 10 minutes. Add the cauliflower and chile. Cover and cook over low heat, stirring occasionally, until the cauliflower is tender, about 25 minutes. Add the wine and water, cover and simmer over moderately low heat until the liquid has reduced to about 1/2 cup, about 12 minutes. Add the cherry tomatoes and simmer for 5 minutes longer.",
+        "Meanwhile, bring a large pot of salted water to a boil. Add the pasta and cook, stirring occasionally, until al dente. Drain the pasta, then toss it with the vegetables in the skillet. Season with salt and black pepper and serve."
+      ],
+      "nutrients": {},
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=550&h=275&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2015%2F03%2FHD-fw200709_r_penne.jpg",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "1 hr 10 mins"
+      }
+    },
+    {
+      "name": "Real Hummus",
+      "ingredients": [
+        "2 cloves garlic, divided",
+        "1 (19 ounce) can garbanzo beans, half the liquid reserved",
+        "4 tablespoons lemon juice",
+        "2 tablespoons tahini",
+        "1 teaspoon salt",
+        "black pepper to taste",
+        "2 tablespoons olive oil"
+      ],
+      "instructions": [
+        "In a blender, chop garlic. Pour garbanzo beans into the blender, reserving about 1 tablespoon for garnish. Add reserved liquid, lemon juice, tahini, and salt to the blender. Blend until creamy and well mixed.",
+        "Transfer the mixture to a medium serving bowl. Sprinkle with pepper and pour olive oil over the top. Garnish with reserved garbanzo beans."
+      ],
+      "nutrients": {
+        "protein": "1.6g",
+        "carbohydrates": "6.8g",
+        "dietary fiber": "1.4g",
+        "sugars": "0.1g",
+        "fat": "2.5g",
+        "saturated fat": "0.3g",
+        "vitamin a iu": "8.3IU",
+        "niacin equivalents": "0.4mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "2.5mg",
+        "folate": "20mcg",
+        "calcium": "16.1mg",
+        "iron": "0.5mg",
+        "magnesium": "9.6mg",
+        "potassium": "58.2mg",
+        "sodium": "198.8mg",
+        "calories from fat": "22.2"
+      },
+      "tags": [],
+      "servings": "20",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3024&h=1512&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4524208.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "15 mins "
+      }
+    },
+    {
+      "name": "Homemade Chicken Fajitas",
+      "ingredients": [
+        "1 tablespoon chili powder",
+        "1 teaspoon ground cumin",
+        "1 teaspoon ground paprika",
+        "1 teaspoon salt",
+        "1 teaspoon ground black pepper",
+        "¼ teaspoon cayenne pepper",
+        "¼ teaspoon garlic powder",
+        "1 ½ pounds skinless, boneless chicken breast, cut into strips",
+        "4 tablespoons olive oil, or more as needed",
+        "2 bell peppers, sliced",
+        "1 onion, thinly sliced",
+        "8 (6 inch) flour tortillas"
+      ],
+      "instructions": [
+        "Whisk chili powder, paprika, salt, pepper, cayenne pepper, and garlic powder for fajita seasoning together in a small bowl.",
+        "Trim chicken of any excess fat and place in a large, lidded bowl. Add 2 tablespoons olive oil and sprinkle with about 3/4 of the fajita seasoning. Toss, adding more oil if necessary, until coated. Poke chicken with a knife to allow penetration of seasoning and oil. Place the lid on the bowl and shake until chicken is thoroughly coated. Marinate in the refrigerator, shaking every couple of hours, for 4 to 6 hours.",
+        "Remove the marinating bowl from the refrigerator and let sit on the counter until chicken is room temperature, about 1 hour.",
+        "Preheat an outdoor grill for medium heat and lightly oil the grate. Preheat the oven to 350 degrees F (175 degrees C). Make 2 stacks of 4 tortillas, and wrap each one in aluminum foil.",
+        "Heat remaining 2 tablespoons olive oil in a large skillet over medium heat. Add peppers and onion. Stir in remaining fajita seasoning and cook, stirring occasionally, until vegetables are soft, 8 to 10 minutes.",
+        "While vegetables are cooking, place tortillas in the oven to warm. At the same time, grill chicken, turning halfway through, until no longer pink in the center and the juices run clear, 2 to 3 minutes per side.",
+        "To assemble fajitas, fill warmed tortillas with chicken, peppers, and onions."
+      ],
+      "nutrients": {
+        "protein": "42.4g",
+        "carbohydrates": "43.9g",
+        "dietary fiber": "5.3g",
+        "sugars": "6.3g",
+        "fat": "23.3g",
+        "saturated fat": "4.4g",
+        "cholesterol": "96.9mg",
+        "vitamin a iu": "2832.5IU",
+        "niacin equivalents": "27.1mg",
+        "vitamin b6": "1.1mg",
+        "vitamin c": "82.1mg",
+        "folate": "112.1mcg",
+        "calcium": "131.4mg",
+        "iron": "4.7mg",
+        "magnesium": "67.6mg",
+        "potassium": "671.3mg",
+        "sodium": "1099.1mg",
+        "thiamin": "0.5mg",
+        "calories from fat": "209.9"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9190832.jpg",
+      "time": {
+        "prepration_time": "25 mins ",
+        "cooking_time": "10 mins ",
+        "additional_time": "5 hrs ",
+        "total": "5 hrs 35 mins "
+      }
+    },
+    {
+      "name": "Sashimi Tuna Salad With Mint Lime Cilantro Dressing",
+      "ingredients": [
+        "2 tablespoons olive oil",
+        "1 ½ teaspoons lime juice",
+        "1 ½ teaspoons chopped fresh cilantro",
+        "½ teaspoon garlic, minced",
+        "1 teaspoon chopped fresh mint",
+        "½ teaspoon lemon juice",
+        "⅛ teaspoon salt",
+        "1 ½ cups mixed baby salad greens",
+        "½ cup torn romaine lettuce",
+        "2 tablespoons diced mango",
+        "1 ½ teaspoons roasted peanuts",
+        "4 slices cucumber, quartered",
+        "2 tablespoons crisp chow mein noodles",
+        "1 (3 ounce) fresh ahi (yellowfin) tuna steak",
+        "1 pinch salt and ground black pepper to taste",
+        "¼ avocado, sliced"
+      ],
+      "instructions": [
+        "Whisk olive oil, lime juice, cilantro, garlic, mint, lemon juice, and salt in a bowl. Refrigerate salad dressing for at least 1 hour or overnight for best flavor.",
+        "Preheat an outdoor grill for high heat and grease the grate.",
+        "Toss salad greens, romaine lettuce, mango, peanuts, cucumber, and chow mein noodles in a salad bowl.",
+        "Sprinkle tuna with salt and black pepper.",
+        "Grill tuna on the preheated grill until the outside is seared and brown and the inside is still red, about 1 1/2 minutes per side for rare. Slice the grilled tuna.",
+        "Top salad with slices of avocado and grilled tuna; drizzle with salad dressing to taste."
+      ],
+      "nutrients": {
+        "protein": "12.4g",
+        "carbohydrates": "9.3g",
+        "dietary fiber": "3.6g",
+        "sugars": "3g",
+        "fat": "19.3g",
+        "saturated fat": "2.8g",
+        "cholesterol": "19.1mg",
+        "vitamin a iu": "2168.5IU",
+        "niacin equivalents": "7.2mg",
+        "vitamin b6": "0.5mg",
+        "vitamin c": "19.2mg",
+        "folate": "96.5mcg",
+        "calcium": "49.4mg",
+        "iron": "1.4mg",
+        "magnesium": "51.1mg",
+        "potassium": "577.9mg",
+        "sodium": "207.3mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "173.8"
+      },
+      "tags": [],
+      "servings": "2",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9413520.jpg",
+      "time": {
+        "prepration_time": "30 mins ",
+        "cooking_time": "5 mins ",
+        "additional_time": "1 hr ",
+        "total": "1 hr 35 mins "
+      }
+    },
+    {
+      "name": "Seared Ahi Tuna Steaks",
+      "ingredients": [
+        "2 (5 ounce) ahi tuna steaks",
+        "1 teaspoon kosher salt",
+        "¼ teaspoon cayenne pepper",
+        "½ tablespoon butter",
+        "2 tablespoons olive oil",
+        "1 teaspoon whole peppercorns"
+      ],
+      "instructions": [
+        "Season the tuna steaks with salt and cayenne pepper.",
+        "Melt the butter with the olive oil in a skillet over medium-high heat. Cook the peppercorns in the mixture until they soften and pop, about 5 minutes. Gently place the seasoned tuna in the skillet and cook to desired doneness, 1 1/2 minutes per side for rare."
+      ],
+      "nutrients": {
+        "protein": "33.3g",
+        "carbohydrates": "0.7g",
+        "dietary fiber": "0.3g",
+        "fat": "17.8g",
+        "saturated fat": "4g",
+        "cholesterol": "71.4mg",
+        "vitamin a iu": "269.9IU",
+        "niacin equivalents": "20.1mg",
+        "vitamin b6": "1.3mg",
+        "vitamin c": "1.8mg",
+        "folate": "3.3mcg",
+        "calcium": "27.6mg",
+        "iron": "1.4mg",
+        "magnesium": "72.9mg",
+        "potassium": "645.4mg",
+        "sodium": "1033.6mg",
+        "thiamin": "0.6mg",
+        "calories from fat": "160.1"
+      },
+      "tags": [],
+      "servings": "2",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=1280&h=640&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F10%2F27%2Fahi.jpg",
+      "time": {
+        "prepration_time": "5 mins ",
+        "cooking_time": "12 mins ",
+        "additional_time": "",
+        "total": "17 mins "
+      }
+    },
+    {
+      "name": "Caesar Salad Supreme",
+      "ingredients": [
+        "6 cloves garlic, peeled, divided",
+        "¾ cup mayonnaise",
+        "5 anchovies anchovy fillets, minced",
+        "6 tablespoons grated Parmesan cheese, divided",
+        "1 teaspoon Worcestershire sauce",
+        "1 teaspoon Dijon mustard",
+        "1 tablespoon lemon juice, or more to taste",
+        "salt to taste",
+        "ground black pepper to taste",
+        "¼ cup olive oil",
+        "4 cups day-old bread, cubed",
+        "1 head romaine lettuce, torn into bite-size pieces"
+      ],
+      "instructions": [
+        "Mince 3 cloves of garlic, and combine in a small bowl with mayonnaise, anchovies, 2 tablespoons of the Parmesan cheese, Worcestershire sauce, mustard, and lemon juice. Season to taste with salt and black pepper. Refrigerate until ready to use.",
+        "Heat oil in a large skillet over medium heat. Cut the remaining 3 cloves of garlic into quarters, and add to hot oil. Cook and stir until brown, and then remove garlic from pan. Add bread cubes to the hot oil. Cook, turning frequently, until lightly browned. Remove bread cubes from oil, and season with salt and pepper.",
+        "Place lettuce in a large bowl. Toss with dressing, remaining Parmesan cheese, and seasoned bread cubes."
+      ],
+      "nutrients": {
+        "protein": "5.8g",
+        "carbohydrates": "16.3g",
+        "dietary fiber": "1.8g",
+        "sugars": "2.2g",
+        "fat": "33.5g",
+        "saturated fat": "5.6g",
+        "cholesterol": "17.7mg",
+        "vitamin a iu": "3353.9IU",
+        "niacin equivalents": "3mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "15.7mg",
+        "folate": "104.9mcg",
+        "calcium": "125.5mg",
+        "iron": "1.8mg",
+        "magnesium": "18.7mg",
+        "potassium": "212.1mg",
+        "sodium": "549.1mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "301.8"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3778&h=1889&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4523712.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "",
+        "total": "35 mins "
+      }
+    },
+    {
+      "name": "California Roll",
+      "ingredients": [
+        "4 cups water",
+        "2 cups uncooked white rice",
+        "½ cup seasoned rice vinegar",
+        "1 teaspoon white sugar, or as needed",
+        "1 teaspoon salt, or as needed",
+        "¼ pound cooked crab meat, drained of excess liquid and shredded",
+        "1 tablespoon mayonnaise",
+        "5 sheets nori (dry seaweed)",
+        "1 avocado, sliced",
+        "¼ cup red caviar, such as tobiko",
+        "1 English cucumber, seeded and sliced into strips",
+        "2 tablespoons drained pickled ginger, for garnish",
+        "2 tablespoons soy sauce, or to taste",
+        "1 tablespoon wasabi paste"
+      ],
+      "instructions": [
+        "Wrap a sushi rolling mat completely in plastic wrap and set aside.",
+        "Bring water and rice to a boil in a saucepan over high heat. Reduce heat to medium-low, cover, and simmer until the rice is tender and the liquid has been absorbed, 20 to 25 minutes. Transfer rice to a bowl and cut in rice vinegar using a rice paddle or wooden spoon. Season with 1 teaspoon sugar and 1 teaspoon salt, or to taste. Allow to cool to room temperature, about 30 minutes.",
+        "Combine crab meat with mayonnaise in a small bowl.",
+        "Place a sheet of nori on a flat work surface. Spread a thin layer of rice on top of the nori. Place the nori, rice side down, on the prepared rolling mat. Place 2 to 3 avocado slices on top of the nori in one layer. Top with 2 to 3 tablespoons of the crab mixture. Spoon 1 to 2 teaspoons tobiko lengthwise on one side of the avocado-crab mixture, and 2 cucumber strips on the other side. Using the mat as a guide, carefully roll the California roll into a tight log. Remove the rolling mat. Top roll with more tobiko, cover with plastic wrap, and gently press the tobiko into the top of the roll. Remove the plastic and cut roll into 6 even pieces using a wet knife. Repeat with remaining sheets of nori and filling. Serve garnished with pickled ginger, soy sauce, and wasabi paste"
+      ],
+      "nutrients": {
+        "protein": "15.3g",
+        "carbohydrates": "70.3g",
+        "dietary fiber": "4.1g",
+        "sugars": "3.1g",
+        "fat": "11.2g",
+        "saturated fat": "1.9g",
+        "cholesterol": "93.6mg",
+        "vitamin a iu": "425.1IU",
+        "niacin equivalents": "8.1mg",
+        "vitamin b6": "0.4mg",
+        "vitamin c": "7.5mg",
+        "folate": "228.5mcg",
+        "calcium": "95.4mg",
+        "iron": "5.4mg",
+        "magnesium": "93.8mg",
+        "potassium": "508.7mg",
+        "sodium": "1237mg",
+        "thiamin": "0.5mg",
+        "calories from fat": "101"
+      },
+      "tags": [],
+      "servings": "5",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=4688&h=2344&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4543382.jpg",
+      "time": {
+        "prepration_time": "1 hr ",
+        "cooking_time": "20 mins ",
+        "additional_time": "30 mins ",
+        "total": "1 hr 50 mins "
+      }
+    },
+    {
+      "name": "California Roll Sushi",
+      "ingredients": [
+        "1 cup uncooked short-grain white rice",
+        "1 cup water",
+        "¼ cup rice vinegar",
+        "1 tablespoon white sugar",
+        "½ cup imitation crabmeat, finely chopped",
+        "¼ cup mayonnaise",
+        "8 sheets nori (dry seaweed)",
+        "2 ½ tablespoons sesame seeds",
+        "1 cucumber, cut into thin spears",
+        "2 avocados - pitted, peeled, and sliced the long way"
+      ],
+      "instructions": [
+        "Wash the rice in several changes of water until the rinse water is no longer cloudy, drain well, and place in a covered pan or rice cooker with 1 cup water. Bring to a boil, reduce heat to a simmer, and cover the pan. Allow the rice to simmer until the top looks dry, about 15 minutes. Turn off the heat, and let stand for 10 minutes to absorb the rest of the water.",
+        "Mix the rice vinegar and sugar in a small bowl until the sugar has dissolved, and stir the mixture into the cooked rice until well combined. Allow the rice to cool, and set aside.",
+        "Mix the imitation crabmeat with mayonnaise in a bowl, and set aside. To roll the sushi, cover a bamboo rolling mat with plastic wrap. Lay a sheet of nori, shiny side down, on the plastic wrap. With wet fingers, firmly pat a thin, even layer of prepared rice over the nori, leaving 1/4 inch uncovered at the bottom edge of the sheet. Sprinkle the rice with about 1/2 teaspoon of sesame seeds, and gently press them into the rice. Carefully flip the nori sheet over so the seaweed side is up.",
+        "Place 2 or 3 long cucumber spears, 2 or 3 slices of avocado, and about 1 tablespoon of imitation crab mixture in a line across the nori sheet, about 1/4 from the uncovered edge. Pick up the edge of the bamboo rolling sheet, fold the bottom edge of the sheet up, enclosing the filling, and tightly roll the sushi into a cylinder about 1 1/2 inch in diameter. Once the sushi is rolled, wrap it in the mat and gently squeeze to compact it tightly.",
+        "Cut each roll into 1 inch pieces with a very sharp knife dipped in water."
+      ],
+      "nutrients": {
+        "protein": "3.9g",
+        "carbohydrates": "23.7g",
+        "dietary fiber": "4.4g",
+        "sugars": "3.1g",
+        "fat": "14.4g",
+        "saturated fat": "2.1g",
+        "cholesterol": "4.7mg",
+        "vitamin a iu": "264.8IU",
+        "niacin equivalents": "2.7mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "6.8mg",
+        "folate": "79.1mcg",
+        "calcium": "42.7mg",
+        "iron": "1.6mg",
+        "magnesium": "36.7mg",
+        "potassium": "327.3mg",
+        "sodium": "135mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "129.6"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=992&h=496&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4564632.jpg",
+      "time": {
+        "prepration_time": "45 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "30 mins ",
+        "total": "1 hr 30 mins "
+      }
+    },
+    {
+      "name": "Cream Cheese and Crab Sushi Rolls",
+      "ingredients": [
+        "1 cup uncooked white rice",
+        "2 cups water",
+        "2 tablespoons rice vinegar",
+        "1 teaspoon salt",
+        "2 sheets nori seaweed sheets",
+        "¼ cucumber, peeled and sliced lengthwise",
+        "2 pieces imitation crab legs",
+        "½ (3 ounce) package cream cheese, sliced",
+        "1 teaspoon minced fresh ginger root"
+      ],
+      "instructions": [
+        "Bring the rice and water to a boil in a saucepan over high heat. Reduce heat to medium-low, cover, and simmer until the rice is tender, and the liquid has been absorbed, 20 to 25 minutes. Stir in rice vinegar and salt. Allow to cool completely.",
+        "Lay out seaweed sheets. Moisten hands with water, then spread the rice evenly on each sheet, leaving a 1/2 inch gap along one edge, lengthwise. Arrange strips of cucumber, imitation crabmeat, and cream cheese in a straight line along the side opposite of the gap. Roll the sushi from the toppings to the exposed end of the the seaweed sheet.",
+        "Using a sharp wet knife, slice each roll into 5 or 6 pieces. Serve with minced ginger on the side."
+      ],
+      "nutrients": {
+        "protein": "10.7g",
+        "carbohydrates": "79.9g",
+        "dietary fiber": "1.5g",
+        "sugars": "2.4g",
+        "fat": "8.2g",
+        "saturated fat": "4.9g",
+        "cholesterol": "29mg",
+        "vitamin a iu": "458.1IU",
+        "niacin equivalents": "6mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "1.8mg",
+        "folate": "222.4mcg",
+        "calcium": "60.5mg",
+        "iron": "4.5mg",
+        "magnesium": "42.5mg",
+        "potassium": "210.1mg",
+        "sodium": "1474.8mg",
+        "thiamin": "0.6mg",
+        "calories from fat": "73.8"
+      },
+      "tags": [],
+      "servings": "2",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=960&h=480&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4208534.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "20 mins ",
+        "additional_time": "1 hr 10 mins ",
+        "total": "1 hr 40 mins "
+      }
+    },
+    {
+      "name": "Spaghetti Carbonara II",
+      "ingredients": [
+        "1 pound spaghetti",
+        "1 tablespoon olive oil",
+        "8 slices bacon, diced",
+        "1 tablespoon olive oil",
+        "1 onion, chopped",
+        "1 clove garlic, minced",
+        "¼ cup dry white wine",
+        "4 eggs",
+        "½ cup grated Parmesan cheese",
+        "1 pinch salt and black pepper to taste",
+        "2 tablespoons chopped fresh parsley",
+        "2 tablespoons grated Parmesan cheese"
+      ],
+      "instructions": [
+        "In a large pot of boiling salted water, cook spaghetti pasta until al dente. Drain well. Toss with 1 tablespoon of olive oil, and set aside.",
+        "Meanwhile in a large skillet, cook chopped bacon until slightly crisp; remove and drain onto paper towels. Reserve 2 tablespoons of bacon fat; add remaining 1 tablespoon olive oil, and heat in reused large skillet. Add chopped onion, and cook over medium heat until onion is translucent. Add minced garlic, and cook 1 minute more. Add wine if desired; cook one more minute.",
+        "Return cooked bacon to pan; add cooked and drained spaghetti. Toss to coat and heat through, adding more olive oil if it seems dry or is sticking together. Add beaten eggs and cook, tossing constantly with tongs or large fork until eggs are barely set. Quickly add 1/2 cup Parmesan cheese, and toss again. Add salt and pepper to taste (remember that bacon and Parmesan are very salty).",
+        "Serve immediately with chopped parsley sprinkled on top, and extra Parmesan cheese at table."
+      ],
+      "nutrients": {
+        "protein": "16.4g",
+        "carbohydrates": "44.7g",
+        "dietary fiber": "2.1g",
+        "sugars": "2.4g",
+        "fat": "21.1g",
+        "saturated fat": "6.7g",
+        "cholesterol": "117.5mg",
+        "vitamin a iu": "239IU",
+        "niacin equivalents": "8.6mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "2.4mg",
+        "folate": "151.6mcg",
+        "calcium": "102mg",
+        "iron": "2.7mg",
+        "magnesium": "41.5mg",
+        "potassium": "258.5mg",
+        "sodium": "368.8mg",
+        "thiamin": "0.7mg",
+        "calories from fat": "190.3"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=960&h=480&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F04%2F01%2F187850.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "20 mins ",
+        "additional_time": "",
+        "total": "40 mins "
+      }
+    },
+    {
+      "name": "Pasta Carbonara I",
+      "ingredients": [
+        "½ pound bacon, cut into small pieces",
+        "4 eggs, room temperature",
+        "¼ cup heavy cream at room temperature",
+        "1 cup grated Parmesan cheese",
+        "16 ounces dry fettuccine pasta",
+        "¼ cup butter, softened",
+        "¼ cup chopped parsley",
+        "ground black pepper to taste"
+      ],
+      "instructions": [
+        "Cook bacon until crisp. Drain on paper towels.",
+        "In medium bowl beat together eggs and cream just until blended. Stir in cheese and set aside.",
+        "Cook pasta according to package directions. Drain and return to pan. Toss with butter until it is melted. Add bacon and cheese mixture and toss gently until mixed."
+      ],
+      "nutrients": {
+        "protein": "18.1g",
+        "carbohydrates": "41.7g",
+        "dietary fiber": "2g",
+        "sugars": "2.2g",
+        "fat": "17.7g",
+        "saturated fat": "8.6g",
+        "cholesterol": "132.5mg",
+        "vitamin a iu": "559.5IU",
+        "niacin equivalents": "6.5mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "2.5mg",
+        "folate": "127.2mcg",
+        "calcium": "143.5mg",
+        "iron": "2.4mg",
+        "magnesium": "37.6mg",
+        "potassium": "218.6mg",
+        "sodium": "450.4mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "159.3"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8137490.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Caprese Salad",
+      "ingredients": [
+        "1 pound fresh mozzarella",
+        "4 large heirloom tomatoes",
+        "½ cup loosely packed fresh basil, torn",
+        "Sea salt",
+        "Freshly cracked black pepper",
+        "Balsamic vinegar",
+        "Extra-virgin olive oil"
+      ],
+      "instructions": [
+        "Slice mozzarella and tomatoes 1/4 inch thick; arrange on serving platter. Sprinkle with fresh basil, salt, and pepper. Drizzle to taste with balsamic vinegar and extra-virgin olive oil."
+      ],
+      "nutrients": {},
+      "tags": [],
+      "servings": "Makes 6 servings",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=420&h=210&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2007%2F09%2F25%2Fcaprese-salad-cl-1665292-x.jpg",
+      "time": {
+        "prepration_time": "",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": ""
+      }
+    },
+    {
+      "name": "Caprese Salad",
+      "ingredients": [
+        "8 ounces fresh mozzarella cheese, cubed",
+        "1 (10 ounce) basket cherry tomatoes",
+        "3 tablespoons torn fresh basil leaves",
+        "1 tablespoon olive oil",
+        "salt and pepper to taste"
+      ],
+      "instructions": [
+        "Toss together the mozzarella, cherry tomatoes, basil, and olive oil in a large bowl. Season with salt and pepper."
+      ],
+      "nutrients": {
+        "protein": "14.4g",
+        "carbohydrates": "4.9g",
+        "dietary fiber": "0.8g",
+        "sugars": "0.6g",
+        "fat": "12.6g",
+        "saturated fat": "6.2g",
+        "cholesterol": "36.3mg",
+        "vitamin a iu": "819.1IU",
+        "niacin equivalents": "3.5mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "13.9mg",
+        "folate": "17.1mcg",
+        "calcium": "450.5mg",
+        "iron": "0.5mg",
+        "magnesium": "22.1mg",
+        "potassium": "210.9mg",
+        "sodium": "357.5mg",
+        "calories from fat": "113.8"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=4608&h=2304&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F879583.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "10 mins "
+      }
+    },
+    {
+      "name": "Homemade Vegetable Soup",
+      "ingredients": [
+        "2 cups chopped baby carrots",
+        "2 baking potatoes, cut into cubes",
+        "1 small sweet onion, chopped",
+        "2 stalks celery, chopped",
+        "1 (14 ounce) can great Northern beans, rinsed and drained",
+        "½ small head cabbage, chopped",
+        "1 (14 ounce) can diced tomatoes",
+        "2 cups cut fresh green beans (1/2 inch pieces)",
+        "1 (32 ounce) carton chicken broth",
+        "2 (14 ounce) cans vegetable stock",
+        "2 cups water",
+        "1 ½ teaspoons dried basil",
+        "1 pinch rubbed sage",
+        "1 pinch dried thyme leaves",
+        "salt to taste"
+      ],
+      "instructions": [
+        "Combine the baby carrots, potatoes, onion, celery, beans, cabbage, tomatoes, green beans, chicken broth, vegetable stock, water, basil, sage, thyme, and salt in a large pot; bring to a boil. Reduce heat to low; cover. Simmer until vegetables are tender, about 90 minutes."
+      ],
+      "nutrients": {
+        "protein": "7.6g",
+        "carbohydrates": "32.6g",
+        "dietary fiber": "7.9g",
+        "sugars": "7.5g",
+        "fat": "0.9g",
+        "saturated fat": "0.1g",
+        "cholesterol": "2.8mg",
+        "vitamin a iu": "5775.9IU",
+        "niacin equivalents": "2.6mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "37.6mg",
+        "folate": "92.6mcg",
+        "calcium": "112.6mg",
+        "iron": "3.6mg",
+        "magnesium": "56.2mg",
+        "potassium": "718.3mg",
+        "sodium": "866.6mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "8.2"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7851899.jpg",
+      "time": {
+        "prepration_time": "25 mins ",
+        "cooking_time": "1 hr 30 mins ",
+        "additional_time": "",
+        "total": "1 hr 55 mins "
+      }
+    },
+    {
+      "name": "Poutine",
+      "ingredients": [
+        "1 (16 ounce) package frozen French fries",
+        "1 (10.25 ounce) can beef gravy",
+        "1 (8 ounce) package shredded Cheddar cheese"
+      ],
+      "instructions": [
+        "Preheat the oven to 400 degrees F (200 degrees C). Place French fries on a baking sheet, and bake for 15 to 20 minutes, or according to package instructions.",
+        "Heat the gravy in a small saucepan over medium heat. Place the hot fries in a large serving bowl or on a platter. Pour the gravy over the fries. Sprinkle shredded cheese over the top. Serve when cheese has melted."
+      ],
+      "nutrients": {
+        "protein": "11.9g",
+        "carbohydrates": "21.6g",
+        "dietary fiber": "1.6g",
+        "sugars": "0.3g",
+        "fat": "18.6g",
+        "saturated fat": "9.3g",
+        "cholesterol": "40.2mg",
+        "vitamin a iu": "555.4IU",
+        "niacin equivalents": "3.8mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "12.9mg",
+        "folate": "33.8mcg",
+        "calcium": "285.6mg",
+        "iron": "0.9mg",
+        "magnesium": "27.1mg",
+        "potassium": "393.9mg",
+        "sodium": "758.6mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "167.5"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3099&h=1550&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1053830.jpg",
+      "time": {
+        "prepration_time": "10 mins ",
+        "cooking_time": "20 mins ",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Real Poutine",
+      "ingredients": [
+        "1 quart vegetable oil for frying",
+        "1 (10.25 ounce) can beef gravy",
+        "5 medium potatoes, cut into fries",
+        "2 cups cheese curds"
+      ],
+      "instructions": [
+        "Heat oil in a deep fryer or deep heavy skillet to 365 degrees F (185 degrees C). While the oil is heating, you can begin to warm your gravy.",
+        "Place the fries into the hot oil, and cook until light brown, about 5 minutes. Make the fries in batches if necessary to allow them room to move a little in the oil. Remove to a paper towel lined plate to drain.",
+        "Place the fries on a serving platter, and sprinkle the cheese over them. Ladle gravy over the fries and cheese, and serve immediately."
+      ],
+      "nutrients": {
+        "protein": "23.8g",
+        "carbohydrates": "51g",
+        "dietary fiber": "5.9g",
+        "sugars": "3.6g",
+        "fat": "46.3g",
+        "saturated fat": "18g",
+        "cholesterol": "78.2mg",
+        "vitamin a iu": "696.4IU",
+        "niacin equivalents": "7.6mg",
+        "vitamin b6": "0.8mg",
+        "vitamin c": "52.5mg",
+        "folate": "55mcg",
+        "calcium": "529.2mg",
+        "iron": "2.5mg",
+        "magnesium": "80.5mg",
+        "potassium": "1188.5mg",
+        "sodium": "772.9mg",
+        "thiamin": "0.3mg",
+        "calories from fat": "416.8"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://www.allrecipes.com/img/misc/og-default.png",
+      "time": {
+        "prepration_time": "5 mins ",
+        "cooking_time": "20 mins ",
+        "additional_time": "",
+        "total": "25 mins "
+      }
+    },
+    {
+      "name": "Tomato Basil Pasta",
+      "ingredients": [
+        "2 cups diced tomatoes",
+        "1 small onion, finely chopped",
+        "6 tablespoons olive oil",
+        "2 cloves crushed garlic",
+        "6 leaves fresh basil, torn",
+        "10 ounces fusilli pasta",
+        "3 tablespoons grated Parmesan cheese, or to taste",
+        "1 ½ cups crumbled feta cheese",
+        "salt and ground black pepper to taste"
+      ],
+      "instructions": [
+        "Stir tomatoes, onion, olive oil, garlic, and basil together in a bowl.",
+        "Bring a large pot of lightly salted water to a boil. Cook fusilli in the boiling water, stirring occasionally, until cooked through but firm to the bite, 12 minutes. Drain.",
+        "Toss warm pasta with feta cheese and Parmesan cheese in a large bowl. Stir tomato mixture into pasta and season with salt and pepper."
+      ],
+      "nutrients": {
+        "protein": "13.3g",
+        "carbohydrates": "39.5g",
+        "dietary fiber": "2.2g",
+        "sugars": "5.2g",
+        "fat": "23.4g",
+        "saturated fat": "8.1g",
+        "cholesterol": "35.6mg",
+        "vitamin a iu": "489.4IU",
+        "niacin equivalents": "5.1mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "14.7mg",
+        "folate": "114.8mcg",
+        "calcium": "234.3mg",
+        "iron": "2.2mg",
+        "magnesium": "37.3mg",
+        "potassium": "269.5mg",
+        "sodium": "466.5mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "210.3"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2592&h=1296&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F191853.jpg",
+      "time": {
+        "prepration_time": "30 mins ",
+        "cooking_time": "10 mins ",
+        "additional_time": "",
+        "total": "40 mins "
+      }
+    },
+    {
+      "name": "Tomato Basil Penne Pasta",
+      "ingredients": [
+        "1 (8 ounce) package penne pasta",
+        "1 tablespoon basil oil",
+        "1 tablespoon olive oil",
+        "3 cloves garlic, minced",
+        "1 pint grape tomatoes, halved",
+        "1 cup shredded pepperjack cheese",
+        "1 cup shredded mozzarella cheese",
+        "¼ cup grated Parmesan cheese",
+        "1 tablespoon minced fresh basil"
+      ],
+      "instructions": [
+        "Bring a large pot of water to a rolling boil over high heat. Cook pasta in boiling water until the pasta has cooked through, but is still firm to the bite, about 11 minutes. Drain.",
+        "Heat basil and olive oils in a large skillet over medium-high heat. Cook garlic in oil until soft. Add tomatoes, reduce heat to medium, and simmer for 10 minutes. Stir in pepperjack, mozzarella, and Parmesan cheese. When cheese begins to melt, mix in cooked penne pasta. Season with fresh basil."
+      ],
+      "nutrients": {
+        "protein": "24.1g",
+        "carbohydrates": "47.1g",
+        "dietary fiber": "2.8g",
+        "sugars": "2.3g",
+        "fat": "24.8g",
+        "saturated fat": "10.9g",
+        "cholesterol": "57.8mg",
+        "vitamin a iu": "1128.7IU",
+        "niacin equivalents": "5.8mg",
+        "vitamin b6": "0.2mg",
+        "vitamin c": "15.1mg",
+        "folate": "15mcg",
+        "calcium": "473.8mg",
+        "iron": "2.1mg",
+        "magnesium": "43.9mg",
+        "potassium": "311.2mg",
+        "sodium": "461.8mg",
+        "calories from fat": "223.6"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3648&h=1824&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F242356.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "25 mins ",
+        "additional_time": "",
+        "total": "45 mins "
+      }
+    },
+    {
+      "name": "Creamy Pasta Bake with Cherry Tomatoes and Basil",
+      "ingredients": [
+        "1 (16 ounce) package penne pasta",
+        "1 tablespoon olive oil",
+        "1 onion, finely chopped",
+        "3 cloves garlic, minced",
+        "3 (6 ounce) cans tomato sauce",
+        "2 tablespoons tomato paste",
+        "¾ cup heavy whipping cream",
+        "½ cup grated Parmesan cheese",
+        "salt and freshly ground black pepper",
+        "1 pinch white sugar",
+        "1 pound cherry tomatoes, halved",
+        "1 ¼ cups shredded mozzarella cheese",
+        "1 small bunch fresh basil, finely chopped"
+      ],
+      "instructions": [
+        "Bring a large pot of lightly salted water to a boil. Add penne and cook, stirring occasionally, until tender yet firm to the bite, about 11 minutes. Drain, reserving 1 cup of cooking water.",
+        "Heat olive oil in a large skillet over medium heat and cook onion until soft and translucent while penne is cooking, about 5 minutes. Add garlic and cook an additional 30 seconds. Stir in tomato sauce and tomato paste and cook until slightly reduced, about 5 minutes. Add cream and Parmesan cheese and season with salt, pepper, and sugar.",
+        "Preheat oven to 400 degrees F (200 degrees C). Grease a baking dish.",
+        "Stir some pasta cooking water into the sauce and add cooked penne. Remove from heat and stir in cherry tomatoes, 1/2 the mozzarella cheese, and basil. Pour penne mixture into the prepared baking dish and cover with remaining mozzarella cheese.",
+        "Bake in the preheated oven until cheese is melted, about 20 minutes."
+      ],
+      "nutrients": {
+        "protein": "21.4g",
+        "carbohydrates": "67.8g",
+        "dietary fiber": "5.3g",
+        "sugars": "7.8g",
+        "fat": "21.2g",
+        "saturated fat": "11.1g",
+        "cholesterol": "61.7mg",
+        "vitamin a iu": "1954.3IU",
+        "niacin equivalents": "8.3mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "25.3mg",
+        "folate": "35.9mcg",
+        "calcium": "334.1mg",
+        "iron": "4mg",
+        "magnesium": "77.8mg",
+        "potassium": "753.3mg",
+        "sodium": "779.8mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "190.4"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3264&h=1632&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4573350.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "35 mins ",
+        "additional_time": "",
+        "total": "55 mins "
+      }
+    },
+    {
+      "name": "Chicken Milanese",
+      "ingredients": [
+        "2 eggs",
+        "kosher salt to taste",
+        "ground black pepper to taste",
+        "¾ cup all-purpose flour",
+        "1 cup Italian seasoned bread crumbs",
+        "2 skinless, boneless chicken breast halves, thinly sliced",
+        "¼ cup vegetable oil for frying",
+        "1 lemon, cut into wedges"
+      ],
+      "instructions": [
+        "Preheat oven to 200 degrees F (95 degrees C).",
+        "Beat eggs with salt and pepper in a shallow dish. Spread flour in another dish and bread crumbs in a third dish.",
+        "Working with one piece at a time, gently press chicken into the flour to coat and shake off the excess flour. Dip into the beaten egg, then press into bread crumbs. Gently toss between your hands so any bread crumbs that haven't stuck can fall away. Place the breaded chicken onto a plate while breading the rest; do not stack.",
+        "Heat vegetable oil in a large skillet over medium heat. Pan-fry chicken in batches of 2 or 3 pieces until golden brown and no longer pink in the center, about 2 to 4 minutes per side. Transfer cooked chicken to a baking sheet and keep warm in preheated oven while cooking remaining chicken.",
+        "Serve with lemon wedges."
+      ],
+      "nutrients": {
+        "protein": "23g",
+        "carbohydrates": "39g",
+        "dietary fiber": "2.2g",
+        "sugars": "2g",
+        "fat": "7.5g",
+        "saturated fat": "1.9g",
+        "cholesterol": "129.2mg",
+        "vitamin a iu": "189.5IU",
+        "niacin equivalents": "13.7mg",
+        "vitamin b6": "0.4mg",
+        "vitamin c": "0.9mg",
+        "folate": "91.9mcg",
+        "calcium": "78.8mg",
+        "iron": "3.5mg",
+        "magnesium": "34.7mg",
+        "potassium": "240mg",
+        "sodium": "694.5mg",
+        "thiamin": "0.3mg",
+        "calories from fat": "67.3"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3888&h=1944&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3566647.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Chicken Marsala Milanese",
+      "ingredients": [
+        "2 (6 ounce) skinless, boneless chicken breast halves",
+        "kosher salt and freshly ground black pepper to taste",
+        "1 pinch cayenne pepper, or to taste",
+        "½ cup all-purpose flour, or as needed",
+        "1 large egg, beaten",
+        "1 ½ cups panko bread crumbs, divided, or more as needed",
+        "1 ounce Parmigiano-Reggiano cheese, freshly grated (Optional)",
+        "¼ cup olive oil for frying",
+        "3 tablespoons unsalted butter",
+        "8 ounces brown mushrooms, sliced",
+        "salt to taste",
+        "2 tablespoons all-purpose flour",
+        "½ cup dry Marsala wine",
+        "2 teaspoons lemon juice",
+        "2 cups chicken broth",
+        "1 pinch ground black pepper",
+        "1 pinch cayenne pepper",
+        "1 tablespoon chopped flat-leaf (Italian) parsley"
+      ],
+      "instructions": [
+        "Place chicken breasts between two pieces of plastic wrap, or a cut-open zip-top bag, and use a meat pounder to flatten the meat to about 1/4-inch thickness.",
+        "Season chicken on both sides of the chicken with salt, pepper, and cayenne, and transfer to a large plate. Sift flour over both sides of the chicken until the surface is completely coated. Transfer to a clean plate.",
+        "Brush away any excess flour from the plate. Sprinkle about 1/4 inch of panko onto the surface of the plate.",
+        "Pour the egg over the floured chicken and use a brush to paint evenly over the meat. Flip and repeat on the other side. Once chicken has been thoroughly coated with the egg, pick up each piece with tongs, letting the excess egg drip off, and place on the plate of panko.",
+        "Generously sprinkle panko over the top of the chicken and press in with your hands or tongs. Flip the chicken over, and sprinkle more panko over the top. Repeat until the chicken is well breaded all over.",
+        "Sprinkle a light coating of the Parmigiano-Reggiano over the top of the chicken and press lightly into the breading with your hands. Flip and repeat on the other side.",
+        "Transfer to a plate sprinkled with more panko. Cover with plastic wrap and keep in the refrigerator until you're ready to pan-fry.",
+        "To make the sauce, melt butter in a saucepan over high heat; add the mushrooms and a large pinch of salt. Cook mushrooms, stirring occasionally, until well browned, 5 to 6 minutes. Reduce heat to medium and stir in flour. Cook, stirring occasionally, for another 2 minutes.",
+        "Pour in Marsala and lemon juice and use a spatula or spoon to scrape any caramelization from the bottom of the pan. Pour in chicken broth and raise heat to medium-high. Season with black pepper and cayenne and bring to a simmer. Cook the mixture, stirring occasionally, until it reduces and thickens slightly. Keep hot until needed or let cool and reheat when needed. Before serving, some freshly chopped parsley can be stirred in.",
+        "Heat olive oil in a nonstick skillet over medium-high heat. Add the breaded chicken to the pan and reduce the heat to medium. Cook until golden brown and cooked through, about 3 minutes per side. Serve immediately with Marsala sauce underneath or spooned over the top."
+      ],
+      "nutrients": {
+        "protein": "61.6g",
+        "carbohydrates": "101.2g",
+        "dietary fiber": "2.4g",
+        "sugars": "8.5g",
+        "fat": "34.4g",
+        "saturated fat": "16.5g",
+        "cholesterol": "254.2mg",
+        "vitamin a iu": "986.5IU",
+        "niacin equivalents": "32.4mg",
+        "vitamin b6": "0.9mg",
+        "vitamin c": "7.6mg",
+        "folate": "111.6mcg",
+        "calcium": "212.3mg",
+        "iron": "4.6mg",
+        "magnesium": "68.6mg",
+        "potassium": "830.4mg",
+        "sodium": "1911.4mg",
+        "thiamin": "0.5mg",
+        "calories from fat": "310"
+      },
+      "tags": [],
+      "servings": "2",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=1280&h=640&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F11%2F04%2Fimage-41.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "30 mins ",
+        "additional_time": "",
+        "total": "50 mins "
+      }
+    },
+    {
+      "name": "Green Papaya Salad (Som Tam Malakor)",
+      "ingredients": [
+        "¼ cup peanuts",
+        "2 peppers Thai chiles, chopped",
+        "3 cloves garlic",
+        "1 tablespoon dried shrimp",
+        "1 tablespoon white sugar",
+        "2 medium limes, juiced",
+        "2 tablespoons fish sauce",
+        "1 medium papaya - peeled, seeded, and sliced",
+        "1 cup cherry tomatoes, halved",
+        "¼ cup fresh green beans, cut into 1-inch pieces",
+        "½ medium carrot, peeled and shredded",
+        "salt and ground black pepper to taste"
+      ],
+      "instructions": [
+        "Preheat the oven to 350 degrees F (175 degrees C). Place peanuts on a baking sheet.",
+        "Toast in the preheated oven until fragrant and browned, 7 to 8 minutes. Let cool for 5 minutes.",
+        "Grind roasted peanuts, Thai chilies, garlic, dried shrimp, and sugar in a mortar and pestle or food processor. Stir in lime juice and fish sauce to make dressing.",
+        "Toss papaya, tomatoes, green beans, and carrot with dressing. Season with salt and pepper."
+      ],
+      "nutrients": {
+        "protein": "8.9g",
+        "carbohydrates": "37.3g",
+        "dietary fiber": "7.3g",
+        "sugars": "16.6g",
+        "fat": "9.8g",
+        "saturated fat": "1.4g",
+        "cholesterol": "5.2mg",
+        "vitamin a iu": "4549.8IU",
+        "niacin equivalents": "5.8mg",
+        "vitamin b6": "0.4mg",
+        "vitamin c": "197mg",
+        "folate": "99.2mcg",
+        "calcium": "89.2mg",
+        "iron": "2.2mg",
+        "magnesium": "96mg",
+        "potassium": "855.3mg",
+        "sodium": "1126.2mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "88"
+      },
+      "tags": [],
+      "servings": "2",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F01%2F26%2FSom-Tam-Malakor-Green-Papaya-Salad-2000.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "10 mins ",
+        "additional_time": "5 mins ",
+        "total": "35 mins "
+      }
+    },
+    {
+      "name": "Cheese Cake Cups",
+      "ingredients": [
+        "16 vanilla wafer cookies",
+        "2 (8 ounce) packages cream cheese, softened",
+        "¾ cup white sugar",
+        "2 eggs",
+        "1 teaspoon vanilla extract"
+      ],
+      "instructions": [
+        "Preheat oven to 350 degrees F (175 degrees C). Line muffin pans with cupcake papers.",
+        "Place one wafer cookie in the bottom of each cupcake paper. In a medium bowl, cream together cream cheese and sugar. Beat in eggs and vanilla until smooth. Pour over wafers in cupcake papers.",
+        "Bake in preheated oven 15 minutes, until golden and set."
+      ],
+      "nutrients": {
+        "protein": "3.2g",
+        "carbohydrates": "14.5g",
+        "dietary fiber": "0.1g",
+        "sugars": "9.5g",
+        "fat": "11.5g",
+        "saturated fat": "6.6g",
+        "cholesterol": "54mg",
+        "vitamin a iu": "407.4IU",
+        "niacin equivalents": "0.7mg",
+        "folate": "9.2mcg",
+        "calcium": "27.3mg",
+        "iron": "0.6mg",
+        "magnesium": "3.2mg",
+        "potassium": "48.7mg",
+        "sodium": "110mg",
+        "calories from fat": "103.9"
+      },
+      "tags": [],
+      "servings": "16",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2272&h=1136&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F14090.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "",
+        "total": "30 mins "
+      }
+    },
+    {
+      "name": "Family Secret Meatballs and Sauce",
+      "ingredients": [
+        "2 pounds ground beef",
+        "¾ cup rolled oats",
+        "6 tablespoons chopped sweet onion (such as a Walla Walla)",
+        "1 cup milk",
+        "1 ½ teaspoons salt",
+        "½ teaspoon ground black pepper",
+        "1 ½ cups ketchup",
+        "3 tablespoons Worcestershire sauce",
+        "3 tablespoons white sugar",
+        "4 ½ tablespoons chopped sweet onion (such as a Walla Walla)",
+        "4 ½ tablespoons apple cider vinegar",
+        "¾ cup water"
+      ],
+      "instructions": [
+        "Preheat oven to 350 degrees F (175 degrees C). Grease a 9x13-inch baking dish.",
+        "Mix together the ground beef, rolled oats, 6 tablespoons of sweet onion, milk, salt, and black pepper until thoroughly combined. Roll the mixture into 2-inch meatballs, and place meatballs into the prepared baking dish.",
+        "In a bowl, mix the ketchup, Worcestershire sauce, sugar, 4 1/2 tablespoons of sweet onion, apple cider vinegar, and water until the sugar has dissolved, and pour the sauce evenly over the meatballs.",
+        "Bake the meatballs and sauce in the preheated oven until the sauce is bubbling and thickened and the meatballs are no longer pink inside, about 1 1/2 hours. An instant-read thermometer inserted into the center of a meatball should read at least 160 degrees F (70 degrees C)."
+      ],
+      "nutrients": {
+        "protein": "21.9g",
+        "carbohydrates": "25.2g",
+        "dietary fiber": "1.2g",
+        "sugars": "17.7g",
+        "fat": "14.5g",
+        "saturated fat": "5.7g",
+        "cholesterol": "71.3mg",
+        "vitamin a iu": "483.2IU",
+        "niacin equivalents": "9.4mg",
+        "vitamin b6": "0.3mg",
+        "vitamin c": "8.7mg",
+        "folate": "18.5mcg",
+        "calcium": "68.9mg",
+        "iron": "2.9mg",
+        "magnesium": "40.9mg",
+        "potassium": "556.7mg",
+        "sodium": "1079.8mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "130.9"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=1936&h=968&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F968399.jpg",
+      "time": {
+        "prepration_time": "15 mins ",
+        "cooking_time": "1 hr 30 mins ",
+        "additional_time": "",
+        "total": "1 hr 45 mins "
+      }
+    },
+    {
+      "name": "Italian Spaghetti Sauce with Meatballs",
+      "ingredients": [
+        "1 pound lean ground beef",
+        "1 cup fresh bread crumbs",
+        "1 tablespoon dried parsley",
+        "1 tablespoon grated Parmesan cheese",
+        "¼ teaspoon ground black pepper",
+        "⅛ teaspoon garlic powder",
+        "1 egg, beaten",
+        "¾ cup chopped onion",
+        "5 cloves garlic, minced",
+        "¼ cup olive oil",
+        "2 (28 ounce) cans whole peeled tomatoes",
+        "2 teaspoons salt",
+        "1 teaspoon white sugar",
+        "1 bay leaf",
+        "1 (6 ounce) can tomato paste",
+        "¾ teaspoon dried basil",
+        "½ teaspoon ground black pepper"
+      ],
+      "instructions": [
+        "In a large bowl, combine ground beef, bread crumbs, parsley, Parmesan, 1/4 teaspoon black pepper, garlic powder and beaten egg. Mix well and form into 12 balls. Store, covered, in refrigerator until needed.",
+        "In a large saucepan over medium heat, saute onion and garlic in olive oil until onion is translucent. Stir in tomatoes, salt, sugar and bay leaf. Cover, reduce heat to low, and simmer 90 minutes. Stir in tomato paste, basil, 1/2 teaspoon pepper and meatballs and simmer 30 minutes more. Serve."
+      ],
+      "nutrients": {
+        "protein": "18.9g",
+        "carbohydrates": "23g",
+        "dietary fiber": "4.5g",
+        "sugars": "11.1g",
+        "fat": "21.2g",
+        "saturated fat": "5.9g",
+        "cholesterol": "77.4mg",
+        "vitamin a iu": "824.8IU",
+        "niacin equivalents": "9.1mg",
+        "vitamin b6": "0.6mg",
+        "vitamin c": "32.8mg",
+        "folate": "45.6mcg",
+        "calcium": "139.6mg",
+        "iron": "5.5mg",
+        "magnesium": "59.3mg",
+        "potassium": "1023.1mg",
+        "sodium": "1492.5mg",
+        "thiamin": "0.2mg",
+        "calories from fat": "191"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=3024&h=1512&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6561306.jpg",
+      "time": {
+        "prepration_time": "20 mins ",
+        "cooking_time": "2 hrs ",
+        "additional_time": "",
+        "total": "2 hrs 20 mins "
+      }
+    },
+    {
+      "name": "Slow Cooker Sauce with Meatballs",
+      "ingredients": [
+        "2 tablespoons extra virgin olive oil",
+        "1 large onion, chopped",
+        "6 each garlic cloves, minced",
+        "1 (28 ounce) can RED GOLD® Crushed Tomatoes",
+        "1 (28 ounce) can RED GOLD® Tomato Sauce",
+        "1 (6 ounce) can RED GOLD® Tomato Paste",
+        "1 tablespoon dried basil",
+        "1 teaspoon dried oregano",
+        "1 pinch Salt and black pepper to taste",
+        "1 teaspoon fennel seed",
+        "2 tablespoons sugar",
+        "½ cup water",
+        "2 pounds lean ground beef or ground turkey",
+        "½ cup quick cooking oats",
+        "1 teaspoon dried basil",
+        "¼ teaspoon black pepper",
+        "2 cloves garlic, minced",
+        "2 large eggs eggs",
+        "8 ounces small fresh mozzarella balls",
+        "3 tablespoons extra-virgin olive oil"
+      ],
+      "instructions": [
+        "In a large skillet heat extra-virgin olive oil on medium heat. Add onion and garlic. Cook until tender. Spray 5 quart or larger slow cooker. Add onion and garlic and remaining sauce ingredients. Stir to combine. Cook on low for 6 to 7 hours. Serve on pasta of your choice.",
+        "Meat can be added to the sauce if desired. Below is a meatball recipe that could be added to the sauce at the beginning of the cook time.",
+        "Mozzarella Meatballs: In a large bowl mix turkey, oats, basil, black pepper, garlic cloves and eggs. Shape into 2-inch balls (should get 14 to 16 meatballs). Press 1 small mozzarella ball into center of each meatball, sealed inside.",
+        "In a large skillet, heat oil over medium-high neat. Add meatballs; cook just until browned on all side. Place half of the sauce in slow cooker, add meatballs and then last half of sauce. Cook as directed."
+      ],
+      "nutrients": {
+        "protein": "43.7g",
+        "carbohydrates": "42.5g",
+        "dietary fiber": "7.9g",
+        "sugars": "18.5g",
+        "fat": "39.9g",
+        "saturated fat": "14.8g",
+        "cholesterol": "196.7mg",
+        "vitamin a iu": "192.2IU",
+        "niacin equivalents": "12.8mg",
+        "vitamin b6": "0.5mg",
+        "vitamin c": "3.9mg",
+        "folate": "29.7mcg",
+        "calcium": "67.6mg",
+        "iron": "3.9mg",
+        "magnesium": "46.3mg",
+        "potassium": "508.4mg",
+        "sodium": "1187.2mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "359.2"
+      },
+      "tags": [],
+      "servings": "6",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1696192.jpg",
+      "time": {
+        "prepration_time": "30 mins ",
+        "cooking_time": "6 hrs ",
+        "additional_time": "",
+        "total": "6 hrs 30 mins "
+      }
+    },
+    {
+      "name": "Easy Swedish Meatball Sauce",
+      "ingredients": [
+        "1 cup beef stock",
+        "1 cup heavy cream",
+        "3 tablespoons all-purpose flour",
+        "1 tablespoon soy sauce",
+        "1 teaspoon ground black pepper",
+        "½ teaspoon dried rosemary",
+        "½ (20 ounce) package frozen cooked meatballs, thawed"
+      ],
+      "instructions": [
+        "Whisk together the beef stock, heavy cream, flour, soy sauce, black pepper, and rosemary in a large saucepan until smooth. Cook and stir over low heat until thickened, about 10 minutes, stirring occasionally. Stir in the meatballs, and continue cooking until meatballs are heated through, about 5 more minutes."
+      ],
+      "nutrients": {
+        "protein": "15g",
+        "carbohydrates": "12.2g",
+        "dietary fiber": "0.8g",
+        "sugars": "0.9g",
+        "fat": "31.5g",
+        "saturated fat": "17g",
+        "cholesterol": "140.4mg",
+        "vitamin a iu": "1080.2IU",
+        "niacin equivalents": "4.2mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "4.6mg",
+        "folate": "22.9mcg",
+        "calcium": "76.9mg",
+        "iron": "2.1mg",
+        "magnesium": "23.7mg",
+        "potassium": "299.2mg",
+        "sodium": "357.8mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "283.2"
+      },
+      "tags": [],
+      "servings": "4",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=960&h=480&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2021%2F10%2F12%2F6396200-easy-swedish-meatball-sauce-ladyomega.jpeg",
+      "time": {
+        "prepration_time": "5 mins ",
+        "cooking_time": "15 mins ",
+        "additional_time": "",
+        "total": "20 mins "
+      }
+    },
+    {
+      "name": "Sushi Roll",
+      "ingredients": [
+        "⅔ cup uncooked short-grain white rice",
+        "3 tablespoons rice vinegar",
+        "3 tablespoons white sugar",
+        "1 ½ teaspoons salt",
+        "4 sheets nori seaweed sheets",
+        "½ cucumber, peeled, cut into small strips",
+        "2 tablespoons pickled ginger",
+        "1 avocado",
+        "½ pound imitation crabmeat, flaked"
+      ],
+      "instructions": [
+        "In a medium saucepan, bring 1 1/3 cups water to a boil. Add rice, and stir. Reduce heat, cover, and simmer for 20 minutes. In a small bowl, mix the rice vinegar, sugar ,and salt. Blend the mixture into the rice.",
+        "Preheat oven to 300 degrees F (150 degrees C). On a medium baking sheet, heat nori in the preheated oven 1 to 2 minutes, until warm.",
+        "Center one sheet nori on a bamboo sushi mat. Wet your hands. Using your hands, spread a thin layer of rice on the sheet of nori, and press into a thin layer. Arrange 1/4 of the cucumber, ginger, avocado, and imitation crabmeat in a line down the center of the rice. Lift the end of the mat, and gently roll it over the ingredients, pressing gently. Roll it forward to make a complete roll. Repeat with remaining ingredients.",
+        "Cut each roll into 4 to 6 slices using a wet, sharp knife."
+      ],
+      "nutrients": {
+        "protein": "3.9g",
+        "carbohydrates": "25.8g",
+        "dietary fiber": "2.4g",
+        "sugars": "7.4g",
+        "fat": "3.9g",
+        "saturated fat": "0.6g",
+        "cholesterol": "5.7mg",
+        "vitamin a iu": "131.7IU",
+        "niacin equivalents": "2mg",
+        "vitamin b6": "0.1mg",
+        "vitamin c": "3.4mg",
+        "folate": "61.7mcg",
+        "calcium": "12.3mg",
+        "iron": "1mg",
+        "magnesium": "25mg",
+        "potassium": "186.1mg",
+        "sodium": "702.5mg",
+        "thiamin": "0.1mg",
+        "calories from fat": "35.3"
+      },
+      "tags": [],
+      "servings": "8",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2305&h=1153&url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5360403.jpg",
+      "time": {
+        "prepration_time": "45 mins ",
+        "cooking_time": "",
+        "additional_time": "",
+        "total": "45 mins "
+      }
+    }
+  ]
+}

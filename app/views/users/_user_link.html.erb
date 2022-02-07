@@ -2,9 +2,7 @@
   <div class="flex w-full items-center">
     <div class="mr-2 w-16 rounded-full">
 
-      <% if user.avatar.attached? %>
-        <%= image_tag user.avatar, class: 'w-full' %>
-      <% end %>
+        <%= image_tag user.avatar.attached? ? user.avatar : 'logo.png', class: 'w-full' %>
     </div>
 
     <div class="grid w-full grow">

@@ -5,7 +5,8 @@ class CreateRecipes < ActiveRecord::Migration[7.0]
       t.references :original, foreign_key: { to_table: :recipes }
       t.string :title
       t.text :description
-      t.integer :time
+      t.string :remote_image
+      t.string :time
       t.integer :servings
 
       t.timestamps

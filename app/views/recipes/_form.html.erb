@@ -62,8 +62,7 @@
     <div class="my-5">
       <h4 class="text-gray-500 text-lg font-semibold">Time</h4>
       <div class="grid grid-cols-4 bg-gray-100 font-semibold shadow rounded-md ">
-        <%= form.number_field :time, placeholder: "Enter Time in", class: "block col-span-3 text-lg bg-gray-100 text-gray-700 border-none outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4  w-full" %>
-        <div class="text-gray-500 text-center self-center">Minutes</div>
+        <%= form.text_field :time, placeholder: "Enter Total Time", class: "block col-span-3 text-lg bg-gray-100 text-gray-700 border-none outline-none focus:outline-none focus:border-none focus:ring-0 px-3 py-4  w-full" %>
       </div>
       <% if recipe.errors.any? && recipe.errors.full_messages_for(:time) %>
         <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg my-3">

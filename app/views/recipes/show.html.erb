@@ -19,16 +19,24 @@
     </div>
 
     <div class="flex">
-      <div data-controller='modal-wrapper'>
-        <template data-modal-wrapper-target="template">
-          <%= render 'shared/modal', title: 'Add To Cookbook', src: '/new_join_cookbook_recipe?recipe_id='+ @recipe.id.to_s %>
-        </template>
-        <button data-action='modal-wrapper#open' class=" text-center mx-auto hover:text-blue-800">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <% if user_signed_in? %>
+        <div data-controller='modal-wrapper'>
+          <template data-modal-wrapper-target="template">
+            <%= render 'shared/modal', title: 'Add To Cookbook', src: '/new_join_cookbook_recipe?recipe_id=' + @recipe.id.to_s %>
+          </template>
+          <button data-action='modal-wrapper#open' class=" text-center mx-auto hover:text-blue-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+            </svg>
+          </button>
+        </div>
+      <% else %>
+        <%= link_to new_user_registration_path do %>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-center mx-auto hover:text-blue-800 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
           </svg>
-        </button>
-      </div>
+        <% end %>
+      <% end %>
     </div>
   </div>
 
@@ -47,6 +55,10 @@
     <% if @recipe.image.attached? %>
       <div class="max-w-xl mx-auto">
         <%= image_tag @recipe.image, class: 'mx-auto w-full h-full my-2 rounded' %>
+      </div>
+    <% elsif @recipe.remote_image.present? %>
+      <div class="max-w-xl mx-auto">
+        <%= image_tag @recipe.remote_image, class: 'mx-auto w-full h-full my-2 rounded' %>
       </div>
     <% end %>
   </div>
@@ -74,8 +86,9 @@
         <%= @recipe.instructions.count %> STEPS
       </h1>
       <div id="recipes" class="grid my-3 mx-2">
-        <% @recipe.instructions.each do |instruction| %>
-          <div class="my-2 text-xl px-4">
+        <% @recipe.instructions.each_with_index do |instruction, index| %>
+          <div class="my-2 text-xl px-4 flex">
+            <span class="mr-2 font-bold"><%= index + 1 %>. </span>
             <%= render 'recipes/instruction', instruction: instruction %>
           </div>
         <% end %>

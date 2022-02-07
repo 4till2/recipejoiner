@@ -89,7 +89,8 @@ ActiveRecord::Schema.define(version: 2022_01_28_155234) do
     t.bigint "original_id"
     t.string "title"
     t.text "description"
-    t.integer "time"
+    t.string "remote_image"
+    t.string "time"
     t.integer "servings"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

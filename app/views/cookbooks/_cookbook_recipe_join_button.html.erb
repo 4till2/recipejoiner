@@ -1,5 +1,6 @@
 <%= turbo_frame_tag 'join_button' do %>
   <div class="flex items-center justify-between ml-2">
+
     <% if (recipe ||= nil || cookbook ||= nil) && recipe&.id && cookbook&.id %>
       <div class="border rounded-lg">
         <%= button_to join_cookbook_recipe_path(recipe_id: recipe.id, cookbook_id: cookbook.id), class: 'flex' do %>

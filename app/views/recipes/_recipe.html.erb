@@ -14,8 +14,8 @@
             </div>
           </div>
           <div class="my-3 w-full">
-            <% if recipe.image.attached? %>
-              <%= image_tag recipe.image, class: 'w-24 md:w-48 float-right ml-2 self-end' %>
+            <% if recipe.image.attached? || recipe.remote_image.present? %>
+              <%= image_tag recipe.image.attached? ? recipe.image : recipe.remote_image, class: 'w-24 md:w-48 float-right ml-2 self-end' %>
             <% end %>
             <div class="text-sm md:text-lg grow"><%= truncate(recipe.description, length: 300) %></div>
 

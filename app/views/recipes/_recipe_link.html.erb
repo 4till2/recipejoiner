@@ -2,9 +2,9 @@
 
   <div class="flex w-full items-center">
     <div class="mr-2 w-16 bg-gray-700">
-    <% if recipe.image.attached? %>
-        <%= image_tag recipe.image, class: 'w-full' %>
-    <% end %>
+      <% if recipe.image.attached? || recipe.remote_image.present? %>
+        <%= image_tag recipe.image.attached? ? recipe.image : recipe.remote_image, class: 'w-full' %>
+      <% end %>
     </div>
 
     <div class="grid w-full grow">
@@ -13,8 +13,10 @@
       </p>
       <div class="inline-flex text-gray-500 text-xs truncate">
         <span>Recipe by <%= recipe.user.username %> </span>
-        <span class="px-1">&#8226;</span>
-        <span class="truncate"><%= recipe.description %></span>
+        <% if recipe.description.present? %>
+          <span class="px-1">&#8226;</span>
+          <span class="truncate"><%= recipe.description %></span>
+        <% end %>
       </div>
     </div>
   </div>

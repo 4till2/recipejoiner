@@ -9,8 +9,8 @@ class User < ApplicationRecord
             uniqueness: {
               # object = person object being validated
               # data = { model: "User", attribute: "Username", value: <username> }
-              message: ->(object, data) do
-                "#{object.name}, #{data[:value]} is already taken."
+              message: lambda do |object, data|
+                "#{data[:value]} is already taken."
               end
             }
   validates :username, presence: { message: "must be given please." }
@@ -35,7 +35,7 @@ class User < ApplicationRecord
 
   multisearchable against: [:username]
 
-  DEFAULT_FEED_COUNT = 10
+  DEFAULT_FEED_COUNT = 30
 
   def paginated_collection(src)
     case src
@@ -128,11 +128,12 @@ class User < ApplicationRecord
     return if total.negative?
 
     l = total / 3
-    (Recipe.where.not(user_id: id).last(l) +
+    list = (Recipe.where.not(user_id: id).last(l) +
       Cookbook.where.not(user_id: id).last(l) +
       User.where.not(id: id).last(l)
     ).shuffle
 
+    pad_with_suggestions(list, l, total, 'Recipe')
   end
 
   def as_chef

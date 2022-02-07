@@ -9,7 +9,7 @@
         </div>
       </div>
     <% else %>
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 truncate">
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 ">
         <%= render 'shared/items', items: items, link: local_assigns[:link], small: local_assigns[:small], class: "#{local_assigns[:class]} p-4 w-full" %>
       </div>
     <% end %>

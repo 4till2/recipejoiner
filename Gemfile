@@ -80,4 +80,3 @@ gem 'pundit'
 gem 'acts-as-taggable-on', '~> 9.0'
 gem 'pg_search'
 gem 'pagy', '~> 5.9'
-
