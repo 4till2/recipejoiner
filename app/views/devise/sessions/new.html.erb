@@ -15,7 +15,7 @@
     </div>
 
     <div class="mt-6">
-      <%= form_for(resource, as: resource_name, data: { turbo: false }, url: session_path(resource_name), class: "space-y-6") do |f| %>
+      <%= form_for(resource, as: resource_name, html: { data: { turbo: false } }, url: session_path(resource_name), class: "space-y-6") do |f| %>
         <div class="my-2">
           <label for="email" class="block text-sm font-medium text-gray-700">
             Email address
