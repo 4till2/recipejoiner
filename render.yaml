@@ -1,0 +1,20 @@
+---
+databases:
+  - name: spoonjoy 
+    databaseName: spoonjoy_production
+    user: spoonjoy 
+    plan: free
+services:
+  - type: redis
+    name: spoonjoy-redis
+    ipAllowList: [ ]
+    plan: free
+    maxmemoryPolicy: noeviction
+  - type: web
+    name: spoonjoy
+    env: ruby
+    buildCommand: ./bin/render-build.sh
+    startCommand: bundle exec puma -C config/puma.rb
+    plan: free
+    envVars:
+      - fromGroup: spoonjoy_env 
